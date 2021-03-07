@@ -1,0 +1,1303 @@
+[02-18 00:00:03,309] INFO  [080-exec-4][] c.c.w.i.AccessLogInterceptor{37} - remoteAddr=0:0:0:0:0:0:0:1, uri=/, method=GET, queryString=null, hasException=false, duration=2393ms
+[02-18 00:00:07,619] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 00:00:31,283] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 00:00:44,469] INFO  [main][] c.c.c.c.CoryContextApplicationContextInitializer{19} - CoryContextApplicationContextInitializer initialize
+[02-18 00:00:44,505] INFO  [main][] com.cory.CoryWebDemoApplication{55} - Starting CoryWebDemoApplication using Java 1.8.0_131 on Cory-PC with PID 8944 (E:\WORK\idea_workspace\cory-web-spring-boot-demo-all\target\classes started by Cory in E:\WORK\idea_workspace\cory-web-spring-boot-demo-all)
+[02-18 00:00:44,507] DEBUG [main][] com.cory.CoryWebDemoApplication{56} - Running with Spring Boot v2.4.2, Spring v5.3.3
+[02-18 00:00:44,509] INFO  [main][] com.cory.CoryWebDemoApplication{660} - No active profile set, falling back to default profiles: default
+[02-18 00:00:45,983] INFO  [main][] c.c.db.processor.CoryDbDaoProcessor{35} - cory db register bean definition start
+[02-18 00:00:46,003] INFO  [main][] c.c.db.processor.CoryDbDaoProcessor{59} - cory db register bean definition finish, registered 9 DAO
+[02-18 00:00:47,721] INFO  [main][] c.o.c.s.m.GenericManageableCaptchaService{42} - Init com.octo.captcha.service.captchastore.FastHashMapCaptchaStore
+[02-18 00:00:48,986] INFO  [main][] c.a.d.s.b.a.DruidDataSourceAutoConfigure{56} - Init DruidDataSource
+[02-18 00:00:49,352] INFO  [main][] c.alibaba.druid.pool.DruidDataSource{985} - {dataSource-1} inited
+[02-18 00:00:49,750] INFO  [main][] c.c.sevice.base.SystemConfigService{65} - 加载系统参数配置...
+[02-18 00:00:49,831] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_system_config WHERE IS_DELETED = 0 ORDER BY ID DESC LIMIT 0, 2147483647, params: null
+[02-18 00:00:49,893] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{138} - sql: SELECT COUNT(*) FROM base_system_config WHERE IS_DELETED = 0, params: null
+[02-18 00:00:49,987] INFO  [main][] c.c.sevice.base.SystemConfigService{76} - 加载系统参数配置完成(共23条).
+[02-18 00:00:50,123] INFO  [main][] c.c.s.base.resource.ResourceScanner{36} - start to scan Controllers ...
+[02-18 00:00:50,326] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/systemconfig/detailData/**"]
+[02-18 00:00:50,326] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/systemconfig/delete/**"]
+[02-18 00:00:50,342] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/systemconfig/save*"]
+[02-18 00:00:50,342] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/systemconfig/refreshCache*"]
+[02-18 00:00:50,342] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/systemconfig/listData*"]
+[02-18 00:00:50,342] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/datadict/save*"]
+[02-18 00:00:50,342] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/datadict/delete/**"]
+[02-18 00:00:50,358] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/datadict/listData*"]
+[02-18 00:00:50,358] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/datadict/updateShowable*"]
+[02-18 00:00:50,358] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/datadict/detailData/**"]
+[02-18 00:00:50,358] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/resource/listData*"]
+[02-18 00:00:50,358] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/resource/detailData/**"]
+[02-18 00:00:50,358] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/resource/delete/**"]
+[02-18 00:00:50,373] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/resource/save*"]
+[02-18 00:00:50,373] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/role/listData*"]
+[02-18 00:00:50,373] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/role/detailData/**"]
+[02-18 00:00:50,373] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/role/save*"]
+[02-18 00:00:50,373] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/role/doAssign*"]
+[02-18 00:00:50,389] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/demo/save*"]
+[02-18 00:00:50,389] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/demo/post*"]
+[02-18 00:00:50,389] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/demo/detailData/**"]
+[02-18 00:00:50,389] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/demo/upload*"]
+[02-18 00:00:50,405] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/demo/delete/**"]
+[02-18 00:00:50,405] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/demo/hi*"]
+[02-18 00:00:50,405] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/demo/listData*"]
+[02-18 00:00:50,405] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/errorPage*"]
+[02-18 00:00:50,420] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/***"]
+[02-18 00:00:50,420] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/feedback/listData*"]
+[02-18 00:00:50,420] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/feedback/save*"]
+[02-18 00:00:50,420] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/feedback/delete/**"]
+[02-18 00:00:50,420] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/feedback/detailData/**"]
+[02-18 00:00:50,436] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/user/changePasswordDirectly*"]
+[02-18 00:00:50,436] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/user/doAssign*"]
+[02-18 00:00:50,436] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/user/listData*"]
+[02-18 00:00:50,436] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/user/detailData/**"]
+[02-18 00:00:50,451] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/user/changePassword*"]
+[02-18 00:00:50,451] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/currentUser*"]
+[02-18 00:00:50,451] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/doRegister*"]
+[02-18 00:00:50,451] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/login*"]
+[02-18 00:00:50,467] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/register*"]
+[02-18 00:00:50,467] INFO  [main][] c.c.s.base.resource.ResourceScanner{56} - scan Controllers finish, url count: 0 ...
+[02-18 00:00:51,757] INFO  [main][] org.quartz.impl.StdSchedulerFactory{1220} - Using default implementation for ThreadExecutor
+[02-18 00:00:51,788] INFO  [main][] o.quartz.core.SchedulerSignalerImpl{61} - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+[02-18 00:00:51,788] INFO  [main][] org.quartz.core.QuartzScheduler{229} - Quartz Scheduler v.2.3.2 created.
+[02-18 00:00:51,788] INFO  [main][] org.quartz.simpl.RAMJobStore{155} - RAMJobStore initialized.
+[02-18 00:00:51,788] INFO  [main][] org.quartz.core.QuartzScheduler{294} - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+[02-18 00:00:51,788] INFO  [main][] org.quartz.impl.StdSchedulerFactory{1374} - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+[02-18 00:00:51,788] INFO  [main][] org.quartz.impl.StdSchedulerFactory{1378} - Quartz scheduler version: 2.3.2
+[02-18 00:00:51,788] INFO  [main][] org.quartz.core.QuartzScheduler{2293} - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@1b26fac2
+[02-18 00:00:51,879] INFO  [main][] org.quartz.core.QuartzScheduler{547} - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+[02-18 00:00:51,879] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 00:00:51,910] INFO  [main][] com.cory.CoryWebDemoApplication{61} - Started CoryWebDemoApplication in 8.07 seconds (JVM running for 8.709)
+[02-18 00:00:55,877] INFO  [080-exec-1][] c.c.w.i.AccessLogInterceptor{37} - remoteAddr=0:0:0:0:0:0:0:1, uri=/, method=GET, queryString=null, hasException=false, duration=3377ms
+[02-18 00:00:58,790] INFO  [080-exec-2][] c.c.w.i.AccessLogInterceptor{37} - remoteAddr=0:0:0:0:0:0:0:1, uri=/, method=GET, queryString=null, hasException=false, duration=1371ms
+[02-18 00:01:03,493] INFO  [080-exec-5][] c.c.w.i.AccessLogInterceptor{37} - remoteAddr=0:0:0:0:0:0:0:1, uri=/, method=GET, queryString=null, hasException=false, duration=1474ms
+[02-18 00:01:20,409] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 00:01:49,120] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 00:02:14,798] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 00:02:38,861] INFO  [main][] c.c.c.c.CoryContextApplicationContextInitializer{19} - CoryContextApplicationContextInitializer initialize
+[02-18 00:02:38,892] INFO  [main][] com.cory.CoryWebDemoApplication{55} - Starting CoryWebDemoApplication using Java 1.8.0_131 on Cory-PC with PID 9648 (E:\WORK\idea_workspace\cory-web-spring-boot-demo-all\target\classes started by Cory in E:\WORK\idea_workspace\cory-web-spring-boot-demo-all)
+[02-18 00:02:38,908] DEBUG [main][] com.cory.CoryWebDemoApplication{56} - Running with Spring Boot v2.4.2, Spring v5.3.3
+[02-18 00:02:38,908] INFO  [main][] com.cory.CoryWebDemoApplication{660} - No active profile set, falling back to default profiles: default
+[02-18 00:02:40,453] INFO  [main][] c.c.db.processor.CoryDbDaoProcessor{35} - cory db register bean definition start
+[02-18 00:02:40,470] INFO  [main][] c.c.db.processor.CoryDbDaoProcessor{59} - cory db register bean definition finish, registered 9 DAO
+[02-18 00:02:42,206] INFO  [main][] c.o.c.s.m.GenericManageableCaptchaService{42} - Init com.octo.captcha.service.captchastore.FastHashMapCaptchaStore
+[02-18 00:02:43,216] INFO  [main][] c.a.d.s.b.a.DruidDataSourceAutoConfigure{56} - Init DruidDataSource
+[02-18 00:02:43,424] INFO  [main][] c.alibaba.druid.pool.DruidDataSource{985} - {dataSource-1} inited
+[02-18 00:02:43,861] INFO  [main][] c.c.sevice.base.SystemConfigService{65} - 加载系统参数配置...
+[02-18 00:02:43,939] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_system_config WHERE IS_DELETED = 0 ORDER BY ID DESC LIMIT 0, 2147483647, params: null
+[02-18 00:02:44,002] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{138} - sql: SELECT COUNT(*) FROM base_system_config WHERE IS_DELETED = 0, params: null
+[02-18 00:02:44,096] INFO  [main][] c.c.sevice.base.SystemConfigService{76} - 加载系统参数配置完成(共23条).
+[02-18 00:02:44,158] INFO  [main][] c.c.s.base.resource.ResourceScanner{36} - start to scan Controllers ...
+[02-18 00:02:44,471] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/resource/listData*"]
+[02-18 00:02:44,486] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/resource/detailData/**"]
+[02-18 00:02:44,486] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/resource/delete/**"]
+[02-18 00:02:44,502] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/resource/save*"]
+[02-18 00:02:44,627] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/errorPage*"]
+[02-18 00:02:44,627] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/***"]
+[02-18 00:02:44,642] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/feedback/listData*"]
+[02-18 00:02:44,642] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/feedback/save*"]
+[02-18 00:02:44,642] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/feedback/delete/**"]
+[02-18 00:02:44,642] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/feedback/detailData/**"]
+[02-18 00:02:44,658] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/currentUser*"]
+[02-18 00:02:44,658] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/doRegister*"]
+[02-18 00:02:44,658] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/login*"]
+[02-18 00:02:44,658] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/register*"]
+[02-18 00:02:44,674] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/demo/save*"]
+[02-18 00:02:44,674] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/demo/post*"]
+[02-18 00:02:44,674] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/demo/detailData/**"]
+[02-18 00:02:44,674] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/demo/upload*"]
+[02-18 00:02:44,689] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/demo/delete/**"]
+[02-18 00:02:44,689] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/demo/hi*"]
+[02-18 00:02:44,689] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/demo/listData*"]
+[02-18 00:02:44,705] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/role/listData*"]
+[02-18 00:02:44,705] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/role/detailData/**"]
+[02-18 00:02:44,705] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/role/save*"]
+[02-18 00:02:44,721] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/role/doAssign*"]
+[02-18 00:02:44,721] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/systemconfig/detailData/**"]
+[02-18 00:02:44,721] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/systemconfig/delete/**"]
+[02-18 00:02:44,721] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/systemconfig/save*"]
+[02-18 00:02:44,736] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/systemconfig/refreshCache*"]
+[02-18 00:02:44,736] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/systemconfig/listData*"]
+[02-18 00:02:44,736] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/datadict/save*"]
+[02-18 00:02:44,752] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/datadict/delete/**"]
+[02-18 00:02:44,752] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/datadict/listData*"]
+[02-18 00:02:44,752] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/datadict/updateShowable*"]
+[02-18 00:02:44,767] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/datadict/detailData/**"]
+[02-18 00:02:44,767] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/user/changePasswordDirectly*"]
+[02-18 00:02:44,767] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/user/doAssign*"]
+[02-18 00:02:44,783] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/user/listData*"]
+[02-18 00:02:44,783] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/user/detailData/**"]
+[02-18 00:02:44,783] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/user/changePassword*"]
+[02-18 00:02:44,783] INFO  [main][] c.c.s.base.resource.ResourceScanner{56} - scan Controllers finish, url count: 0 ...
+[02-18 00:02:46,545] INFO  [main][] org.quartz.impl.StdSchedulerFactory{1220} - Using default implementation for ThreadExecutor
+[02-18 00:02:46,561] INFO  [main][] o.quartz.core.SchedulerSignalerImpl{61} - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+[02-18 00:02:46,561] INFO  [main][] org.quartz.core.QuartzScheduler{229} - Quartz Scheduler v.2.3.2 created.
+[02-18 00:02:46,561] INFO  [main][] org.quartz.simpl.RAMJobStore{155} - RAMJobStore initialized.
+[02-18 00:02:46,576] INFO  [main][] org.quartz.core.QuartzScheduler{294} - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+[02-18 00:02:46,576] INFO  [main][] org.quartz.impl.StdSchedulerFactory{1374} - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+[02-18 00:02:46,576] INFO  [main][] org.quartz.impl.StdSchedulerFactory{1378} - Quartz scheduler version: 2.3.2
+[02-18 00:02:46,576] INFO  [main][] org.quartz.core.QuartzScheduler{2293} - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@1055d261
+[02-18 00:02:46,639] INFO  [main][] org.quartz.core.QuartzScheduler{547} - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+[02-18 00:02:46,639] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 00:02:46,686] INFO  [main][] com.cory.CoryWebDemoApplication{61} - Started CoryWebDemoApplication in 8.481 seconds (JVM running for 9.309)
+[02-18 00:02:52,443] INFO  [080-exec-2][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[02-18 00:02:52,457] INFO  [080-exec-2][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[02-18 00:02:52,461] INFO  [080-exec-2][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_role WHERE IS_DELETED = 0 AND ( name = ? ), params: ["anon"]
+[02-18 00:02:52,468] INFO  [080-exec-2][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[02-18 00:02:52,469] INFO  [080-exec-2][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[02-18 00:02:52,471] INFO  [080-exec-2][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT r.* FROM BASE_RESOURCE r WHERE r.IS_DELETED = 0 AND EXISTS(SELECT 1 FROM BASE_ROLE_RESOURCE_REL rel WHERE rel.IS_DELETED = 0 AND r.ID = rel.RESOURCE_ID AND rel.ROLE_ID = ?), params: [2]
+[02-18 00:02:52,680] INFO  [080-exec-1][] c.c.w.i.AccessLogInterceptor{37} - remoteAddr=0:0:0:0:0:0:0:1, uri=/login, method=GET, queryString=null, hasException=false, duration=154ms
+[02-18 00:03:10,418] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 00:03:16,599] INFO  [080-exec-3][] c.c.w.i.AccessLogInterceptor{37} - remoteAddr=0:0:0:0:0:0:0:1, uri=/loginsss, method=GET, queryString=null, hasException=false, duration=3128ms
+[02-18 00:03:32,176] INFO  [080-exec-4][] c.c.w.i.AccessLogInterceptor{37} - remoteAddr=0:0:0:0:0:0:0:1, uri=/loginsss, method=GET, queryString=null, hasException=false, duration=7148ms
+[02-18 00:03:37,044] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 00:03:47,963] INFO  [main][] c.c.c.c.CoryContextApplicationContextInitializer{19} - CoryContextApplicationContextInitializer initialize
+[02-18 00:03:47,979] INFO  [main][] com.cory.CoryWebDemoApplication{55} - Starting CoryWebDemoApplication using Java 1.8.0_131 on Cory-PC with PID 10920 (E:\WORK\idea_workspace\cory-web-spring-boot-demo-all\target\classes started by Cory in E:\WORK\idea_workspace\cory-web-spring-boot-demo-all)
+[02-18 00:03:47,979] DEBUG [main][] com.cory.CoryWebDemoApplication{56} - Running with Spring Boot v2.4.2, Spring v5.3.3
+[02-18 00:03:47,979] INFO  [main][] com.cory.CoryWebDemoApplication{660} - No active profile set, falling back to default profiles: default
+[02-18 00:03:49,423] INFO  [main][] c.c.db.processor.CoryDbDaoProcessor{35} - cory db register bean definition start
+[02-18 00:03:49,438] INFO  [main][] c.c.db.processor.CoryDbDaoProcessor{59} - cory db register bean definition finish, registered 9 DAO
+[02-18 00:03:51,252] INFO  [main][] c.o.c.s.m.GenericManageableCaptchaService{42} - Init com.octo.captcha.service.captchastore.FastHashMapCaptchaStore
+[02-18 00:03:52,324] INFO  [main][] c.a.d.s.b.a.DruidDataSourceAutoConfigure{56} - Init DruidDataSource
+[02-18 00:03:52,524] INFO  [main][] c.alibaba.druid.pool.DruidDataSource{985} - {dataSource-1} inited
+[02-18 00:03:52,892] INFO  [main][] c.c.sevice.base.SystemConfigService{65} - 加载系统参数配置...
+[02-18 00:03:52,970] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_system_config WHERE IS_DELETED = 0 ORDER BY ID DESC LIMIT 0, 2147483647, params: null
+[02-18 00:03:53,017] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{138} - sql: SELECT COUNT(*) FROM base_system_config WHERE IS_DELETED = 0, params: null
+[02-18 00:03:53,064] INFO  [main][] c.c.sevice.base.SystemConfigService{76} - 加载系统参数配置完成(共23条).
+[02-18 00:03:53,126] INFO  [main][] c.c.s.base.resource.ResourceScanner{36} - start to scan Controllers ...
+[02-18 00:03:53,330] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/role/listData*"]
+[02-18 00:03:53,330] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/role/detailData/**"]
+[02-18 00:03:53,345] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/role/save*"]
+[02-18 00:03:53,345] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/role/doAssign*"]
+[02-18 00:03:53,345] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/demo/save*"]
+[02-18 00:03:53,345] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/demo/post*"]
+[02-18 00:03:53,361] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/demo/detailData/**"]
+[02-18 00:03:53,361] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/demo/upload*"]
+[02-18 00:03:53,361] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/demo/delete/**"]
+[02-18 00:03:53,361] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/demo/hi*"]
+[02-18 00:03:53,361] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/demo/listData*"]
+[02-18 00:03:53,398] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/errorPage*"]
+[02-18 00:03:53,404] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/***"]
+[02-18 00:03:53,404] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/feedback/listData*"]
+[02-18 00:03:53,404] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/feedback/save*"]
+[02-18 00:03:53,404] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/feedback/delete/**"]
+[02-18 00:03:53,419] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/feedback/detailData/**"]
+[02-18 00:03:53,419] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/resource/listData*"]
+[02-18 00:03:53,419] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/resource/detailData/**"]
+[02-18 00:03:53,419] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/resource/delete/**"]
+[02-18 00:03:53,419] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/resource/save*"]
+[02-18 00:03:53,435] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/datadict/save*"]
+[02-18 00:03:53,435] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/datadict/delete/**"]
+[02-18 00:03:53,435] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/datadict/listData*"]
+[02-18 00:03:53,435] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/datadict/updateShowable*"]
+[02-18 00:03:53,435] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/datadict/detailData/**"]
+[02-18 00:03:53,451] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/user/changePasswordDirectly*"]
+[02-18 00:03:53,451] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/user/doAssign*"]
+[02-18 00:03:53,451] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/user/listData*"]
+[02-18 00:03:53,466] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/user/detailData/**"]
+[02-18 00:03:53,466] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/user/changePassword*"]
+[02-18 00:03:53,466] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/currentUser*"]
+[02-18 00:03:53,466] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/doRegister*"]
+[02-18 00:03:53,482] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/login*"]
+[02-18 00:03:53,482] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/register*"]
+[02-18 00:03:53,482] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/systemconfig/detailData/**"]
+[02-18 00:03:53,482] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/systemconfig/delete/**"]
+[02-18 00:03:53,497] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/systemconfig/save*"]
+[02-18 00:03:53,497] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/systemconfig/refreshCache*"]
+[02-18 00:03:53,497] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/systemconfig/listData*"]
+[02-18 00:03:53,497] INFO  [main][] c.c.s.base.resource.ResourceScanner{56} - scan Controllers finish, url count: 0 ...
+[02-18 00:03:54,940] INFO  [main][] org.quartz.impl.StdSchedulerFactory{1220} - Using default implementation for ThreadExecutor
+[02-18 00:03:54,963] INFO  [main][] o.quartz.core.SchedulerSignalerImpl{61} - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+[02-18 00:03:54,963] INFO  [main][] org.quartz.core.QuartzScheduler{229} - Quartz Scheduler v.2.3.2 created.
+[02-18 00:03:54,965] INFO  [main][] org.quartz.simpl.RAMJobStore{155} - RAMJobStore initialized.
+[02-18 00:03:54,966] INFO  [main][] org.quartz.core.QuartzScheduler{294} - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+[02-18 00:03:54,967] INFO  [main][] org.quartz.impl.StdSchedulerFactory{1374} - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+[02-18 00:03:54,967] INFO  [main][] org.quartz.impl.StdSchedulerFactory{1378} - Quartz scheduler version: 2.3.2
+[02-18 00:03:54,967] INFO  [main][] org.quartz.core.QuartzScheduler{2293} - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@619854a3
+[02-18 00:03:55,053] INFO  [main][] org.quartz.core.QuartzScheduler{547} - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+[02-18 00:03:55,054] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 00:03:55,086] INFO  [main][] com.cory.CoryWebDemoApplication{61} - Started CoryWebDemoApplication in 7.886 seconds (JVM running for 8.855)
+[02-18 00:03:59,026] INFO  [080-exec-1][] c.c.w.i.AccessLogInterceptor{37} - remoteAddr=0:0:0:0:0:0:0:1, uri=/loginsss, method=GET, queryString=null, hasException=false, duration=1956ms
+[02-18 00:04:01,945] INFO  [080-exec-2][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[02-18 00:04:01,961] INFO  [080-exec-2][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[02-18 00:04:01,965] INFO  [080-exec-2][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_role WHERE IS_DELETED = 0 AND ( name = ? ), params: ["anon"]
+[02-18 00:04:01,971] INFO  [080-exec-2][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[02-18 00:04:01,973] INFO  [080-exec-2][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[02-18 00:04:01,974] INFO  [080-exec-2][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT r.* FROM BASE_RESOURCE r WHERE r.IS_DELETED = 0 AND EXISTS(SELECT 1 FROM BASE_ROLE_RESOURCE_REL rel WHERE rel.IS_DELETED = 0 AND r.ID = rel.RESOURCE_ID AND rel.ROLE_ID = ?), params: [2]
+[02-18 00:04:02,015] INFO  [080-exec-3][] c.c.w.i.AccessLogInterceptor{37} - remoteAddr=0:0:0:0:0:0:0:1, uri=/login, method=GET, queryString=returnUrl=losginsss, hasException=false, duration=17ms
+[02-18 00:04:22,607] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 20:07:09,341] INFO  [main][] c.c.c.c.CoryContextApplicationContextInitializer{19} - CoryContextApplicationContextInitializer initialize
+[02-18 20:07:09,408] INFO  [main][] com.cory.CoryWebDemoApplication{55} - Starting CoryWebDemoApplication using Java 1.8.0_131 on Cory-PC with PID 8700 (E:\WORK\idea_workspace\cory-web-spring-boot-demo-all\target\classes started by Cory in E:\WORK\idea_workspace\cory-web-spring-boot-demo-all)
+[02-18 20:07:09,409] DEBUG [main][] com.cory.CoryWebDemoApplication{56} - Running with Spring Boot v2.4.2, Spring v5.3.3
+[02-18 20:07:09,410] INFO  [main][] com.cory.CoryWebDemoApplication{660} - No active profile set, falling back to default profiles: default
+[02-18 20:07:12,349] INFO  [main][] c.c.db.processor.CoryDbDaoProcessor{35} - cory db register bean definition start
+[02-18 20:07:12,389] INFO  [main][] c.c.db.processor.CoryDbDaoProcessor{59} - cory db register bean definition finish, registered 9 DAO
+[02-18 20:07:14,918] INFO  [main][] c.o.c.s.m.GenericManageableCaptchaService{42} - Init com.octo.captcha.service.captchastore.FastHashMapCaptchaStore
+[02-18 20:07:17,007] INFO  [main][] c.a.d.s.b.a.DruidDataSourceAutoConfigure{56} - Init DruidDataSource
+[02-18 20:07:17,462] INFO  [main][] c.alibaba.druid.pool.DruidDataSource{985} - {dataSource-1} inited
+[02-18 20:07:18,118] INFO  [main][] c.c.sevice.base.SystemConfigService{65} - 加载系统参数配置...
+[02-18 20:07:18,476] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_system_config WHERE IS_DELETED = 0 ORDER BY ID DESC LIMIT 0, 2147483647, params: null
+[02-18 20:07:18,578] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{138} - sql: SELECT COUNT(*) FROM base_system_config WHERE IS_DELETED = 0, params: null
+[02-18 20:07:19,054] INFO  [main][] c.c.sevice.base.SystemConfigService{76} - 加载系统参数配置完成(共23条).
+[02-18 20:07:19,133] INFO  [main][] c.c.s.base.resource.ResourceScanner{36} - start to scan Controllers ...
+[02-18 20:07:19,699] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/feedback/listData*"]
+[02-18 20:07:19,710] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/feedback/save*"]
+[02-18 20:07:19,714] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/feedback/delete/**"]
+[02-18 20:07:19,718] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/feedback/detailData/**"]
+[02-18 20:07:19,724] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/resource/listData*"]
+[02-18 20:07:19,727] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/resource/detailData/**"]
+[02-18 20:07:19,732] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/resource/delete/**"]
+[02-18 20:07:19,736] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/resource/save*"]
+[02-18 20:07:19,741] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/systemconfig/detailData/**"]
+[02-18 20:07:19,745] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/systemconfig/delete/**"]
+[02-18 20:07:19,750] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/systemconfig/save*"]
+[02-18 20:07:19,754] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/systemconfig/refreshCache*"]
+[02-18 20:07:19,758] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/systemconfig/listData*"]
+[02-18 20:07:19,766] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/user/changePasswordDirectly*"]
+[02-18 20:07:19,771] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/user/doAssign*"]
+[02-18 20:07:19,775] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/user/listData*"]
+[02-18 20:07:19,780] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/user/detailData/**"]
+[02-18 20:07:19,784] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/user/changePassword*"]
+[02-18 20:07:19,798] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/currentUser*"]
+[02-18 20:07:19,801] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/doRegister*"]
+[02-18 20:07:19,805] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/login*"]
+[02-18 20:07:19,808] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/register*"]
+[02-18 20:07:19,813] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/role/listData*"]
+[02-18 20:07:19,817] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/role/detailData/**"]
+[02-18 20:07:19,821] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/role/save*"]
+[02-18 20:07:19,825] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/role/doAssign*"]
+[02-18 20:07:19,831] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/demo/save*"]
+[02-18 20:07:19,835] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/demo/post*"]
+[02-18 20:07:19,840] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/demo/detailData/**"]
+[02-18 20:07:19,844] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/demo/upload*"]
+[02-18 20:07:19,848] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/demo/delete/**"]
+[02-18 20:07:19,854] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/demo/hi*"]
+[02-18 20:07:19,858] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/demo/listData*"]
+[02-18 20:07:19,863] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/datadict/save*"]
+[02-18 20:07:19,868] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/datadict/delete/**"]
+[02-18 20:07:19,871] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/datadict/listData*"]
+[02-18 20:07:19,875] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/datadict/updateShowable*"]
+[02-18 20:07:19,878] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/datadict/detailData/**"]
+[02-18 20:07:19,884] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/errorPage*"]
+[02-18 20:07:19,890] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/***"]
+[02-18 20:07:19,895] INFO  [main][] c.c.s.base.resource.ResourceScanner{56} - scan Controllers finish, url count: 0 ...
+[02-18 20:07:22,657] INFO  [main][] org.quartz.impl.StdSchedulerFactory{1220} - Using default implementation for ThreadExecutor
+[02-18 20:07:22,680] INFO  [main][] o.quartz.core.SchedulerSignalerImpl{61} - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+[02-18 20:07:22,681] INFO  [main][] org.quartz.core.QuartzScheduler{229} - Quartz Scheduler v.2.3.2 created.
+[02-18 20:07:22,682] INFO  [main][] org.quartz.simpl.RAMJobStore{155} - RAMJobStore initialized.
+[02-18 20:07:22,683] INFO  [main][] org.quartz.core.QuartzScheduler{294} - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+[02-18 20:07:22,683] INFO  [main][] org.quartz.impl.StdSchedulerFactory{1374} - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+[02-18 20:07:22,684] INFO  [main][] org.quartz.impl.StdSchedulerFactory{1378} - Quartz scheduler version: 2.3.2
+[02-18 20:07:22,684] INFO  [main][] org.quartz.core.QuartzScheduler{2293} - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@7491cdae
+[02-18 20:07:22,845] INFO  [main][] org.quartz.core.QuartzScheduler{547} - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+[02-18 20:07:22,845] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 20:07:22,911] INFO  [main][] com.cory.CoryWebDemoApplication{61} - Started CoryWebDemoApplication in 14.671 seconds (JVM running for 23.779)
+[02-18 20:07:52,680] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 20:08:17,702] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 20:08:42,454] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 20:09:07,938] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 20:26:59,665] INFO  [main][] c.c.c.c.CoryContextApplicationContextInitializer{19} - CoryContextApplicationContextInitializer initialize
+[02-18 20:26:59,696] INFO  [main][] com.cory.CoryWebDemoApplication{55} - Starting CoryWebDemoApplication using Java 1.8.0_131 on Cory-PC with PID 7788 (E:\WORK\idea_workspace\cory-web-spring-boot-demo-all\target\classes started by Cory in E:\WORK\idea_workspace\cory-web-spring-boot-demo-all)
+[02-18 20:26:59,696] DEBUG [main][] com.cory.CoryWebDemoApplication{56} - Running with Spring Boot v2.4.2, Spring v5.3.3
+[02-18 20:26:59,696] INFO  [main][] com.cory.CoryWebDemoApplication{660} - No active profile set, falling back to default profiles: default
+[02-18 20:27:01,672] INFO  [main][] c.c.db.processor.CoryDbDaoProcessor{35} - cory db register bean definition start
+[02-18 20:27:01,688] INFO  [main][] c.c.db.processor.CoryDbDaoProcessor{59} - cory db register bean definition finish, registered 9 DAO
+[02-18 20:27:03,438] INFO  [main][] c.o.c.s.m.GenericManageableCaptchaService{42} - Init com.octo.captcha.service.captchastore.FastHashMapCaptchaStore
+[02-18 20:27:04,438] INFO  [main][] c.a.d.s.b.a.DruidDataSourceAutoConfigure{56} - Init DruidDataSource
+[02-18 20:27:04,641] INFO  [main][] c.alibaba.druid.pool.DruidDataSource{985} - {dataSource-1} inited
+[02-18 20:27:05,016] INFO  [main][] c.c.sevice.base.SystemConfigService{65} - 加载系统参数配置...
+[02-18 20:27:05,094] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_system_config WHERE IS_DELETED = 0 ORDER BY ID DESC LIMIT 0, 2147483647, params: null
+[02-18 20:27:05,141] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{138} - sql: SELECT COUNT(*) FROM base_system_config WHERE IS_DELETED = 0, params: null
+[02-18 20:27:05,204] INFO  [main][] c.c.sevice.base.SystemConfigService{76} - 加载系统参数配置完成(共23条).
+[02-18 20:27:05,282] INFO  [main][] c.c.s.base.resource.ResourceScanner{36} - start to scan Controllers ...
+[02-18 20:27:05,454] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/errorPage*"]
+[02-18 20:27:05,469] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/***"]
+[02-18 20:27:05,469] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/user/changePasswordDirectly*"]
+[02-18 20:27:05,485] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/user/doAssign*"]
+[02-18 20:27:05,485] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/user/listData*"]
+[02-18 20:27:05,485] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/user/detailData/**"]
+[02-18 20:27:05,485] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/user/changePassword*"]
+[02-18 20:27:05,485] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/feedback/listData*"]
+[02-18 20:27:05,501] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/feedback/save*"]
+[02-18 20:27:05,501] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/feedback/delete/**"]
+[02-18 20:27:05,501] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/feedback/detailData/**"]
+[02-18 20:27:05,516] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/resource/listData*"]
+[02-18 20:27:05,516] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/resource/detailData/**"]
+[02-18 20:27:05,530] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/resource/delete/**"]
+[02-18 20:27:05,534] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/resource/save*"]
+[02-18 20:27:05,537] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/datadict/save*"]
+[02-18 20:27:05,537] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/datadict/delete/**"]
+[02-18 20:27:05,537] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/datadict/listData*"]
+[02-18 20:27:05,537] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/datadict/updateShowable*"]
+[02-18 20:27:05,553] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/datadict/detailData/**"]
+[02-18 20:27:05,553] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/currentUser*"]
+[02-18 20:27:05,553] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/doRegister*"]
+[02-18 20:27:05,569] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/login*"]
+[02-18 20:27:05,569] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/register*"]
+[02-18 20:27:05,569] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/role/listData*"]
+[02-18 20:27:05,569] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/role/detailData/**"]
+[02-18 20:27:05,584] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/role/save*"]
+[02-18 20:27:05,584] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/role/doAssign*"]
+[02-18 20:27:05,584] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/systemconfig/detailData/**"]
+[02-18 20:27:05,584] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/systemconfig/delete/**"]
+[02-18 20:27:05,584] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/systemconfig/save*"]
+[02-18 20:27:05,584] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/systemconfig/refreshCache*"]
+[02-18 20:27:05,600] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/systemconfig/listData*"]
+[02-18 20:27:05,600] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/demo/save*"]
+[02-18 20:27:05,600] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/demo/post*"]
+[02-18 20:27:05,600] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/demo/detailData/**"]
+[02-18 20:27:05,616] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/demo/upload*"]
+[02-18 20:27:05,616] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/demo/delete/**"]
+[02-18 20:27:05,616] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/demo/hi*"]
+[02-18 20:27:05,616] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/demo/listData*"]
+[02-18 20:27:05,616] INFO  [main][] c.c.s.base.resource.ResourceScanner{56} - scan Controllers finish, url count: 0 ...
+[02-18 20:30:08,001] WARN  [main][] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext{596} - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'coryDbChecker' defined in class path resource [com/cory/db/config/CoryDbAutoConfiguration.class]: Invocation of init method failed; nested exception is com.cory.exception.CoryException: DB处理失败[table demo_demo222 does not exist, please create using follow sql;
+CREATE TABLE `demo_demo222` (`id` bigint(20) NOT NULL AUTO_INCREMENT COMMENT 'ID',`creator` bigint(20) NOT NULL COMMENT '创建人',`modifier` bigint(20) NOT NULL COMMENT '修改人',`create_time` datetime NOT NULL DEFAULT '1970-01-01 00:00:00' COMMENT '创建时间',`modify_time` datetime NOT NULL DEFAULT '1970-01-01 00:00:00' COMMENT '修改时间',`is_deleted` SMALLINT(1) NOT NULL DEFAULT 0 COMMENT '是否删除',`name` varchar(50) NOT NULL  ,PRIMARY KEY (`id`)) ENGINE=InnoDB AUTO_INCREMENT=10001 DEFAULT CHARSET=utf8 COMMENT='测试';
+]
+[02-18 20:30:08,001] INFO  [main][] c.alibaba.druid.pool.DruidDataSource{2032} - {dataSource-1} closing ...
+[02-18 20:30:08,001] INFO  [main][] c.alibaba.druid.pool.DruidDataSource{2104} - {dataSource-1} closed
+[02-18 20:30:08,298] ERROR [main][] o.s.boot.SpringApplication{856} - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'coryDbChecker' defined in class path resource [com/cory/db/config/CoryDbAutoConfiguration.class]: Invocation of init method failed; nested exception is com.cory.exception.CoryException: DB处理失败[table demo_demo222 does not exist, please create using follow sql;
+CREATE TABLE `demo_demo222` (`id` bigint(20) NOT NULL AUTO_INCREMENT COMMENT 'ID',`creator` bigint(20) NOT NULL COMMENT '创建人',`modifier` bigint(20) NOT NULL COMMENT '修改人',`create_time` datetime NOT NULL DEFAULT '1970-01-01 00:00:00' COMMENT '创建时间',`modify_time` datetime NOT NULL DEFAULT '1970-01-01 00:00:00' COMMENT '修改时间',`is_deleted` SMALLINT(1) NOT NULL DEFAULT 0 COMMENT '是否删除',`name` varchar(50) NOT NULL  ,PRIMARY KEY (`id`)) ENGINE=InnoDB AUTO_INCREMENT=10001 DEFAULT CHARSET=utf8 COMMENT='测试';
+]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1788)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:609)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:923)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:588)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:767)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:426)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1311)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1300)
+	at com.cory.CoryWebDemoApplication.main(CoryWebDemoApplication.java:11)
+Caused by: com.cory.exception.CoryException: DB处理失败[table demo_demo222 does not exist, please create using follow sql;
+CREATE TABLE `demo_demo222` (`id` bigint(20) NOT NULL AUTO_INCREMENT COMMENT 'ID',`creator` bigint(20) NOT NULL COMMENT '创建人',`modifier` bigint(20) NOT NULL COMMENT '修改人',`create_time` datetime NOT NULL DEFAULT '1970-01-01 00:00:00' COMMENT '创建时间',`modify_time` datetime NOT NULL DEFAULT '1970-01-01 00:00:00' COMMENT '修改时间',`is_deleted` SMALLINT(1) NOT NULL DEFAULT 0 COMMENT '是否删除',`name` varchar(50) NOT NULL  ,PRIMARY KEY (`id`)) ENGINE=InnoDB AUTO_INCREMENT=10001 DEFAULT CHARSET=utf8 COMMENT='测试';
+]
+	at com.cory.db.processor.CoryDbChecker.afterPropertiesSet(CoryDbChecker.java:102)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1847)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1784)
+	... 17 common frames omitted
+[02-18 20:32:52,811] INFO  [main][] c.c.c.c.CoryContextApplicationContextInitializer{19} - CoryContextApplicationContextInitializer initialize
+[02-18 20:32:52,830] INFO  [main][] com.cory.CoryWebDemoApplication{55} - Starting CoryWebDemoApplication using Java 1.8.0_131 on Cory-PC with PID 12180 (E:\WORK\idea_workspace\cory-web-spring-boot-demo-all\target\classes started by Cory in E:\WORK\idea_workspace\cory-web-spring-boot-demo-all)
+[02-18 20:32:52,830] DEBUG [main][] com.cory.CoryWebDemoApplication{56} - Running with Spring Boot v2.4.2, Spring v5.3.3
+[02-18 20:32:52,831] INFO  [main][] com.cory.CoryWebDemoApplication{660} - No active profile set, falling back to default profiles: default
+[02-18 20:32:54,505] INFO  [main][] c.c.db.processor.CoryDbDaoProcessor{35} - cory db register bean definition start
+[02-18 20:32:54,521] INFO  [main][] c.c.db.processor.CoryDbDaoProcessor{59} - cory db register bean definition finish, registered 9 DAO
+[02-18 20:32:56,528] INFO  [main][] c.o.c.s.m.GenericManageableCaptchaService{42} - Init com.octo.captcha.service.captchastore.FastHashMapCaptchaStore
+[02-18 20:32:57,585] INFO  [main][] c.a.d.s.b.a.DruidDataSourceAutoConfigure{56} - Init DruidDataSource
+[02-18 20:32:57,867] INFO  [main][] c.alibaba.druid.pool.DruidDataSource{985} - {dataSource-1} inited
+[02-18 20:32:58,273] INFO  [main][] c.c.sevice.base.SystemConfigService{65} - 加载系统参数配置...
+[02-18 20:32:58,335] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_system_config WHERE IS_DELETED = 0 ORDER BY ID DESC LIMIT 0, 2147483647, params: null
+[02-18 20:32:58,382] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{138} - sql: SELECT COUNT(*) FROM base_system_config WHERE IS_DELETED = 0, params: null
+[02-18 20:32:58,460] INFO  [main][] c.c.sevice.base.SystemConfigService{76} - 加载系统参数配置完成(共23条).
+[02-18 20:32:58,547] INFO  [main][] c.c.s.base.resource.ResourceScanner{36} - start to scan Controllers ...
+[02-18 20:32:58,811] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/datadict/save*"]
+[02-18 20:32:58,817] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/datadict/delete/**"]
+[02-18 20:32:58,820] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/datadict/listData*"]
+[02-18 20:32:58,822] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/datadict/updateShowable*"]
+[02-18 20:32:58,825] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/datadict/detailData/**"]
+[02-18 20:32:58,830] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/user/changePasswordDirectly*"]
+[02-18 20:32:58,832] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/user/doAssign*"]
+[02-18 20:32:58,834] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/user/listData*"]
+[02-18 20:32:58,837] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/user/detailData/**"]
+[02-18 20:32:58,839] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/user/changePassword*"]
+[02-18 20:32:58,844] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/feedback/listData*"]
+[02-18 20:32:58,846] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/feedback/save*"]
+[02-18 20:32:58,849] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/feedback/delete/**"]
+[02-18 20:32:58,851] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/feedback/detailData/**"]
+[02-18 20:32:58,855] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/resource/listData*"]
+[02-18 20:32:58,858] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/resource/detailData/**"]
+[02-18 20:32:58,861] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/resource/delete/**"]
+[02-18 20:32:58,864] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/resource/save*"]
+[02-18 20:32:58,873] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/currentUser*"]
+[02-18 20:32:58,877] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/doRegister*"]
+[02-18 20:32:58,880] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/login*"]
+[02-18 20:32:58,882] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/register*"]
+[02-18 20:32:58,886] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/role/listData*"]
+[02-18 20:32:58,889] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/role/detailData/**"]
+[02-18 20:32:58,892] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/role/save*"]
+[02-18 20:32:58,894] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/role/doAssign*"]
+[02-18 20:32:58,898] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/systemconfig/detailData/**"]
+[02-18 20:32:58,900] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/systemconfig/delete/**"]
+[02-18 20:32:58,902] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/systemconfig/save*"]
+[02-18 20:32:58,905] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/systemconfig/refreshCache*"]
+[02-18 20:32:58,907] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/systemconfig/listData*"]
+[02-18 20:32:58,912] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/demo/save*"]
+[02-18 20:32:58,916] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/demo/post*"]
+[02-18 20:32:58,919] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/demo/detailData/**"]
+[02-18 20:32:58,923] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/demo/upload*"]
+[02-18 20:32:58,926] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/demo/delete/**"]
+[02-18 20:32:58,928] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/demo/hi*"]
+[02-18 20:32:58,932] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/demo/listData*"]
+[02-18 20:32:58,936] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/errorPage*"]
+[02-18 20:32:58,940] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/***"]
+[02-18 20:32:58,942] INFO  [main][] c.c.s.base.resource.ResourceScanner{56} - scan Controllers finish, url count: 0 ...
+[02-18 20:32:59,983] INFO  [main][] com.cory.db.processor.CoryDbChecker{138} - create table demo_demo222: CREATE TABLE `demo_demo222` (`id` bigint(20) NOT NULL AUTO_INCREMENT COMMENT 'ID',`creator` bigint(20) NOT NULL COMMENT '创建人',`modifier` bigint(20) NOT NULL COMMENT '修改人',`create_time` datetime NOT NULL DEFAULT '1970-01-01 00:00:00' COMMENT '创建时间',`modify_time` datetime NOT NULL DEFAULT '1970-01-01 00:00:00' COMMENT '修改时间',`is_deleted` SMALLINT(1) NOT NULL DEFAULT 0 COMMENT '是否删除',`name` varchar(50) NOT NULL  ,PRIMARY KEY (`id`)) ENGINE=InnoDB AUTO_INCREMENT=10001 DEFAULT CHARSET=utf8 COMMENT='测试';
+[02-18 20:33:00,436] INFO  [main][] org.quartz.impl.StdSchedulerFactory{1220} - Using default implementation for ThreadExecutor
+[02-18 20:33:00,452] INFO  [main][] o.quartz.core.SchedulerSignalerImpl{61} - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+[02-18 20:33:00,452] INFO  [main][] org.quartz.core.QuartzScheduler{229} - Quartz Scheduler v.2.3.2 created.
+[02-18 20:33:00,452] INFO  [main][] org.quartz.simpl.RAMJobStore{155} - RAMJobStore initialized.
+[02-18 20:33:00,452] INFO  [main][] org.quartz.core.QuartzScheduler{294} - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+[02-18 20:33:00,452] INFO  [main][] org.quartz.impl.StdSchedulerFactory{1374} - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+[02-18 20:33:00,452] INFO  [main][] org.quartz.impl.StdSchedulerFactory{1378} - Quartz scheduler version: 2.3.2
+[02-18 20:33:00,452] INFO  [main][] org.quartz.core.QuartzScheduler{2293} - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@4c24c40a
+[02-18 20:33:00,545] INFO  [main][] org.quartz.core.QuartzScheduler{547} - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+[02-18 20:33:00,545] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 20:33:00,592] INFO  [main][] com.cory.CoryWebDemoApplication{61} - Started CoryWebDemoApplication in 8.435 seconds (JVM running for 9.201)
+[02-18 20:33:30,078] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 20:33:57,446] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 20:34:25,101] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 20:34:48,691] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 20:35:17,669] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 20:35:47,100] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 20:36:13,531] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 20:36:39,329] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 20:37:08,391] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 20:37:32,960] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 20:38:01,797] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 20:38:30,376] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 20:38:59,074] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 20:39:22,744] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 20:39:51,932] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 20:40:15,295] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 20:40:41,453] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 20:41:08,396] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 20:41:31,620] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 20:42:00,781] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 20:42:30,258] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 20:42:56,690] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 20:43:26,508] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 20:43:50,243] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 20:44:17,648] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 20:44:43,743] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 20:45:09,004] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 20:45:37,271] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 20:46:04,817] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 20:46:29,207] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 20:46:52,467] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 20:47:19,157] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 20:47:46,488] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 20:48:15,246] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 20:48:43,132] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 20:49:08,106] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 20:49:31,232] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 20:49:54,582] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 20:50:22,815] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 20:50:45,896] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 20:51:13,387] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 20:51:42,692] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 20:52:09,520] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 20:52:38,130] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 20:53:05,088] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 20:53:29,165] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 20:53:58,223] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 20:54:21,607] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 20:54:45,093] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 20:55:10,982] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 20:55:34,772] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 20:55:58,575] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 20:56:27,591] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 20:56:51,544] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 20:57:20,996] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 20:57:49,493] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 20:58:14,073] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 20:58:42,456] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 20:59:12,363] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 20:59:41,184] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 21:00:05,293] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 21:00:30,803] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 21:01:00,653] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 21:01:29,104] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 21:02:02,143] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 21:02:28,153] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 21:02:53,528] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 21:03:22,320] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 21:03:47,499] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 21:04:16,114] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 21:04:42,010] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 21:05:07,805] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 21:05:31,232] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 21:06:01,061] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 21:06:28,545] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 21:06:51,869] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 21:07:18,719] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 21:07:47,085] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 21:08:11,687] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 21:08:37,966] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 21:09:07,149] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 21:09:36,446] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 21:10:05,435] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 21:10:34,935] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 21:11:01,532] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 21:11:28,072] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 21:11:52,120] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 21:12:17,394] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 21:12:41,638] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 21:13:09,743] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 21:13:36,581] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 21:14:01,641] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 21:14:26,845] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 21:14:51,081] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 21:15:18,642] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 21:15:42,549] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 21:16:07,231] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 21:16:33,711] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 21:16:57,221] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 21:17:27,039] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 21:17:53,375] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 21:18:21,976] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 21:18:50,173] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 21:19:16,312] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 21:19:45,932] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 21:20:12,628] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 21:20:42,292] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 21:21:08,960] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 21:21:36,676] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 21:22:02,944] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 21:22:31,088] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 21:22:56,512] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 21:23:23,007] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 21:23:46,908] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 21:24:16,469] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 21:24:40,995] INFO  [main][] c.c.c.c.CoryContextApplicationContextInitializer{19} - CoryContextApplicationContextInitializer initialize
+[02-18 21:24:41,026] INFO  [main][] com.cory.CoryWebDemoApplication{55} - Starting CoryWebDemoApplication using Java 1.8.0_131 on Cory-PC with PID 8400 (E:\WORK\idea_workspace\cory-web-spring-boot-demo-all\target\classes started by Cory in E:\WORK\idea_workspace\cory-web-spring-boot-demo-all)
+[02-18 21:24:41,026] DEBUG [main][] com.cory.CoryWebDemoApplication{56} - Running with Spring Boot v2.4.2, Spring v5.3.3
+[02-18 21:24:41,026] INFO  [main][] com.cory.CoryWebDemoApplication{660} - No active profile set, falling back to default profiles: default
+[02-18 21:24:42,809] INFO  [main][] c.c.db.processor.CoryDbDaoProcessor{35} - cory db register bean definition start
+[02-18 21:24:42,825] INFO  [main][] c.c.db.processor.CoryDbDaoProcessor{59} - cory db register bean definition finish, registered 9 DAO
+[02-18 21:24:44,685] INFO  [main][] c.o.c.s.m.GenericManageableCaptchaService{42} - Init com.octo.captcha.service.captchastore.FastHashMapCaptchaStore
+[02-18 21:24:45,757] INFO  [main][] c.a.d.s.b.a.DruidDataSourceAutoConfigure{56} - Init DruidDataSource
+[02-18 21:24:46,086] INFO  [main][] c.alibaba.druid.pool.DruidDataSource{985} - {dataSource-1} inited
+[02-18 21:24:46,445] INFO  [main][] c.c.sevice.base.SystemConfigService{65} - 加载系统参数配置...
+[02-18 21:24:46,508] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_system_config WHERE IS_DELETED = 0 ORDER BY ID DESC LIMIT 0, 2147483647, params: null
+[02-18 21:24:46,570] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{138} - sql: SELECT COUNT(*) FROM base_system_config WHERE IS_DELETED = 0, params: null
+[02-18 21:24:46,633] INFO  [main][] c.c.sevice.base.SystemConfigService{76} - 加载系统参数配置完成(共23条).
+[02-18 21:24:46,711] INFO  [main][] c.c.s.base.resource.ResourceScanner{36} - start to scan Controllers ...
+[02-18 21:24:46,945] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/resource/listData*"]
+[02-18 21:24:46,961] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/resource/detailData/**"]
+[02-18 21:24:46,961] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/resource/delete/**"]
+[02-18 21:24:46,961] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/resource/save*"]
+[02-18 21:24:46,961] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/demo/save*"]
+[02-18 21:24:46,976] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/demo/post*"]
+[02-18 21:24:46,976] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/demo/detailData/**"]
+[02-18 21:24:46,976] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/demo/upload*"]
+[02-18 21:24:46,976] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/demo/delete/**"]
+[02-18 21:24:46,992] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/demo/hi*"]
+[02-18 21:24:46,992] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/demo/listData*"]
+[02-18 21:24:46,992] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/errorPage*"]
+[02-18 21:24:46,992] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/***"]
+[02-18 21:24:47,007] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/user/changePasswordDirectly*"]
+[02-18 21:24:47,007] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/user/doAssign*"]
+[02-18 21:24:47,007] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/user/listData*"]
+[02-18 21:24:47,007] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/user/detailData/**"]
+[02-18 21:24:47,007] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/user/changePassword*"]
+[02-18 21:24:47,007] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/role/listData*"]
+[02-18 21:24:47,023] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/role/detailData/**"]
+[02-18 21:24:47,023] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/role/save*"]
+[02-18 21:24:47,023] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/role/doAssign*"]
+[02-18 21:24:47,023] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/feedback/listData*"]
+[02-18 21:24:47,023] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/feedback/save*"]
+[02-18 21:24:47,023] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/feedback/delete/**"]
+[02-18 21:24:47,023] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/feedback/detailData/**"]
+[02-18 21:24:47,039] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/currentUser*"]
+[02-18 21:24:47,039] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/doRegister*"]
+[02-18 21:24:47,039] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/datadict/save*"]
+[02-18 21:24:47,039] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/datadict/delete/**"]
+[02-18 21:24:47,039] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/datadict/listData*"]
+[02-18 21:24:47,039] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/datadict/updateShowable*"]
+[02-18 21:24:47,039] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/datadict/detailData/**"]
+[02-18 21:24:47,054] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/systemconfig/detailData/**"]
+[02-18 21:24:47,054] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/systemconfig/delete/**"]
+[02-18 21:24:47,054] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/systemconfig/save*"]
+[02-18 21:24:47,054] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/systemconfig/refreshCache*"]
+[02-18 21:24:47,054] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/systemconfig/listData*"]
+[02-18 21:24:47,054] INFO  [main][] c.c.s.base.resource.ResourceScanner{56} - scan Controllers finish, url count: 0 ...
+[02-18 21:24:48,398] INFO  [main][] org.quartz.impl.StdSchedulerFactory{1220} - Using default implementation for ThreadExecutor
+[02-18 21:24:48,430] INFO  [main][] o.quartz.core.SchedulerSignalerImpl{61} - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+[02-18 21:24:48,430] INFO  [main][] org.quartz.core.QuartzScheduler{229} - Quartz Scheduler v.2.3.2 created.
+[02-18 21:24:48,430] INFO  [main][] org.quartz.simpl.RAMJobStore{155} - RAMJobStore initialized.
+[02-18 21:24:48,430] INFO  [main][] org.quartz.core.QuartzScheduler{294} - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+[02-18 21:24:48,430] INFO  [main][] org.quartz.impl.StdSchedulerFactory{1374} - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+[02-18 21:24:48,430] INFO  [main][] org.quartz.impl.StdSchedulerFactory{1378} - Quartz scheduler version: 2.3.2
+[02-18 21:24:48,430] INFO  [main][] org.quartz.core.QuartzScheduler{2293} - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@43094e0c
+[02-18 21:24:48,523] INFO  [main][] org.quartz.core.QuartzScheduler{547} - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+[02-18 21:24:48,523] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 21:24:48,555] INFO  [main][] com.cory.CoryWebDemoApplication{61} - Started CoryWebDemoApplication in 8.318 seconds (JVM running for 9.071)
+[02-18 21:25:17,253] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 21:25:40,973] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 21:26:09,370] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 21:26:38,928] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 21:27:07,352] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 21:27:32,282] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 21:28:00,336] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 21:28:25,417] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 21:28:51,913] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 21:29:16,453] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 21:29:46,371] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 21:30:15,452] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 21:30:42,057] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 21:31:07,283] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 21:31:32,406] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 21:32:00,892] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 21:32:26,374] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 21:32:56,088] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 21:33:21,739] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 21:33:47,436] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 21:34:17,247] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 21:34:43,822] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 21:35:11,994] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 21:35:40,209] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 21:36:09,014] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 21:36:36,267] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 21:37:01,561] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 21:37:30,039] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 21:37:59,065] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 21:38:23,580] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 21:38:49,886] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 21:39:14,572] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 21:39:42,696] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 21:40:12,145] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 21:40:42,136] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 21:41:11,891] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 21:41:39,073] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 21:42:05,739] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 21:42:30,571] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 21:42:57,782] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 21:43:23,117] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 21:43:51,792] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 21:44:17,954] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 21:44:43,761] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 21:45:10,844] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 21:45:36,344] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 21:46:01,736] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 21:46:31,638] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 21:47:01,420] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 21:47:31,388] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 21:47:57,652] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 21:48:26,728] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 21:48:56,261] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 21:49:24,592] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 21:49:51,947] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 21:50:17,553] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 21:50:47,323] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 21:51:12,646] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 21:51:41,682] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 21:52:11,556] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 21:52:39,578] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 21:53:04,149] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 21:53:33,864] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 21:54:01,612] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 21:54:25,099] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 21:54:50,864] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 21:55:14,051] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 21:55:41,029] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 21:56:05,626] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 21:56:33,671] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 21:56:58,065] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 21:57:24,713] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 21:57:49,623] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 21:58:13,154] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 21:58:36,903] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 21:59:02,678] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 21:59:29,968] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 21:59:57,034] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 22:00:20,117] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 22:00:46,383] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 22:01:09,667] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 22:01:34,212] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 22:02:03,346] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 22:02:29,758] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 22:02:54,947] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 22:03:23,838] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 22:03:51,572] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 22:04:14,847] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 22:04:38,309] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 22:05:02,564] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 22:05:26,835] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 22:05:56,050] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 22:06:21,336] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 22:06:51,192] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 22:07:16,037] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 22:07:41,491] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 22:08:08,882] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 22:08:33,304] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 22:08:59,007] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 22:09:22,103] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 22:09:48,371] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 22:10:15,579] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 22:10:39,808] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 22:11:04,743] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 22:11:34,020] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 22:11:57,297] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 22:12:26,240] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 22:12:49,850] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 22:13:13,205] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 22:13:42,191] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 22:14:06,902] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 22:14:31,050] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 22:14:57,865] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 22:15:27,478] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 22:15:55,940] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 22:16:24,622] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 22:16:49,654] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 22:17:16,179] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 22:17:45,170] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 22:18:12,582] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 22:18:42,326] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 22:19:05,658] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 22:19:34,961] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 22:20:00,956] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 22:20:25,278] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 22:20:55,174] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 22:21:21,520] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 22:21:46,523] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 22:22:16,061] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 22:22:42,162] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 22:23:08,347] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 22:23:33,190] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 22:23:59,124] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 22:24:26,348] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 22:24:55,146] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 22:25:19,498] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 22:25:42,966] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 22:26:08,606] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 22:26:37,073] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 22:27:04,016] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 22:27:32,918] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 22:27:57,095] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 22:28:20,116] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 22:28:44,325] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 22:29:10,669] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 22:29:35,100] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 22:30:04,800] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 22:30:32,196] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 22:30:58,714] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 22:31:23,022] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 22:31:47,222] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 22:32:12,187] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 22:32:38,013] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 22:33:02,868] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 22:33:27,589] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 22:33:52,505] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 22:34:19,829] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 22:34:46,672] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 22:35:15,534] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 22:35:39,776] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 22:36:04,399] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 22:36:30,194] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 22:36:58,080] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 22:37:27,815] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 22:37:57,372] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 22:38:25,767] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 22:38:49,346] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 22:39:12,973] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 22:39:42,024] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 22:40:06,017] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 22:40:34,153] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 22:40:57,233] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 22:41:23,941] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 22:41:47,221] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 22:42:11,624] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 22:42:36,673] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 22:43:02,762] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 22:43:29,089] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 22:43:57,860] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 22:44:24,481] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 22:44:49,275] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 22:45:17,327] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 22:45:42,380] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 22:46:09,758] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 22:46:37,333] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 22:47:04,464] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 22:47:33,860] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 22:47:58,301] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 22:48:21,510] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 22:48:47,918] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 22:49:16,906] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 22:49:45,648] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 22:50:12,414] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 22:50:37,136] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 22:51:01,851] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 22:51:31,637] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 22:51:59,808] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 22:52:29,413] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 22:52:54,556] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 22:53:19,097] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 22:53:47,852] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 22:54:12,983] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 22:54:39,292] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 22:55:04,931] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 22:55:33,994] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 22:56:01,587] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 22:56:30,434] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 22:56:58,622] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 22:57:21,883] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 22:57:46,693] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 22:58:16,095] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 22:58:39,797] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 22:59:05,575] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 22:59:35,417] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 23:00:03,780] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 23:00:28,137] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 23:00:53,291] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 23:01:17,704] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 23:01:42,483] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 23:02:09,593] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 23:02:39,421] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 23:03:03,453] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 23:03:27,841] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 23:03:55,284] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 23:04:18,374] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 23:04:46,835] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 23:05:13,621] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 23:05:37,515] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 23:06:01,571] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 23:06:30,706] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 23:07:00,651] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 23:07:27,593] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 23:07:55,175] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 23:08:23,361] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 23:08:49,487] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 23:09:14,311] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 23:09:37,557] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 23:10:04,255] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 23:10:34,169] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 23:10:59,930] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 23:11:28,229] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 23:11:52,892] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 23:12:18,818] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 23:12:43,253] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 23:13:10,582] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 23:13:34,623] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 23:13:57,993] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 23:14:24,474] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 23:14:49,968] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 23:15:13,268] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 23:15:43,134] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 23:16:07,734] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 23:16:36,599] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 23:17:06,216] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 23:17:29,672] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 23:17:56,829] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 23:18:21,583] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 23:18:47,955] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 23:19:14,485] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 23:19:43,098] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 23:20:10,798] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 23:20:40,342] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 23:21:04,527] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 23:21:33,165] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 23:21:57,006] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 23:22:24,394] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 23:22:51,407] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 23:23:19,779] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 23:23:47,790] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 23:24:17,349] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 23:24:44,601] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 23:25:08,009] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 23:25:36,326] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 23:25:59,390] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 23:26:27,610] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 23:26:52,884] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 23:27:22,766] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 23:27:47,210] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 23:28:16,719] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 23:28:44,306] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 23:29:12,271] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 23:29:41,267] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 23:30:05,187] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 23:30:34,886] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 23:31:02,430] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 23:31:30,427] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 23:31:56,238] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 23:32:23,811] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 23:32:50,141] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 23:33:19,932] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 23:33:49,610] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 23:34:16,468] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 23:34:39,595] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 23:35:03,326] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 23:35:26,778] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 23:35:50,871] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 23:36:17,351] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 23:36:44,491] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 23:37:13,999] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 23:37:40,948] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 23:38:10,263] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 23:38:33,869] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 23:38:57,917] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 23:39:27,166] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 23:39:56,873] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 23:40:26,169] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 23:40:54,016] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 23:41:20,254] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 23:41:45,502] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 23:42:15,473] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 23:42:41,941] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 23:43:05,312] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 23:43:31,343] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 23:43:55,123] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 23:44:21,302] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 23:44:47,528] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 23:45:11,728] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 23:45:38,822] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 23:46:07,025] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 23:46:34,656] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 23:47:00,946] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 23:47:29,608] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 23:47:57,594] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 23:48:24,385] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 23:48:48,275] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 23:49:11,368] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 23:49:39,993] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 23:50:08,113] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 23:50:31,822] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 23:51:01,710] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 23:51:25,589] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 23:51:54,122] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 23:52:18,406] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 23:52:43,749] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 23:53:13,199] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 23:53:40,617] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 23:54:08,580] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 23:54:29,255] WARN  [ontainer-1][] o.s.d.r.l.RedisMessageListenerContainer{896} - Error closing subscription connection
+org.springframework.data.redis.RedisConnectionFailureException: java.net.SocketException: Connection reset by peer: socket write error; nested exception is redis.clients.jedis.exceptions.JedisConnectionException: java.net.SocketException: Connection reset by peer: socket write error
+	at org.springframework.data.redis.connection.jedis.JedisExceptionConverter.convert(JedisExceptionConverter.java:65)
+	at org.springframework.data.redis.connection.jedis.JedisExceptionConverter.convert(JedisExceptionConverter.java:42)
+	at org.springframework.data.redis.PassThroughExceptionTranslationStrategy.translate(PassThroughExceptionTranslationStrategy.java:44)
+	at org.springframework.data.redis.FallbackExceptionTranslationStrategy.translate(FallbackExceptionTranslationStrategy.java:42)
+	at org.springframework.data.redis.connection.jedis.JedisConnection.convertJedisAccessException(JedisConnection.java:135)
+	at org.springframework.data.redis.connection.jedis.JedisConnection.close(JedisConnection.java:301)
+	at org.springframework.data.redis.listener.RedisMessageListenerContainer$SubscriptionTask.closeConnection(RedisMessageListenerContainer.java:894)
+	at org.springframework.data.redis.listener.RedisMessageListenerContainer.handleSubscriptionException(RedisMessageListenerContainer.java:648)
+	at org.springframework.data.redis.listener.RedisMessageListenerContainer$SubscriptionTask.run(RedisMessageListenerContainer.java:762)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: redis.clients.jedis.exceptions.JedisConnectionException: java.net.SocketException: Connection reset by peer: socket write error
+	at redis.clients.jedis.Connection.disconnect(Connection.java:182)
+	at redis.clients.jedis.BinaryClient.disconnect(BinaryClient.java:936)
+	at redis.clients.jedis.BinaryJedis.disconnect(BinaryJedis.java:1908)
+	at org.springframework.data.redis.connection.jedis.JedisConnection.close(JedisConnection.java:296)
+	... 4 common frames omitted
+Caused by: java.net.SocketException: Connection reset by peer: socket write error
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:111)
+	at java.net.SocketOutputStream.write(SocketOutputStream.java:155)
+	at redis.clients.jedis.util.RedisOutputStream.flushBuffer(RedisOutputStream.java:52)
+	at redis.clients.jedis.util.RedisOutputStream.flush(RedisOutputStream.java:133)
+	at redis.clients.jedis.Connection.disconnect(Connection.java:178)
+	... 7 common frames omitted
+[02-18 23:54:29,255] ERROR [ontainer-1][] o.s.d.r.l.RedisMessageListenerContainer{651} - Connection failure occurred. Restarting subscription task after 5000 ms
+[02-18 23:54:33,420] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 23:54:36,264] ERROR [ontainer-3][] o.s.d.r.l.RedisMessageListenerContainer{651} - Connection failure occurred. Restarting subscription task after 5000 ms
+[02-18 23:54:43,274] ERROR [ontainer-4][] o.s.d.r.l.RedisMessageListenerContainer{651} - Connection failure occurred. Restarting subscription task after 5000 ms
+[02-18 23:54:50,306] ERROR [ontainer-5][] o.s.d.r.l.RedisMessageListenerContainer{651} - Connection failure occurred. Restarting subscription task after 5000 ms
+[02-18 23:54:57,316] ERROR [ontainer-6][] o.s.d.r.l.RedisMessageListenerContainer{651} - Connection failure occurred. Restarting subscription task after 5000 ms
+[02-18 23:55:01,680] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 23:55:02,024] ERROR [1-thread-1][] o.s.s.s.TaskUtils$LoggingErrorHandler{95} - Unexpected error occurred in scheduled task
+org.springframework.data.redis.RedisConnectionFailureException: Cannot get Jedis connection; nested exception is redis.clients.jedis.exceptions.JedisConnectionException: Failed connecting to localhost:6379
+	at org.springframework.data.redis.connection.jedis.JedisConnectionFactory.fetchJedisConnector(JedisConnectionFactory.java:283)
+	at org.springframework.data.redis.connection.jedis.JedisConnectionFactory.getConnection(JedisConnectionFactory.java:485)
+	at org.springframework.data.redis.core.RedisConnectionUtils.fetchConnection(RedisConnectionUtils.java:193)
+	at org.springframework.data.redis.core.RedisConnectionUtils.doGetConnection(RedisConnectionUtils.java:144)
+	at org.springframework.data.redis.core.RedisConnectionUtils.getConnection(RedisConnectionUtils.java:105)
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:209)
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:189)
+	at org.springframework.data.redis.core.AbstractOperations.execute(AbstractOperations.java:96)
+	at org.springframework.data.redis.core.DefaultSetOperations.members(DefaultSetOperations.java:214)
+	at org.springframework.data.redis.core.DefaultBoundSetOperations.members(DefaultBoundSetOperations.java:152)
+	at org.springframework.session.data.redis.RedisSessionExpirationPolicy.cleanExpiredSessions(RedisSessionExpirationPolicy.java:129)
+	at org.springframework.session.data.redis.RedisIndexedSessionRepository.cleanupExpiredSessions(RedisIndexedSessionRepository.java:407)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:95)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: redis.clients.jedis.exceptions.JedisConnectionException: Failed connecting to localhost:6379
+	at redis.clients.jedis.Connection.connect(Connection.java:165)
+	at redis.clients.jedis.BinaryClient.connect(BinaryClient.java:109)
+	at redis.clients.jedis.BinaryJedis.connect(BinaryJedis.java:1904)
+	at org.springframework.data.redis.connection.jedis.JedisConnectionFactory.fetchJedisConnector(JedisConnectionFactory.java:278)
+	... 20 common frames omitted
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at redis.clients.jedis.DefaultJedisSocketFactory.createSocket(DefaultJedisSocketFactory.java:53)
+	at redis.clients.jedis.Connection.connect(Connection.java:158)
+	... 23 common frames omitted
+[02-18 23:55:04,333] ERROR [ontainer-7][] o.s.d.r.l.RedisMessageListenerContainer{651} - Connection failure occurred. Restarting subscription task after 5000 ms
+[02-18 23:55:11,351] ERROR [ontainer-8][] o.s.d.r.l.RedisMessageListenerContainer{651} - Connection failure occurred. Restarting subscription task after 5000 ms
+[02-18 23:55:18,360] ERROR [ontainer-9][] o.s.d.r.l.RedisMessageListenerContainer{651} - Connection failure occurred. Restarting subscription task after 5000 ms
+[02-18 23:55:25,216] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 23:55:25,371] ERROR [ntainer-10][] o.s.d.r.l.RedisMessageListenerContainer{651} - Connection failure occurred. Restarting subscription task after 5000 ms
+[02-18 23:55:32,384] ERROR [ntainer-11][] o.s.d.r.l.RedisMessageListenerContainer{651} - Connection failure occurred. Restarting subscription task after 5000 ms
+[02-18 23:55:39,412] ERROR [ntainer-12][] o.s.d.r.l.RedisMessageListenerContainer{651} - Connection failure occurred. Restarting subscription task after 5000 ms
+[02-18 23:55:46,417] ERROR [ntainer-13][] o.s.d.r.l.RedisMessageListenerContainer{651} - Connection failure occurred. Restarting subscription task after 5000 ms
+[02-18 23:55:49,322] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 23:55:53,433] ERROR [ntainer-14][] o.s.d.r.l.RedisMessageListenerContainer{651} - Connection failure occurred. Restarting subscription task after 5000 ms
+[02-18 23:56:00,458] ERROR [ntainer-15][] o.s.d.r.l.RedisMessageListenerContainer{651} - Connection failure occurred. Restarting subscription task after 5000 ms
+[02-18 23:56:02,025] ERROR [1-thread-1][] o.s.s.s.TaskUtils$LoggingErrorHandler{95} - Unexpected error occurred in scheduled task
+org.springframework.data.redis.RedisConnectionFailureException: Cannot get Jedis connection; nested exception is redis.clients.jedis.exceptions.JedisConnectionException: Failed connecting to localhost:6379
+	at org.springframework.data.redis.connection.jedis.JedisConnectionFactory.fetchJedisConnector(JedisConnectionFactory.java:283)
+	at org.springframework.data.redis.connection.jedis.JedisConnectionFactory.getConnection(JedisConnectionFactory.java:485)
+	at org.springframework.data.redis.core.RedisConnectionUtils.fetchConnection(RedisConnectionUtils.java:193)
+	at org.springframework.data.redis.core.RedisConnectionUtils.doGetConnection(RedisConnectionUtils.java:144)
+	at org.springframework.data.redis.core.RedisConnectionUtils.getConnection(RedisConnectionUtils.java:105)
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:209)
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:189)
+	at org.springframework.data.redis.core.AbstractOperations.execute(AbstractOperations.java:96)
+	at org.springframework.data.redis.core.DefaultSetOperations.members(DefaultSetOperations.java:214)
+	at org.springframework.data.redis.core.DefaultBoundSetOperations.members(DefaultBoundSetOperations.java:152)
+	at org.springframework.session.data.redis.RedisSessionExpirationPolicy.cleanExpiredSessions(RedisSessionExpirationPolicy.java:129)
+	at org.springframework.session.data.redis.RedisIndexedSessionRepository.cleanupExpiredSessions(RedisIndexedSessionRepository.java:407)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:95)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: redis.clients.jedis.exceptions.JedisConnectionException: Failed connecting to localhost:6379
+	at redis.clients.jedis.Connection.connect(Connection.java:165)
+	at redis.clients.jedis.BinaryClient.connect(BinaryClient.java:109)
+	at redis.clients.jedis.BinaryJedis.connect(BinaryJedis.java:1904)
+	at org.springframework.data.redis.connection.jedis.JedisConnectionFactory.fetchJedisConnector(JedisConnectionFactory.java:278)
+	... 20 common frames omitted
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at redis.clients.jedis.DefaultJedisSocketFactory.createSocket(DefaultJedisSocketFactory.java:53)
+	at redis.clients.jedis.Connection.connect(Connection.java:158)
+	... 23 common frames omitted
+[02-18 23:56:07,482] ERROR [ntainer-16][] o.s.d.r.l.RedisMessageListenerContainer{651} - Connection failure occurred. Restarting subscription task after 5000 ms
+[02-18 23:56:14,498] ERROR [ntainer-17][] o.s.d.r.l.RedisMessageListenerContainer{651} - Connection failure occurred. Restarting subscription task after 5000 ms
+[02-18 23:56:19,115] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 23:56:21,524] ERROR [ntainer-18][] o.s.d.r.l.RedisMessageListenerContainer{651} - Connection failure occurred. Restarting subscription task after 5000 ms
+[02-18 23:56:28,542] ERROR [ntainer-19][] o.s.d.r.l.RedisMessageListenerContainer{651} - Connection failure occurred. Restarting subscription task after 5000 ms
+[02-18 23:56:35,562] ERROR [ntainer-20][] o.s.d.r.l.RedisMessageListenerContainer{651} - Connection failure occurred. Restarting subscription task after 5000 ms
+[02-18 23:56:42,581] ERROR [ntainer-21][] o.s.d.r.l.RedisMessageListenerContainer{651} - Connection failure occurred. Restarting subscription task after 5000 ms
+[02-18 23:56:47,227] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 23:56:49,598] ERROR [ntainer-22][] o.s.d.r.l.RedisMessageListenerContainer{651} - Connection failure occurred. Restarting subscription task after 5000 ms
+[02-18 23:56:56,617] ERROR [ntainer-23][] o.s.d.r.l.RedisMessageListenerContainer{651} - Connection failure occurred. Restarting subscription task after 5000 ms
+[02-18 23:57:02,025] ERROR [1-thread-1][] o.s.s.s.TaskUtils$LoggingErrorHandler{95} - Unexpected error occurred in scheduled task
+org.springframework.data.redis.RedisConnectionFailureException: Cannot get Jedis connection; nested exception is redis.clients.jedis.exceptions.JedisConnectionException: Failed connecting to localhost:6379
+	at org.springframework.data.redis.connection.jedis.JedisConnectionFactory.fetchJedisConnector(JedisConnectionFactory.java:283)
+	at org.springframework.data.redis.connection.jedis.JedisConnectionFactory.getConnection(JedisConnectionFactory.java:485)
+	at org.springframework.data.redis.core.RedisConnectionUtils.fetchConnection(RedisConnectionUtils.java:193)
+	at org.springframework.data.redis.core.RedisConnectionUtils.doGetConnection(RedisConnectionUtils.java:144)
+	at org.springframework.data.redis.core.RedisConnectionUtils.getConnection(RedisConnectionUtils.java:105)
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:209)
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:189)
+	at org.springframework.data.redis.core.AbstractOperations.execute(AbstractOperations.java:96)
+	at org.springframework.data.redis.core.DefaultSetOperations.members(DefaultSetOperations.java:214)
+	at org.springframework.data.redis.core.DefaultBoundSetOperations.members(DefaultBoundSetOperations.java:152)
+	at org.springframework.session.data.redis.RedisSessionExpirationPolicy.cleanExpiredSessions(RedisSessionExpirationPolicy.java:129)
+	at org.springframework.session.data.redis.RedisIndexedSessionRepository.cleanupExpiredSessions(RedisIndexedSessionRepository.java:407)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:95)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: redis.clients.jedis.exceptions.JedisConnectionException: Failed connecting to localhost:6379
+	at redis.clients.jedis.Connection.connect(Connection.java:165)
+	at redis.clients.jedis.BinaryClient.connect(BinaryClient.java:109)
+	at redis.clients.jedis.BinaryJedis.connect(BinaryJedis.java:1904)
+	at org.springframework.data.redis.connection.jedis.JedisConnectionFactory.fetchJedisConnector(JedisConnectionFactory.java:278)
+	... 20 common frames omitted
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at redis.clients.jedis.DefaultJedisSocketFactory.createSocket(DefaultJedisSocketFactory.java:53)
+	at redis.clients.jedis.Connection.connect(Connection.java:158)
+	... 23 common frames omitted
+[02-18 23:57:03,622] ERROR [ntainer-24][] o.s.d.r.l.RedisMessageListenerContainer{651} - Connection failure occurred. Restarting subscription task after 5000 ms
+[02-18 23:57:10,631] ERROR [ntainer-25][] o.s.d.r.l.RedisMessageListenerContainer{651} - Connection failure occurred. Restarting subscription task after 5000 ms
+[02-18 23:57:10,867] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 23:57:17,655] ERROR [ntainer-26][] o.s.d.r.l.RedisMessageListenerContainer{651} - Connection failure occurred. Restarting subscription task after 5000 ms
+[02-18 23:57:24,683] ERROR [ntainer-27][] o.s.d.r.l.RedisMessageListenerContainer{651} - Connection failure occurred. Restarting subscription task after 5000 ms
+[02-18 23:57:31,703] ERROR [ntainer-28][] o.s.d.r.l.RedisMessageListenerContainer{651} - Connection failure occurred. Restarting subscription task after 5000 ms
+[02-18 23:57:38,275] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 23:57:38,715] ERROR [ntainer-29][] o.s.d.r.l.RedisMessageListenerContainer{651} - Connection failure occurred. Restarting subscription task after 5000 ms
+[02-18 23:57:45,739] ERROR [ntainer-30][] o.s.d.r.l.RedisMessageListenerContainer{651} - Connection failure occurred. Restarting subscription task after 5000 ms
+[02-18 23:57:52,755] ERROR [ntainer-31][] o.s.d.r.l.RedisMessageListenerContainer{651} - Connection failure occurred. Restarting subscription task after 5000 ms
+[02-18 23:57:59,775] ERROR [ntainer-32][] o.s.d.r.l.RedisMessageListenerContainer{651} - Connection failure occurred. Restarting subscription task after 5000 ms
+[02-18 23:58:02,010] ERROR [1-thread-1][] o.s.s.s.TaskUtils$LoggingErrorHandler{95} - Unexpected error occurred in scheduled task
+org.springframework.data.redis.RedisConnectionFailureException: Cannot get Jedis connection; nested exception is redis.clients.jedis.exceptions.JedisConnectionException: Failed connecting to localhost:6379
+	at org.springframework.data.redis.connection.jedis.JedisConnectionFactory.fetchJedisConnector(JedisConnectionFactory.java:283)
+	at org.springframework.data.redis.connection.jedis.JedisConnectionFactory.getConnection(JedisConnectionFactory.java:485)
+	at org.springframework.data.redis.core.RedisConnectionUtils.fetchConnection(RedisConnectionUtils.java:193)
+	at org.springframework.data.redis.core.RedisConnectionUtils.doGetConnection(RedisConnectionUtils.java:144)
+	at org.springframework.data.redis.core.RedisConnectionUtils.getConnection(RedisConnectionUtils.java:105)
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:209)
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:189)
+	at org.springframework.data.redis.core.AbstractOperations.execute(AbstractOperations.java:96)
+	at org.springframework.data.redis.core.DefaultSetOperations.members(DefaultSetOperations.java:214)
+	at org.springframework.data.redis.core.DefaultBoundSetOperations.members(DefaultBoundSetOperations.java:152)
+	at org.springframework.session.data.redis.RedisSessionExpirationPolicy.cleanExpiredSessions(RedisSessionExpirationPolicy.java:129)
+	at org.springframework.session.data.redis.RedisIndexedSessionRepository.cleanupExpiredSessions(RedisIndexedSessionRepository.java:407)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:95)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: redis.clients.jedis.exceptions.JedisConnectionException: Failed connecting to localhost:6379
+	at redis.clients.jedis.Connection.connect(Connection.java:165)
+	at redis.clients.jedis.BinaryClient.connect(BinaryClient.java:109)
+	at redis.clients.jedis.BinaryJedis.connect(BinaryJedis.java:1904)
+	at org.springframework.data.redis.connection.jedis.JedisConnectionFactory.fetchJedisConnector(JedisConnectionFactory.java:278)
+	... 20 common frames omitted
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at redis.clients.jedis.DefaultJedisSocketFactory.createSocket(DefaultJedisSocketFactory.java:53)
+	at redis.clients.jedis.Connection.connect(Connection.java:158)
+	... 23 common frames omitted
+[02-18 23:58:06,534] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 23:58:06,784] ERROR [ntainer-33][] o.s.d.r.l.RedisMessageListenerContainer{651} - Connection failure occurred. Restarting subscription task after 5000 ms
+[02-18 23:58:13,795] ERROR [ntainer-34][] o.s.d.r.l.RedisMessageListenerContainer{651} - Connection failure occurred. Restarting subscription task after 5000 ms
+[02-18 23:58:20,803] ERROR [ntainer-35][] o.s.d.r.l.RedisMessageListenerContainer{651} - Connection failure occurred. Restarting subscription task after 5000 ms
+[02-18 23:58:27,824] ERROR [ntainer-36][] o.s.d.r.l.RedisMessageListenerContainer{651} - Connection failure occurred. Restarting subscription task after 5000 ms
+[02-18 23:58:34,834] ERROR [ntainer-37][] o.s.d.r.l.RedisMessageListenerContainer{651} - Connection failure occurred. Restarting subscription task after 5000 ms
+[02-18 23:58:36,366] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 23:58:41,860] ERROR [ntainer-38][] o.s.d.r.l.RedisMessageListenerContainer{651} - Connection failure occurred. Restarting subscription task after 5000 ms
+[02-18 23:58:48,890] ERROR [ntainer-39][] o.s.d.r.l.RedisMessageListenerContainer{651} - Connection failure occurred. Restarting subscription task after 5000 ms
+[02-18 23:58:55,911] ERROR [ntainer-40][] o.s.d.r.l.RedisMessageListenerContainer{651} - Connection failure occurred. Restarting subscription task after 5000 ms
+[02-18 23:59:01,837] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 23:59:02,009] ERROR [1-thread-1][] o.s.s.s.TaskUtils$LoggingErrorHandler{95} - Unexpected error occurred in scheduled task
+org.springframework.data.redis.RedisConnectionFailureException: Cannot get Jedis connection; nested exception is redis.clients.jedis.exceptions.JedisConnectionException: Failed connecting to localhost:6379
+	at org.springframework.data.redis.connection.jedis.JedisConnectionFactory.fetchJedisConnector(JedisConnectionFactory.java:283)
+	at org.springframework.data.redis.connection.jedis.JedisConnectionFactory.getConnection(JedisConnectionFactory.java:485)
+	at org.springframework.data.redis.core.RedisConnectionUtils.fetchConnection(RedisConnectionUtils.java:193)
+	at org.springframework.data.redis.core.RedisConnectionUtils.doGetConnection(RedisConnectionUtils.java:144)
+	at org.springframework.data.redis.core.RedisConnectionUtils.getConnection(RedisConnectionUtils.java:105)
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:209)
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:189)
+	at org.springframework.data.redis.core.AbstractOperations.execute(AbstractOperations.java:96)
+	at org.springframework.data.redis.core.DefaultSetOperations.members(DefaultSetOperations.java:214)
+	at org.springframework.data.redis.core.DefaultBoundSetOperations.members(DefaultBoundSetOperations.java:152)
+	at org.springframework.session.data.redis.RedisSessionExpirationPolicy.cleanExpiredSessions(RedisSessionExpirationPolicy.java:129)
+	at org.springframework.session.data.redis.RedisIndexedSessionRepository.cleanupExpiredSessions(RedisIndexedSessionRepository.java:407)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:95)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: redis.clients.jedis.exceptions.JedisConnectionException: Failed connecting to localhost:6379
+	at redis.clients.jedis.Connection.connect(Connection.java:165)
+	at redis.clients.jedis.BinaryClient.connect(BinaryClient.java:109)
+	at redis.clients.jedis.BinaryJedis.connect(BinaryJedis.java:1904)
+	at org.springframework.data.redis.connection.jedis.JedisConnectionFactory.fetchJedisConnector(JedisConnectionFactory.java:278)
+	... 20 common frames omitted
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at redis.clients.jedis.DefaultJedisSocketFactory.createSocket(DefaultJedisSocketFactory.java:53)
+	at redis.clients.jedis.Connection.connect(Connection.java:158)
+	... 23 common frames omitted
+[02-18 23:59:02,930] ERROR [ntainer-41][] o.s.d.r.l.RedisMessageListenerContainer{651} - Connection failure occurred. Restarting subscription task after 5000 ms
+[02-18 23:59:09,955] ERROR [ntainer-42][] o.s.d.r.l.RedisMessageListenerContainer{651} - Connection failure occurred. Restarting subscription task after 5000 ms
+[02-18 23:59:16,962] ERROR [ntainer-43][] o.s.d.r.l.RedisMessageListenerContainer{651} - Connection failure occurred. Restarting subscription task after 5000 ms
+[02-18 23:59:23,973] ERROR [ntainer-44][] o.s.d.r.l.RedisMessageListenerContainer{651} - Connection failure occurred. Restarting subscription task after 5000 ms
+[02-18 23:59:28,415] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 23:59:30,987] ERROR [ntainer-45][] o.s.d.r.l.RedisMessageListenerContainer{651} - Connection failure occurred. Restarting subscription task after 5000 ms
+[02-18 23:59:37,996] ERROR [ntainer-46][] o.s.d.r.l.RedisMessageListenerContainer{651} - Connection failure occurred. Restarting subscription task after 5000 ms
+[02-18 23:59:45,007] ERROR [ntainer-47][] o.s.d.r.l.RedisMessageListenerContainer{651} - Connection failure occurred. Restarting subscription task after 5000 ms
+[02-18 23:59:52,040] ERROR [ntainer-48][] o.s.d.r.l.RedisMessageListenerContainer{651} - Connection failure occurred. Restarting subscription task after 5000 ms
+[02-18 23:59:52,698] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 23:59:59,071] ERROR [ntainer-49][] o.s.d.r.l.RedisMessageListenerContainer{651} - Connection failure occurred. Restarting subscription task after 5000 ms

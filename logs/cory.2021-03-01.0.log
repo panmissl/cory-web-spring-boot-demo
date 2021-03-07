@@ -1,0 +1,845 @@
+[03-01 22:09:02,738] INFO  [main][] c.c.c.c.CoryContextApplicationContextInitializer{19} - CoryContextApplicationContextInitializer initialize
+[03-01 22:09:02,816] INFO  [main][] com.cory.CoryWebDemoApplication{55} - Starting CoryWebDemoApplication using Java 1.8.0_131 on Cory-PC with PID 7680 (E:\WORK\idea_workspace\cory-web-spring-boot-demo-all\target\classes started by Cory in E:\WORK\idea_workspace\cory-web-spring-boot-demo-all)
+[03-01 22:09:02,816] DEBUG [main][] com.cory.CoryWebDemoApplication{56} - Running with Spring Boot v2.4.2, Spring v5.3.3
+[03-01 22:09:02,816] INFO  [main][] com.cory.CoryWebDemoApplication{660} - No active profile set, falling back to default profiles: default
+[03-01 22:09:05,516] INFO  [main][] c.c.db.processor.CoryDbDaoProcessor{35} - cory db register bean definition start
+[03-01 22:09:05,602] INFO  [main][] c.c.db.processor.CoryDbDaoProcessor{59} - cory db register bean definition finish, registered 9 DAO
+[03-01 22:09:09,081] INFO  [main][] c.o.c.s.m.GenericManageableCaptchaService{42} - Init com.octo.captcha.service.captchastore.FastHashMapCaptchaStore
+[03-01 22:09:11,195] DEBUG [main][] org.reflections.Reflections{198} - going to scan these urls: [jar:file:/E:/MavenRepository/com/cory/cory-scheduler-spring-boot-starter/0.0.1-SNAPSHOT/cory-scheduler-spring-boot-starter-0.0.1-SNAPSHOT.jar!/, jar:file:/E:/MavenRepository/com/cory/cory-swagger-spring-boot-starter/0.0.1-SNAPSHOT/cory-swagger-spring-boot-starter-0.0.1-SNAPSHOT.jar!/, jar:file:/E:/MavenRepository/com/cory/cory-db-spring-boot-starter/0.0.1-SNAPSHOT/cory-db-spring-boot-starter-0.0.1-SNAPSHOT.jar!/, jar:file:/E:/MavenRepository/com/cory/cory-web-spring-boot-starter/0.0.1-SNAPSHOT/cory-web-spring-boot-starter-0.0.1-SNAPSHOT.jar!/, jar:file:/E:/MavenRepository/com/cory/cory-context-spring-boot-starter/0.0.1-SNAPSHOT/cory-context-spring-boot-starter-0.0.1-SNAPSHOT.jar!/, jar:file:/E:/MavenRepository/com/cory/cory-cache-spring-boot-starter/0.0.1-SNAPSHOT/cory-cache-spring-boot-starter-0.0.1-SNAPSHOT.jar!/, file:/E:/WORK/idea_workspace/cory-web-spring-boot-demo-all/target/classes/]
+[03-01 22:09:11,365] INFO  [main][] org.reflections.Reflections{239} - Reflections took 168 ms to scan 7 urls, producing 86 keys and 208 values 
+[03-01 22:09:11,370] DEBUG [main][] org.reflections.Reflections{392} - expanded subtype org.quartz.Job -> org.springframework.scheduling.quartz.QuartzJobBean
+[03-01 22:09:11,371] DEBUG [main][] org.reflections.Reflections{392} - expanded subtype java.lang.Comparable -> java.lang.Enum
+[03-01 22:09:11,371] DEBUG [main][] org.reflections.Reflections{392} - expanded subtype java.io.Serializable -> java.lang.Enum
+[03-01 22:09:11,372] DEBUG [main][] org.reflections.Reflections{392} - expanded subtype java.util.EventListener -> javax.servlet.ServletContextListener
+[03-01 22:09:11,376] DEBUG [main][] org.reflections.Reflections{392} - expanded subtype org.apache.shiro.env.DefaultEnvironment -> org.apache.shiro.web.env.DefaultWebEnvironment
+[03-01 22:09:11,377] DEBUG [main][] org.reflections.Reflections{392} - expanded subtype org.apache.shiro.env.NamedObjectEnvironment -> org.apache.shiro.env.DefaultEnvironment
+[03-01 22:09:11,378] DEBUG [main][] org.reflections.Reflections{392} - expanded subtype org.apache.shiro.env.Environment -> org.apache.shiro.env.NamedObjectEnvironment
+[03-01 22:09:11,378] DEBUG [main][] org.reflections.Reflections{392} - expanded subtype org.apache.shiro.util.Destroyable -> org.apache.shiro.env.DefaultEnvironment
+[03-01 22:09:11,378] DEBUG [main][] org.reflections.Reflections{392} - expanded subtype org.apache.shiro.web.env.MutableWebEnvironment -> org.apache.shiro.web.env.DefaultWebEnvironment
+[03-01 22:09:11,379] DEBUG [main][] org.reflections.Reflections{392} - expanded subtype org.apache.shiro.web.env.WebEnvironment -> org.apache.shiro.web.env.MutableWebEnvironment
+[03-01 22:09:11,379] DEBUG [main][] org.reflections.Reflections{392} - expanded subtype org.apache.shiro.env.Environment -> org.apache.shiro.web.env.WebEnvironment
+[03-01 22:09:11,379] DEBUG [main][] org.reflections.Reflections{392} - expanded subtype org.apache.shiro.web.filter.authc.AuthenticatingFilter -> org.apache.shiro.web.filter.authc.FormAuthenticationFilter
+[03-01 22:09:11,380] DEBUG [main][] org.reflections.Reflections{392} - expanded subtype org.apache.shiro.web.filter.authc.AuthenticationFilter -> org.apache.shiro.web.filter.authc.AuthenticatingFilter
+[03-01 22:09:11,380] DEBUG [main][] org.reflections.Reflections{392} - expanded subtype org.apache.shiro.web.filter.AccessControlFilter -> org.apache.shiro.web.filter.authc.AuthenticationFilter
+[03-01 22:09:11,380] DEBUG [main][] org.reflections.Reflections{392} - expanded subtype org.apache.shiro.web.filter.PathMatchingFilter -> org.apache.shiro.web.filter.AccessControlFilter
+[03-01 22:09:11,380] DEBUG [main][] org.reflections.Reflections{392} - expanded subtype org.apache.shiro.web.servlet.AdviceFilter -> org.apache.shiro.web.filter.PathMatchingFilter
+[03-01 22:09:11,381] DEBUG [main][] org.reflections.Reflections{392} - expanded subtype org.apache.shiro.web.servlet.OncePerRequestFilter -> org.apache.shiro.web.servlet.AdviceFilter
+[03-01 22:09:11,381] DEBUG [main][] org.reflections.Reflections{392} - expanded subtype org.apache.shiro.web.servlet.NameableFilter -> org.apache.shiro.web.servlet.OncePerRequestFilter
+[03-01 22:09:11,381] DEBUG [main][] org.reflections.Reflections{392} - expanded subtype org.apache.shiro.web.servlet.AbstractFilter -> org.apache.shiro.web.servlet.NameableFilter
+[03-01 22:09:11,381] DEBUG [main][] org.reflections.Reflections{392} - expanded subtype org.apache.shiro.web.servlet.ServletContextSupport -> org.apache.shiro.web.servlet.AbstractFilter
+[03-01 22:09:11,381] DEBUG [main][] org.reflections.Reflections{392} - expanded subtype javax.servlet.Filter -> org.apache.shiro.web.servlet.AbstractFilter
+[03-01 22:09:11,382] DEBUG [main][] org.reflections.Reflections{392} - expanded subtype org.apache.shiro.util.Nameable -> org.apache.shiro.web.servlet.NameableFilter
+[03-01 22:09:11,382] DEBUG [main][] org.reflections.Reflections{392} - expanded subtype org.apache.shiro.web.filter.PathConfigProcessor -> org.apache.shiro.web.filter.PathMatchingFilter
+[03-01 22:09:11,382] DEBUG [main][] org.reflections.Reflections{392} - expanded subtype javax.servlet.GenericServlet -> javax.servlet.http.HttpServlet
+[03-01 22:09:11,383] DEBUG [main][] org.reflections.Reflections{392} - expanded subtype javax.servlet.Servlet -> javax.servlet.GenericServlet
+[03-01 22:09:11,383] DEBUG [main][] org.reflections.Reflections{392} - expanded subtype javax.servlet.ServletConfig -> javax.servlet.GenericServlet
+[03-01 22:09:11,383] DEBUG [main][] org.reflections.Reflections{392} - expanded subtype java.io.Serializable -> javax.servlet.GenericServlet
+[03-01 22:09:11,384] DEBUG [main][] org.reflections.Reflections{392} - expanded subtype org.springframework.scheduling.quartz.QuartzJobBean -> org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean$MethodInvokingJob
+[03-01 22:09:11,384] DEBUG [main][] org.reflections.Reflections{392} - expanded subtype org.quartz.Job -> org.springframework.scheduling.quartz.QuartzJobBean
+[03-01 22:09:11,384] DEBUG [main][] org.reflections.Reflections{392} - expanded subtype org.springframework.web.bind.support.WebBindingInitializer -> org.springframework.web.bind.support.ConfigurableWebBindingInitializer
+[03-01 22:09:11,385] DEBUG [main][] org.reflections.Reflections{392} - expanded subtype java.beans.PropertyEditor -> java.beans.PropertyEditorSupport
+[03-01 22:09:11,388] DEBUG [main][] org.reflections.Reflections{392} - expanded subtype ognl.MemberAccess -> ognl.AbstractMemberAccess
+[03-01 22:09:11,388] DEBUG [main][] org.reflections.Reflections{392} - expanded subtype org.apache.shiro.web.servlet.AdviceFilter -> org.apache.shiro.web.filter.authc.LogoutFilter
+[03-01 22:09:11,389] DEBUG [main][] org.reflections.Reflections{392} - expanded subtype org.apache.shiro.web.servlet.OncePerRequestFilter -> org.apache.shiro.web.servlet.AdviceFilter
+[03-01 22:09:11,389] DEBUG [main][] org.reflections.Reflections{392} - expanded subtype org.apache.shiro.web.servlet.NameableFilter -> org.apache.shiro.web.servlet.OncePerRequestFilter
+[03-01 22:09:11,389] DEBUG [main][] org.reflections.Reflections{392} - expanded subtype org.apache.shiro.web.servlet.AbstractFilter -> org.apache.shiro.web.servlet.NameableFilter
+[03-01 22:09:11,390] DEBUG [main][] org.reflections.Reflections{392} - expanded subtype org.apache.shiro.web.servlet.ServletContextSupport -> org.apache.shiro.web.servlet.AbstractFilter
+[03-01 22:09:11,390] DEBUG [main][] org.reflections.Reflections{392} - expanded subtype javax.servlet.Filter -> org.apache.shiro.web.servlet.AbstractFilter
+[03-01 22:09:11,390] DEBUG [main][] org.reflections.Reflections{392} - expanded subtype org.apache.shiro.util.Nameable -> org.apache.shiro.web.servlet.NameableFilter
+[03-01 22:09:11,390] DEBUG [main][] org.reflections.Reflections{392} - expanded subtype org.springframework.beans.factory.Aware -> org.springframework.context.ApplicationContextAware
+[03-01 22:09:11,391] DEBUG [main][] org.reflections.Reflections{392} - expanded subtype org.apache.shiro.codec.CodecSupport -> org.apache.shiro.authc.credential.SimpleCredentialsMatcher
+[03-01 22:09:11,391] DEBUG [main][] org.reflections.Reflections{392} - expanded subtype org.apache.shiro.authc.credential.CredentialsMatcher -> org.apache.shiro.authc.credential.SimpleCredentialsMatcher
+[03-01 22:09:11,392] DEBUG [main][] org.reflections.Reflections{392} - expanded subtype org.springframework.util.MethodInvoker -> org.springframework.beans.support.ArgumentConvertingMethodInvoker
+[03-01 22:09:11,392] DEBUG [main][] org.reflections.Reflections{392} - expanded subtype org.apache.shiro.realm.AuthenticatingRealm -> org.apache.shiro.realm.AuthorizingRealm
+[03-01 22:09:11,393] DEBUG [main][] org.reflections.Reflections{392} - expanded subtype org.apache.shiro.realm.CachingRealm -> org.apache.shiro.realm.AuthenticatingRealm
+[03-01 22:09:11,393] DEBUG [main][] org.reflections.Reflections{392} - expanded subtype org.apache.shiro.realm.Realm -> org.apache.shiro.realm.CachingRealm
+[03-01 22:09:11,393] DEBUG [main][] org.reflections.Reflections{392} - expanded subtype org.apache.shiro.util.Nameable -> org.apache.shiro.realm.CachingRealm
+[03-01 22:09:11,393] DEBUG [main][] org.reflections.Reflections{392} - expanded subtype org.apache.shiro.cache.CacheManagerAware -> org.apache.shiro.realm.CachingRealm
+[03-01 22:09:11,394] DEBUG [main][] org.reflections.Reflections{392} - expanded subtype org.apache.shiro.authc.LogoutAware -> org.apache.shiro.realm.CachingRealm
+[03-01 22:09:11,394] DEBUG [main][] org.reflections.Reflections{392} - expanded subtype org.apache.shiro.util.Initializable -> org.apache.shiro.realm.AuthenticatingRealm
+[03-01 22:09:11,394] DEBUG [main][] org.reflections.Reflections{392} - expanded subtype org.apache.shiro.authz.Authorizer -> org.apache.shiro.realm.AuthorizingRealm
+[03-01 22:09:11,394] DEBUG [main][] org.reflections.Reflections{392} - expanded subtype org.apache.shiro.util.Initializable -> org.apache.shiro.realm.AuthorizingRealm
+[03-01 22:09:11,394] DEBUG [main][] org.reflections.Reflections{392} - expanded subtype org.apache.shiro.authz.permission.PermissionResolverAware -> org.apache.shiro.realm.AuthorizingRealm
+[03-01 22:09:11,395] DEBUG [main][] org.reflections.Reflections{392} - expanded subtype org.apache.shiro.authz.permission.RolePermissionResolverAware -> org.apache.shiro.realm.AuthorizingRealm
+[03-01 22:09:11,395] DEBUG [main][] org.reflections.Reflections{392} - expanded subtype org.apache.shiro.authc.AuthenticationException -> org.apache.shiro.authc.AccountException
+[03-01 22:09:11,395] DEBUG [main][] org.reflections.Reflections{392} - expanded subtype org.apache.shiro.ShiroException -> org.apache.shiro.authc.AuthenticationException
+[03-01 22:09:11,395] DEBUG [main][] org.reflections.Reflections{392} - expanded subtype java.lang.RuntimeException -> org.apache.shiro.ShiroException
+[03-01 22:09:11,396] DEBUG [main][] org.reflections.Reflections{392} - expanded subtype java.lang.Exception -> java.lang.RuntimeException
+[03-01 22:09:11,396] DEBUG [main][] org.reflections.Reflections{392} - expanded subtype java.lang.Throwable -> java.lang.Exception
+[03-01 22:09:11,396] DEBUG [main][] org.reflections.Reflections{392} - expanded subtype java.io.Serializable -> java.lang.Throwable
+[03-01 22:09:11,396] DEBUG [main][] org.reflections.Reflections{392} - expanded subtype org.apache.shiro.web.filter.AccessControlFilter -> org.apache.shiro.web.filter.authc.UserFilter
+[03-01 22:09:11,397] DEBUG [main][] org.reflections.Reflections{392} - expanded subtype org.apache.shiro.web.filter.PathMatchingFilter -> org.apache.shiro.web.filter.AccessControlFilter
+[03-01 22:09:11,397] DEBUG [main][] org.reflections.Reflections{392} - expanded subtype org.apache.shiro.web.servlet.AdviceFilter -> org.apache.shiro.web.filter.PathMatchingFilter
+[03-01 22:09:11,397] DEBUG [main][] org.reflections.Reflections{392} - expanded subtype org.apache.shiro.web.servlet.OncePerRequestFilter -> org.apache.shiro.web.servlet.AdviceFilter
+[03-01 22:09:11,397] DEBUG [main][] org.reflections.Reflections{392} - expanded subtype org.apache.shiro.web.servlet.NameableFilter -> org.apache.shiro.web.servlet.OncePerRequestFilter
+[03-01 22:09:11,398] DEBUG [main][] org.reflections.Reflections{392} - expanded subtype org.apache.shiro.web.servlet.AbstractFilter -> org.apache.shiro.web.servlet.NameableFilter
+[03-01 22:09:11,398] DEBUG [main][] org.reflections.Reflections{392} - expanded subtype org.apache.shiro.web.servlet.ServletContextSupport -> org.apache.shiro.web.servlet.AbstractFilter
+[03-01 22:09:11,398] DEBUG [main][] org.reflections.Reflections{392} - expanded subtype javax.servlet.Filter -> org.apache.shiro.web.servlet.AbstractFilter
+[03-01 22:09:11,398] DEBUG [main][] org.reflections.Reflections{392} - expanded subtype org.apache.shiro.util.Nameable -> org.apache.shiro.web.servlet.NameableFilter
+[03-01 22:09:11,399] DEBUG [main][] org.reflections.Reflections{392} - expanded subtype org.apache.shiro.web.filter.PathConfigProcessor -> org.apache.shiro.web.filter.PathMatchingFilter
+[03-01 22:09:11,399] DEBUG [main][] org.reflections.Reflections{392} - expanded subtype java.lang.Exception -> java.lang.RuntimeException
+[03-01 22:09:11,399] DEBUG [main][] org.reflections.Reflections{392} - expanded subtype java.lang.Throwable -> java.lang.Exception
+[03-01 22:09:11,399] DEBUG [main][] org.reflections.Reflections{392} - expanded subtype java.io.Serializable -> java.lang.Throwable
+[03-01 22:09:11,399] DEBUG [main][] org.reflections.Reflections{392} - expanded subtype org.springframework.beans.factory.config.BeanFactoryPostProcessor -> org.springframework.beans.factory.support.BeanDefinitionRegistryPostProcessor
+[03-01 22:09:11,402] DEBUG [main][] org.reflections.Reflections{392} - expanded subtype org.springframework.cache.support.AbstractCacheManager -> org.springframework.cache.transaction.AbstractTransactionSupportingCacheManager
+[03-01 22:09:11,402] DEBUG [main][] org.reflections.Reflections{392} - expanded subtype org.springframework.cache.CacheManager -> org.springframework.cache.support.AbstractCacheManager
+[03-01 22:09:11,406] DEBUG [main][] org.reflections.Reflections{392} - expanded subtype org.springframework.beans.factory.InitializingBean -> org.springframework.cache.support.AbstractCacheManager
+[03-01 22:09:11,461] INFO  [main][] c.a.d.s.b.a.DruidDataSourceAutoConfigure{56} - Init DruidDataSource
+[03-01 22:09:11,912] INFO  [main][] c.alibaba.druid.pool.DruidDataSource{985} - {dataSource-1} inited
+[03-01 22:09:12,465] INFO  [main][] com.cory.service.SystemConfigService{64} - 加载系统参数配置...
+[03-01 22:09:12,701] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT * FROM base_system_config WHERE IS_DELETED = 0 ORDER BY ID DESC LIMIT 0, 2147483647, params: []
+[03-01 22:09:12,808] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{139} - sql: SELECT COUNT(*) FROM base_system_config WHERE IS_DELETED = 0, params: []
+[03-01 22:09:13,128] INFO  [main][] com.cory.service.SystemConfigService{75} - 加载系统参数配置完成(共29条).
+[03-01 22:09:13,221] INFO  [main][] c.c.service.resource.ResourceScanner{44} - start to scan Controllers ...
+[03-01 22:09:13,516] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/user/changePasswordDirectly*"]
+[03-01 22:09:13,553] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/user/doAssign*"]
+[03-01 22:09:13,558] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/user/listData*"]
+[03-01 22:09:13,561] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/user/detailData/**"]
+[03-01 22:09:13,564] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/user/changePassword*"]
+[03-01 22:09:13,578] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/currentUser*"]
+[03-01 22:09:13,582] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/doRegister*"]
+[03-01 22:09:13,586] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/feedback/listData*"]
+[03-01 22:09:13,590] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/feedback/save*"]
+[03-01 22:09:13,594] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/feedback/delete/**"]
+[03-01 22:09:13,599] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/feedback/detailData/**"]
+[03-01 22:09:13,605] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/resource/listData*"]
+[03-01 22:09:13,612] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/resource/detailData/**"]
+[03-01 22:09:13,617] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/resource/delete/**"]
+[03-01 22:09:13,628] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/resource/save*"]
+[03-01 22:09:13,637] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/demo/save*"]
+[03-01 22:09:13,644] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/demo/post*"]
+[03-01 22:09:13,648] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/demo/detailData/**"]
+[03-01 22:09:13,652] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/demo/upload*"]
+[03-01 22:09:13,657] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/demo/delete/**"]
+[03-01 22:09:13,660] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/demo/hi*"]
+[03-01 22:09:13,664] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/demo/listData*"]
+[03-01 22:09:13,671] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/datadict/allTypes*"]
+[03-01 22:09:13,677] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/datadict/save*"]
+[03-01 22:09:13,682] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/datadict/delete/**"]
+[03-01 22:09:13,689] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/datadict/listData*"]
+[03-01 22:09:13,693] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/datadict/updateShowable*"]
+[03-01 22:09:13,697] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/datadict/detailData/**"]
+[03-01 22:09:13,704] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/errorPage*"]
+[03-01 22:09:13,711] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/***"]
+[03-01 22:09:13,716] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/systemconfig/detailData/**"]
+[03-01 22:09:13,722] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/systemconfig/delete/**"]
+[03-01 22:09:13,727] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/systemconfig/save*"]
+[03-01 22:09:13,731] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/systemconfig/refreshCache*"]
+[03-01 22:09:13,738] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/systemconfig/listData*"]
+[03-01 22:09:13,745] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/role/listData*"]
+[03-01 22:09:13,750] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/role/detailData/**"]
+[03-01 22:09:13,755] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/role/save*"]
+[03-01 22:09:13,761] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/role/doAssign*"]
+[03-01 22:09:13,764] INFO  [main][] c.c.service.resource.ResourceScanner{64} - scan Controllers finish, url count: 0
+[03-01 22:09:13,765] INFO  [main][] c.c.service.resource.ResourceScanner{70} - start to scan Model ...
+[03-01 22:09:13,923] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/demo/demo*"]
+[03-01 22:09:13,929] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/base/role*"]
+[03-01 22:09:13,932] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/base/systemconfig*"]
+[03-01 22:09:13,936] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/base/feedback*"]
+[03-01 22:09:13,939] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/base/roleresourcerel*"]
+[03-01 22:09:13,943] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/base/user*"]
+[03-01 22:09:13,946] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/base/userrolerel*"]
+[03-01 22:09:13,949] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/base/resource*"]
+[03-01 22:09:13,949] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/base/datadict*"]
+[03-01 22:09:13,949] INFO  [main][] c.c.service.resource.ResourceScanner{138} - scan Model finish, model count: 9
+[03-01 22:09:16,298] INFO  [main][] org.quartz.impl.StdSchedulerFactory{1220} - Using default implementation for ThreadExecutor
+[03-01 22:09:16,313] INFO  [main][] o.quartz.core.SchedulerSignalerImpl{61} - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+[03-01 22:09:16,313] INFO  [main][] org.quartz.core.QuartzScheduler{229} - Quartz Scheduler v.2.3.2 created.
+[03-01 22:09:16,313] INFO  [main][] org.quartz.simpl.RAMJobStore{155} - RAMJobStore initialized.
+[03-01 22:09:16,313] INFO  [main][] org.quartz.core.QuartzScheduler{294} - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+[03-01 22:09:16,313] INFO  [main][] org.quartz.impl.StdSchedulerFactory{1374} - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+[03-01 22:09:16,313] INFO  [main][] org.quartz.impl.StdSchedulerFactory{1378} - Quartz scheduler version: 2.3.2
+[03-01 22:09:16,313] INFO  [main][] org.quartz.core.QuartzScheduler{2293} - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@41f61188
+[03-01 22:09:16,602] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 22:09:16,602] INFO  [main][] org.quartz.core.QuartzScheduler{547} - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+[03-01 22:09:16,672] INFO  [main][] com.cory.CoryWebDemoApplication{61} - Started CoryWebDemoApplication in 15.034 seconds (JVM running for 18.729)
+[03-01 22:09:45,201] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 22:10:09,543] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 22:10:32,626] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 22:11:01,806] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 22:11:25,070] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 22:11:50,100] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 22:12:15,740] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 22:12:42,050] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 22:13:11,201] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 22:13:39,848] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 22:14:02,944] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 22:14:28,051] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 22:14:57,647] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 22:15:22,294] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 22:15:48,626] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 22:16:14,325] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 22:16:38,796] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 22:17:01,942] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 22:17:30,068] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 22:17:56,623] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 22:18:24,278] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 22:18:53,601] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 22:19:22,645] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 22:19:51,076] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 22:20:18,959] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 22:20:42,567] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 22:21:10,384] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 22:21:37,573] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 22:22:07,502] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 22:22:37,405] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 22:23:05,374] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 22:23:32,317] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 22:23:40,536] INFO  [080-exec-1][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:23:40,646] WARN  [080-exec-1][] c.a.d.pool.DruidAbstractDataSource{1489} - discard long time none received connection. , jdbcUrl : jdbc:mysql://127.0.0.1:3306/lm_tooth?characterEncoding=utf-8&autoReconnect=true&serverTimezone=UTC, version : 1.2.4, lastPacketReceivedIdleMillis : 865136
+[03-01 22:23:40,646] DEBUG [080-exec-1][] c.alibaba.druid.pool.DruidDataSource{1466} - skip not validate connection.
+[03-01 22:23:40,707] INFO  [080-exec-1][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:23:40,713] INFO  [080-exec-1][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT * FROM base_role WHERE IS_DELETED = 0 AND ( name = ? ), params: ["anon"]
+[03-01 22:23:40,722] INFO  [080-exec-1][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:23:40,724] INFO  [080-exec-1][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:23:40,726] INFO  [080-exec-1][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT r.* FROM BASE_RESOURCE r WHERE r.IS_DELETED = 0 AND EXISTS(SELECT 1 FROM BASE_ROLE_RESOURCE_REL rel WHERE rel.IS_DELETED = 0 AND r.ID = rel.RESOURCE_ID AND rel.ROLE_ID = ?), params: [2]
+[03-01 22:23:41,363] INFO  [080-exec-1][] c.c.w.i.AccessLogInterceptor{37} - remoteAddr=0:0:0:0:0:0:0:1, uri=/login, method=GET, queryString=null, hasException=false, duration=456ms
+[03-01 22:23:42,417] INFO  [080-exec-3][] c.c.w.i.AccessLogInterceptor{37} - remoteAddr=0:0:0:0:0:0:0:1, uri=/generateFormToken, method=GET, queryString=null, hasException=false, duration=25ms
+[03-01 22:23:42,417] INFO  [080-exec-2][] c.c.w.i.AccessLogInterceptor{37} - remoteAddr=0:0:0:0:0:0:0:1, uri=/generateCsrfToken, method=GET, queryString=null, hasException=false, duration=26ms
+[03-01 22:23:43,715] INFO  [080-exec-4][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:23:43,719] INFO  [080-exec-4][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:23:43,723] INFO  [080-exec-4][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT * FROM base_user WHERE IS_DELETED = 0 AND ( (PHONE = ? OR EMAIL = ? OR THIRDPARTY_ID = ?) ), params: ["13000000000","13000000000","13000000000"]
+[03-01 22:23:43,729] INFO  [080-exec-4][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:23:43,730] INFO  [080-exec-4][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:23:43,732] INFO  [080-exec-4][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT r.* FROM BASE_ROLE r WHERE r.IS_DELETED = 0 AND EXISTS(SELECT 1 FROM BASE_USER_ROLE_REL rel WHERE rel.IS_DELETED = 0 AND r.ID = rel.ROLE_ID AND rel.USER_ID = ?), params: [1]
+[03-01 22:23:43,734] INFO  [080-exec-4][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:23:43,734] INFO  [080-exec-4][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:23:43,735] INFO  [080-exec-4][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT r.* FROM BASE_RESOURCE r WHERE r.IS_DELETED = 0 AND EXISTS(SELECT 1 FROM BASE_ROLE_RESOURCE_REL rel WHERE rel.IS_DELETED = 0 AND r.ID = rel.RESOURCE_ID AND rel.ROLE_ID = ?), params: [1]
+[03-01 22:23:43,740] INFO  [080-exec-4][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:23:43,741] INFO  [080-exec-4][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:23:43,742] INFO  [080-exec-4][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT * FROM base_user WHERE IS_DELETED = 0 AND ( (PHONE = ? OR EMAIL = ? OR THIRDPARTY_ID = ?) ), params: ["13000000000","13000000000","13000000000"]
+[03-01 22:23:43,744] INFO  [080-exec-4][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:23:43,744] INFO  [080-exec-4][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:23:43,745] INFO  [080-exec-4][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT r.* FROM BASE_ROLE r WHERE r.IS_DELETED = 0 AND EXISTS(SELECT 1 FROM BASE_USER_ROLE_REL rel WHERE rel.IS_DELETED = 0 AND r.ID = rel.ROLE_ID AND rel.USER_ID = ?), params: [1]
+[03-01 22:23:43,746] INFO  [080-exec-4][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:23:43,747] INFO  [080-exec-4][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:23:43,748] INFO  [080-exec-4][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT r.* FROM BASE_RESOURCE r WHERE r.IS_DELETED = 0 AND EXISTS(SELECT 1 FROM BASE_ROLE_RESOURCE_REL rel WHERE rel.IS_DELETED = 0 AND r.ID = rel.RESOURCE_ID AND rel.ROLE_ID = ?), params: [1]
+[03-01 22:23:43,772] INFO  [080-exec-4][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:23:43,772] INFO  [080-exec-4][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:23:43,773] INFO  [080-exec-4][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT * FROM base_user WHERE IS_DELETED = 0 AND ( (PHONE = ? OR EMAIL = ? OR THIRDPARTY_ID = ?) ), params: ["13000000000","13000000000","13000000000"]
+[03-01 22:23:43,775] INFO  [080-exec-4][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:23:43,775] INFO  [080-exec-4][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:23:43,775] INFO  [080-exec-4][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT r.* FROM BASE_ROLE r WHERE r.IS_DELETED = 0 AND EXISTS(SELECT 1 FROM BASE_USER_ROLE_REL rel WHERE rel.IS_DELETED = 0 AND r.ID = rel.ROLE_ID AND rel.USER_ID = ?), params: [1]
+[03-01 22:23:43,776] INFO  [080-exec-4][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:23:43,777] INFO  [080-exec-4][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:23:43,778] INFO  [080-exec-4][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT r.* FROM BASE_RESOURCE r WHERE r.IS_DELETED = 0 AND EXISTS(SELECT 1 FROM BASE_ROLE_RESOURCE_REL rel WHERE rel.IS_DELETED = 0 AND r.ID = rel.RESOURCE_ID AND rel.ROLE_ID = ?), params: [1]
+[03-01 22:23:43,782] INFO  [080-exec-4][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:23:43,783] INFO  [080-exec-4][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:23:43,784] INFO  [080-exec-4][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT * FROM base_user WHERE IS_DELETED = 0 AND ( (PHONE = ? OR EMAIL = ? OR THIRDPARTY_ID = ?) ), params: ["13000000000","13000000000","13000000000"]
+[03-01 22:23:43,785] INFO  [080-exec-4][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:23:43,786] INFO  [080-exec-4][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:23:43,786] INFO  [080-exec-4][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT r.* FROM BASE_ROLE r WHERE r.IS_DELETED = 0 AND EXISTS(SELECT 1 FROM BASE_USER_ROLE_REL rel WHERE rel.IS_DELETED = 0 AND r.ID = rel.ROLE_ID AND rel.USER_ID = ?), params: [1]
+[03-01 22:23:43,788] INFO  [080-exec-4][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:23:43,788] INFO  [080-exec-4][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:23:43,789] INFO  [080-exec-4][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT r.* FROM BASE_RESOURCE r WHERE r.IS_DELETED = 0 AND EXISTS(SELECT 1 FROM BASE_ROLE_RESOURCE_REL rel WHERE rel.IS_DELETED = 0 AND r.ID = rel.RESOURCE_ID AND rel.ROLE_ID = ?), params: [1]
+[03-01 22:23:43,811] INFO  [080-exec-5][] c.c.w.i.AccessLogInterceptor{37} - remoteAddr=0:0:0:0:0:0:0:1, uri=/generateCsrfToken, method=GET, queryString=null, hasException=false, duration=0ms
+[03-01 22:23:43,819] INFO  [080-exec-6][] c.c.w.i.AccessLogInterceptor{37} - remoteAddr=0:0:0:0:0:0:0:1, uri=/generateFormToken, method=GET, queryString=null, hasException=false, duration=2ms
+[03-01 22:23:43,820] INFO  [080-exec-7][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:23:43,821] INFO  [080-exec-7][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:23:43,824] INFO  [080-exec-7][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT * FROM base_user WHERE IS_DELETED = 0 AND ( (PHONE = ? OR EMAIL = ? OR THIRDPARTY_ID = ?) ), params: ["13000000000","13000000000","13000000000"]
+[03-01 22:23:43,829] INFO  [080-exec-7][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:23:43,831] INFO  [080-exec-7][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:23:43,833] INFO  [080-exec-7][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT r.* FROM BASE_ROLE r WHERE r.IS_DELETED = 0 AND EXISTS(SELECT 1 FROM BASE_USER_ROLE_REL rel WHERE rel.IS_DELETED = 0 AND r.ID = rel.ROLE_ID AND rel.USER_ID = ?), params: [1]
+[03-01 22:23:43,834] INFO  [080-exec-7][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:23:43,835] INFO  [080-exec-7][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:23:43,837] INFO  [080-exec-7][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT r.* FROM BASE_RESOURCE r WHERE r.IS_DELETED = 0 AND EXISTS(SELECT 1 FROM BASE_ROLE_RESOURCE_REL rel WHERE rel.IS_DELETED = 0 AND r.ID = rel.RESOURCE_ID AND rel.ROLE_ID = ?), params: [1]
+[03-01 22:23:43,995] INFO  [080-exec-7][] c.c.w.i.AccessLogInterceptor{37} - remoteAddr=0:0:0:0:0:0:0:1, uri=/currentUser, method=GET, queryString=null, hasException=false, duration=176ms
+[03-01 22:23:45,059] INFO  [080-exec-8][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:23:45,060] INFO  [080-exec-8][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:23:45,062] INFO  [080-exec-8][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT * FROM base_role WHERE IS_DELETED = 0 AND ( name = ? ), params: ["anon"]
+[03-01 22:23:45,065] INFO  [080-exec-8][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:23:45,066] INFO  [080-exec-8][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:23:45,067] INFO  [080-exec-8][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT r.* FROM BASE_RESOURCE r WHERE r.IS_DELETED = 0 AND EXISTS(SELECT 1 FROM BASE_ROLE_RESOURCE_REL rel WHERE rel.IS_DELETED = 0 AND r.ID = rel.RESOURCE_ID AND rel.ROLE_ID = ?), params: [2]
+[03-01 22:23:45,077] INFO  [080-exec-8][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:23:45,078] INFO  [080-exec-8][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:23:45,079] INFO  [080-exec-8][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT * FROM base_user WHERE IS_DELETED = 0 AND ( (PHONE = ? OR EMAIL = ? OR THIRDPARTY_ID = ?) ), params: ["13000000000","13000000000","13000000000"]
+[03-01 22:23:45,080] INFO  [080-exec-8][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:23:45,081] INFO  [080-exec-8][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:23:45,082] INFO  [080-exec-8][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT r.* FROM BASE_ROLE r WHERE r.IS_DELETED = 0 AND EXISTS(SELECT 1 FROM BASE_USER_ROLE_REL rel WHERE rel.IS_DELETED = 0 AND r.ID = rel.ROLE_ID AND rel.USER_ID = ?), params: [1]
+[03-01 22:23:45,084] INFO  [080-exec-8][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:23:45,085] INFO  [080-exec-8][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:23:45,086] INFO  [080-exec-8][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT r.* FROM BASE_RESOURCE r WHERE r.IS_DELETED = 0 AND EXISTS(SELECT 1 FROM BASE_ROLE_RESOURCE_REL rel WHERE rel.IS_DELETED = 0 AND r.ID = rel.RESOURCE_ID AND rel.ROLE_ID = ?), params: [1]
+[03-01 22:23:45,105] INFO  [080-exec-8][] c.c.w.i.AccessLogInterceptor{37} - remoteAddr=0:0:0:0:0:0:0:1, uri=/, method=GET, queryString=null, hasException=false, duration=28ms
+[03-01 22:23:45,528] INFO  [080-exec-2][] c.c.w.i.AccessLogInterceptor{37} - remoteAddr=0:0:0:0:0:0:0:1, uri=/generateCsrfToken, method=GET, queryString=null, hasException=false, duration=0ms
+[03-01 22:23:45,528] INFO  [080-exec-3][] c.c.w.i.AccessLogInterceptor{37} - remoteAddr=0:0:0:0:0:0:0:1, uri=/generateFormToken, method=GET, queryString=null, hasException=false, duration=0ms
+[03-01 22:23:53,923] INFO  [080-exec-4][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:23:53,924] INFO  [080-exec-4][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:23:53,925] INFO  [080-exec-4][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT * FROM base_role WHERE IS_DELETED = 0 AND ( name = ? ), params: ["anon"]
+[03-01 22:23:53,926] INFO  [080-exec-4][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:23:53,927] INFO  [080-exec-4][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:23:53,927] INFO  [080-exec-4][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT r.* FROM BASE_RESOURCE r WHERE r.IS_DELETED = 0 AND EXISTS(SELECT 1 FROM BASE_ROLE_RESOURCE_REL rel WHERE rel.IS_DELETED = 0 AND r.ID = rel.RESOURCE_ID AND rel.ROLE_ID = ?), params: [2]
+[03-01 22:23:53,960] INFO  [080-exec-4][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT * FROM base_system_config WHERE IS_DELETED = 0 ORDER BY ID DESC LIMIT 0, 20, params: []
+[03-01 22:23:53,961] INFO  [080-exec-4][] com.cory.db.jdbc.CoryDbProxy{139} - sql: SELECT COUNT(*) FROM base_system_config WHERE IS_DELETED = 0, params: []
+[03-01 22:23:53,986] INFO  [080-exec-4][] c.c.w.i.AccessLogInterceptor{37} - remoteAddr=0:0:0:0:0:0:0:1, uri=/ajax/base/systemconfig/listData, method=GET, queryString=current=1&pageSize=20&pageNo=1, hasException=false, duration=48ms
+[03-01 22:23:58,315] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 22:24:21,352] INFO  [080-exec-7][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:24:21,353] INFO  [080-exec-7][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:24:21,355] INFO  [080-exec-7][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT * FROM base_role WHERE IS_DELETED = 0 AND ( name = ? ), params: ["anon"]
+[03-01 22:24:21,358] INFO  [080-exec-7][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:24:21,359] INFO  [080-exec-7][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:24:21,361] INFO  [080-exec-7][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT r.* FROM BASE_RESOURCE r WHERE r.IS_DELETED = 0 AND EXISTS(SELECT 1 FROM BASE_ROLE_RESOURCE_REL rel WHERE rel.IS_DELETED = 0 AND r.ID = rel.RESOURCE_ID AND rel.ROLE_ID = ?), params: [2]
+[03-01 22:24:21,369] INFO  [080-exec-7][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:24:21,370] INFO  [080-exec-7][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:24:21,373] INFO  [080-exec-7][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT * FROM base_user WHERE IS_DELETED = 0 AND ( (PHONE = ? OR EMAIL = ? OR THIRDPARTY_ID = ?) ), params: ["13000000000","13000000000","13000000000"]
+[03-01 22:24:21,374] INFO  [080-exec-7][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:24:21,375] INFO  [080-exec-7][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:24:21,376] INFO  [080-exec-7][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT r.* FROM BASE_ROLE r WHERE r.IS_DELETED = 0 AND EXISTS(SELECT 1 FROM BASE_USER_ROLE_REL rel WHERE rel.IS_DELETED = 0 AND r.ID = rel.ROLE_ID AND rel.USER_ID = ?), params: [1]
+[03-01 22:24:21,378] INFO  [080-exec-7][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:24:21,378] INFO  [080-exec-7][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:24:21,379] INFO  [080-exec-7][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT r.* FROM BASE_RESOURCE r WHERE r.IS_DELETED = 0 AND EXISTS(SELECT 1 FROM BASE_ROLE_RESOURCE_REL rel WHERE rel.IS_DELETED = 0 AND r.ID = rel.RESOURCE_ID AND rel.ROLE_ID = ?), params: [1]
+[03-01 22:24:21,395] INFO  [080-exec-7][] c.c.w.i.AccessLogInterceptor{37} - remoteAddr=0:0:0:0:0:0:0:1, uri=/base/systemconfig, method=GET, queryString=fixSiderbar=true&colorWeak=false&title=%E4%BD%A0%E5%A5%BD&pwa=false, hasException=false, duration=26ms
+[03-01 22:24:21,825] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 22:24:22,628] INFO  [080-exec-8][] c.c.w.i.AccessLogInterceptor{37} - remoteAddr=0:0:0:0:0:0:0:1, uri=/generateCsrfToken, method=GET, queryString=null, hasException=false, duration=0ms
+[03-01 22:24:22,630] INFO  [080-exec-1][] c.c.w.i.AccessLogInterceptor{37} - remoteAddr=0:0:0:0:0:0:0:1, uri=/generateFormToken, method=GET, queryString=null, hasException=false, duration=0ms
+[03-01 22:24:23,085] INFO  [80-exec-10][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:24:23,086] INFO  [80-exec-10][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:24:23,087] INFO  [80-exec-10][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT * FROM base_role WHERE IS_DELETED = 0 AND ( name = ? ), params: ["anon"]
+[03-01 22:24:23,088] INFO  [80-exec-10][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:24:23,089] INFO  [80-exec-10][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:24:23,091] INFO  [80-exec-10][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT r.* FROM BASE_RESOURCE r WHERE r.IS_DELETED = 0 AND EXISTS(SELECT 1 FROM BASE_ROLE_RESOURCE_REL rel WHERE rel.IS_DELETED = 0 AND r.ID = rel.RESOURCE_ID AND rel.ROLE_ID = ?), params: [2]
+[03-01 22:24:23,101] INFO  [80-exec-10][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT * FROM base_system_config WHERE IS_DELETED = 0 ORDER BY ID DESC LIMIT 0, 20, params: []
+[03-01 22:24:23,102] INFO  [80-exec-10][] com.cory.db.jdbc.CoryDbProxy{139} - sql: SELECT COUNT(*) FROM base_system_config WHERE IS_DELETED = 0, params: []
+[03-01 22:24:23,132] INFO  [80-exec-10][] c.c.w.i.AccessLogInterceptor{37} - remoteAddr=0:0:0:0:0:0:0:1, uri=/ajax/base/systemconfig/listData, method=GET, queryString=current=1&pageSize=20&pageNo=1, hasException=false, duration=34ms
+[03-01 22:24:50,903] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 22:25:07,883] INFO  [080-exec-2][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:25:07,885] INFO  [080-exec-2][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:25:07,888] INFO  [080-exec-2][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT * FROM base_role WHERE IS_DELETED = 0 AND ( name = ? ), params: ["anon"]
+[03-01 22:25:07,891] INFO  [080-exec-2][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:25:07,892] INFO  [080-exec-2][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:25:07,894] INFO  [080-exec-2][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT r.* FROM BASE_RESOURCE r WHERE r.IS_DELETED = 0 AND EXISTS(SELECT 1 FROM BASE_ROLE_RESOURCE_REL rel WHERE rel.IS_DELETED = 0 AND r.ID = rel.RESOURCE_ID AND rel.ROLE_ID = ?), params: [2]
+[03-01 22:25:07,902] INFO  [080-exec-2][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:25:07,903] INFO  [080-exec-2][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:25:07,906] INFO  [080-exec-2][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT * FROM base_user WHERE IS_DELETED = 0 AND ( (PHONE = ? OR EMAIL = ? OR THIRDPARTY_ID = ?) ), params: ["13000000000","13000000000","13000000000"]
+[03-01 22:25:07,907] INFO  [080-exec-2][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:25:07,908] INFO  [080-exec-2][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:25:07,909] INFO  [080-exec-2][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT r.* FROM BASE_ROLE r WHERE r.IS_DELETED = 0 AND EXISTS(SELECT 1 FROM BASE_USER_ROLE_REL rel WHERE rel.IS_DELETED = 0 AND r.ID = rel.ROLE_ID AND rel.USER_ID = ?), params: [1]
+[03-01 22:25:07,911] INFO  [080-exec-2][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:25:07,911] INFO  [080-exec-2][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:25:07,913] INFO  [080-exec-2][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT r.* FROM BASE_RESOURCE r WHERE r.IS_DELETED = 0 AND EXISTS(SELECT 1 FROM BASE_ROLE_RESOURCE_REL rel WHERE rel.IS_DELETED = 0 AND r.ID = rel.RESOURCE_ID AND rel.ROLE_ID = ?), params: [1]
+[03-01 22:25:07,936] INFO  [080-exec-2][] c.c.w.i.AccessLogInterceptor{37} - remoteAddr=0:0:0:0:0:0:0:1, uri=/base/systemconfig, method=GET, queryString=fixSiderbar=true&colorWeak=false&title=%E4%BD%A0%E5%A5%BD&pwa=false, hasException=false, duration=34ms
+[03-01 22:25:09,442] INFO  [080-exec-4][] c.c.w.i.AccessLogInterceptor{37} - remoteAddr=0:0:0:0:0:0:0:1, uri=/generateCsrfToken, method=GET, queryString=null, hasException=false, duration=0ms
+[03-01 22:25:09,445] INFO  [080-exec-5][] c.c.w.i.AccessLogInterceptor{37} - remoteAddr=0:0:0:0:0:0:0:1, uri=/generateFormToken, method=GET, queryString=null, hasException=false, duration=1ms
+[03-01 22:25:10,033] INFO  [080-exec-6][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:25:10,034] INFO  [080-exec-6][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:25:10,036] INFO  [080-exec-6][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT * FROM base_role WHERE IS_DELETED = 0 AND ( name = ? ), params: ["anon"]
+[03-01 22:25:10,037] INFO  [080-exec-6][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:25:10,038] INFO  [080-exec-6][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:25:10,041] INFO  [080-exec-6][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT r.* FROM BASE_RESOURCE r WHERE r.IS_DELETED = 0 AND EXISTS(SELECT 1 FROM BASE_ROLE_RESOURCE_REL rel WHERE rel.IS_DELETED = 0 AND r.ID = rel.RESOURCE_ID AND rel.ROLE_ID = ?), params: [2]
+[03-01 22:25:10,051] INFO  [080-exec-6][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT * FROM base_system_config WHERE IS_DELETED = 0 ORDER BY ID DESC LIMIT 0, 20, params: []
+[03-01 22:25:10,054] INFO  [080-exec-6][] com.cory.db.jdbc.CoryDbProxy{139} - sql: SELECT COUNT(*) FROM base_system_config WHERE IS_DELETED = 0, params: []
+[03-01 22:25:10,068] INFO  [080-exec-6][] c.c.w.i.AccessLogInterceptor{37} - remoteAddr=0:0:0:0:0:0:0:1, uri=/ajax/base/systemconfig/listData, method=GET, queryString=current=1&pageSize=20&pageNo=1, hasException=false, duration=19ms
+[03-01 22:25:20,368] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 22:25:48,026] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 22:26:13,647] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 22:26:42,769] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 22:27:10,162] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 22:27:33,004] INFO  [080-exec-1][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:27:33,005] WARN  [080-exec-1][] c.a.d.pool.DruidAbstractDataSource{1489} - discard long time none received connection. , jdbcUrl : jdbc:mysql://127.0.0.1:3306/lm_tooth?characterEncoding=utf-8&autoReconnect=true&serverTimezone=UTC, version : 1.2.4, lastPacketReceivedIdleMillis : 142950
+[03-01 22:27:33,006] DEBUG [080-exec-1][] c.alibaba.druid.pool.DruidDataSource{1466} - skip not validate connection.
+[03-01 22:27:33,018] INFO  [080-exec-1][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:27:33,019] INFO  [080-exec-1][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT * FROM base_role WHERE IS_DELETED = 0 AND ( name = ? ), params: ["anon"]
+[03-01 22:27:33,022] INFO  [080-exec-1][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:27:33,022] INFO  [080-exec-1][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:27:33,023] INFO  [080-exec-1][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT r.* FROM BASE_RESOURCE r WHERE r.IS_DELETED = 0 AND EXISTS(SELECT 1 FROM BASE_ROLE_RESOURCE_REL rel WHERE rel.IS_DELETED = 0 AND r.ID = rel.RESOURCE_ID AND rel.ROLE_ID = ?), params: [2]
+[03-01 22:27:33,048] INFO  [080-exec-1][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT * FROM base_data_dict WHERE IS_DELETED = 0 ORDER BY SN DESC LIMIT 0, 20, params: []
+[03-01 22:27:33,050] INFO  [080-exec-1][] com.cory.db.jdbc.CoryDbProxy{139} - sql: SELECT COUNT(*) FROM base_data_dict WHERE IS_DELETED = 0, params: []
+[03-01 22:27:33,052] INFO  [080-exec-1][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT * FROM base_data_dict WHERE IS_DELETED = 0 AND ( ID = ? ), params: [1]
+[03-01 22:27:33,054] INFO  [080-exec-1][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT * FROM base_data_dict WHERE IS_DELETED = 0 AND ( ID = ? ), params: [1]
+[03-01 22:27:33,056] INFO  [080-exec-1][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT * FROM base_data_dict WHERE IS_DELETED = 0 AND ( ID = ? ), params: [1]
+[03-01 22:27:33,058] INFO  [080-exec-1][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT * FROM base_data_dict WHERE IS_DELETED = 0 AND ( ID = ? ), params: [1]
+[03-01 22:27:33,059] INFO  [080-exec-1][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT * FROM base_data_dict WHERE IS_DELETED = 0 AND ( ID = ? ), params: [1]
+[03-01 22:27:33,075] INFO  [080-exec-1][] c.c.w.i.AccessLogInterceptor{37} - remoteAddr=0:0:0:0:0:0:0:1, uri=/ajax/base/datadict/listData, method=GET, queryString=current=1&pageSize=20&pageNo=1, hasException=false, duration=45ms
+[03-01 22:27:34,027] INFO  [80-exec-10][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:27:34,028] INFO  [80-exec-10][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:27:34,029] INFO  [80-exec-10][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT * FROM base_role WHERE IS_DELETED = 0 AND ( name = ? ), params: ["anon"]
+[03-01 22:27:34,030] INFO  [80-exec-10][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:27:34,030] INFO  [80-exec-10][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:27:34,031] INFO  [80-exec-10][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT r.* FROM BASE_RESOURCE r WHERE r.IS_DELETED = 0 AND EXISTS(SELECT 1 FROM BASE_ROLE_RESOURCE_REL rel WHERE rel.IS_DELETED = 0 AND r.ID = rel.RESOURCE_ID AND rel.ROLE_ID = ?), params: [2]
+[03-01 22:27:34,040] INFO  [80-exec-10][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT * FROM base_user WHERE IS_DELETED = 0 ORDER BY ID DESC LIMIT 0, 20, params: []
+[03-01 22:27:34,042] INFO  [80-exec-10][] com.cory.db.jdbc.CoryDbProxy{139} - sql: SELECT COUNT(*) FROM base_user WHERE IS_DELETED = 0, params: []
+[03-01 22:27:34,056] INFO  [80-exec-10][] c.c.w.i.AccessLogInterceptor{37} - remoteAddr=0:0:0:0:0:0:0:1, uri=/ajax/base/user/listData, method=GET, queryString=current=1&pageSize=20&pageNo=1, hasException=false, duration=21ms
+[03-01 22:27:35,476] INFO  [080-exec-9][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:27:35,477] INFO  [080-exec-9][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:27:35,478] INFO  [080-exec-9][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT * FROM base_role WHERE IS_DELETED = 0 AND ( name = ? ), params: ["anon"]
+[03-01 22:27:35,479] INFO  [080-exec-9][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:27:35,480] INFO  [080-exec-9][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:27:35,481] INFO  [080-exec-9][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT r.* FROM BASE_RESOURCE r WHERE r.IS_DELETED = 0 AND EXISTS(SELECT 1 FROM BASE_ROLE_RESOURCE_REL rel WHERE rel.IS_DELETED = 0 AND r.ID = rel.RESOURCE_ID AND rel.ROLE_ID = ?), params: [2]
+[03-01 22:27:35,492] INFO  [080-exec-9][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT * FROM base_role WHERE IS_DELETED = 0 ORDER BY ID DESC LIMIT 0, 20, params: []
+[03-01 22:27:35,493] INFO  [080-exec-9][] com.cory.db.jdbc.CoryDbProxy{139} - sql: SELECT COUNT(*) FROM base_role WHERE IS_DELETED = 0, params: []
+[03-01 22:27:35,505] INFO  [080-exec-9][] c.c.w.i.AccessLogInterceptor{37} - remoteAddr=0:0:0:0:0:0:0:1, uri=/ajax/base/role/listData, method=GET, queryString=current=1&pageSize=20&pageNo=1, hasException=false, duration=20ms
+[03-01 22:27:36,644] INFO  [080-exec-2][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:27:36,645] INFO  [080-exec-2][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:27:36,646] INFO  [080-exec-2][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT * FROM base_role WHERE IS_DELETED = 0 AND ( name = ? ), params: ["anon"]
+[03-01 22:27:36,647] INFO  [080-exec-2][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:27:36,647] INFO  [080-exec-2][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:27:36,648] INFO  [080-exec-2][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT r.* FROM BASE_RESOURCE r WHERE r.IS_DELETED = 0 AND EXISTS(SELECT 1 FROM BASE_ROLE_RESOURCE_REL rel WHERE rel.IS_DELETED = 0 AND r.ID = rel.RESOURCE_ID AND rel.ROLE_ID = ?), params: [2]
+[03-01 22:27:36,660] INFO  [080-exec-2][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 ORDER BY VALUE DESC LIMIT 0, 200, params: []
+[03-01 22:27:36,669] INFO  [080-exec-2][] com.cory.db.jdbc.CoryDbProxy{139} - sql: SELECT COUNT(*) FROM base_resource WHERE IS_DELETED = 0, params: []
+[03-01 22:27:36,717] INFO  [080-exec-2][] c.c.w.i.AccessLogInterceptor{37} - remoteAddr=0:0:0:0:0:0:0:1, uri=/ajax/base/resource/listData, method=GET, queryString=current=1&pageSize=200&sort=VALUE%20DESC&pageNo=1, hasException=false, duration=63ms
+[03-01 22:27:37,948] INFO  [080-exec-4][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:27:37,949] INFO  [080-exec-4][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:27:37,950] INFO  [080-exec-4][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT * FROM base_role WHERE IS_DELETED = 0 AND ( name = ? ), params: ["anon"]
+[03-01 22:27:37,951] INFO  [080-exec-4][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:27:37,952] INFO  [080-exec-4][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:27:37,953] INFO  [080-exec-4][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT r.* FROM BASE_RESOURCE r WHERE r.IS_DELETED = 0 AND EXISTS(SELECT 1 FROM BASE_ROLE_RESOURCE_REL rel WHERE rel.IS_DELETED = 0 AND r.ID = rel.RESOURCE_ID AND rel.ROLE_ID = ?), params: [2]
+[03-01 22:27:37,977] INFO  [080-exec-4][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT * FROM base_feedback WHERE IS_DELETED = 0 ORDER BY ID DESC LIMIT 0, 20, params: []
+[03-01 22:27:37,978] INFO  [080-exec-4][] com.cory.db.jdbc.CoryDbProxy{139} - sql: SELECT COUNT(*) FROM base_feedback WHERE IS_DELETED = 0, params: []
+[03-01 22:27:37,994] INFO  [080-exec-4][] c.c.w.i.AccessLogInterceptor{37} - remoteAddr=0:0:0:0:0:0:0:1, uri=/ajax/base/feedback/listData, method=GET, queryString=current=1&pageSize=20&pageNo=1, hasException=false, duration=36ms
+[03-01 22:27:38,735] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 22:27:53,030] INFO  [080-exec-6][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:27:53,031] INFO  [080-exec-6][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:27:53,032] INFO  [080-exec-6][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT * FROM base_role WHERE IS_DELETED = 0 AND ( name = ? ), params: ["anon"]
+[03-01 22:27:53,033] INFO  [080-exec-6][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:27:53,034] INFO  [080-exec-6][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:27:53,034] INFO  [080-exec-6][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT r.* FROM BASE_RESOURCE r WHERE r.IS_DELETED = 0 AND EXISTS(SELECT 1 FROM BASE_ROLE_RESOURCE_REL rel WHERE rel.IS_DELETED = 0 AND r.ID = rel.RESOURCE_ID AND rel.ROLE_ID = ?), params: [2]
+[03-01 22:27:53,040] INFO  [080-exec-6][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT * FROM base_system_config WHERE IS_DELETED = 0 ORDER BY ID DESC LIMIT 0, 20, params: []
+[03-01 22:27:53,042] INFO  [080-exec-6][] com.cory.db.jdbc.CoryDbProxy{139} - sql: SELECT COUNT(*) FROM base_system_config WHERE IS_DELETED = 0, params: []
+[03-01 22:27:53,058] INFO  [080-exec-6][] c.c.w.i.AccessLogInterceptor{37} - remoteAddr=0:0:0:0:0:0:0:1, uri=/ajax/base/systemconfig/listData, method=GET, queryString=current=1&pageSize=20&pageNo=1, hasException=false, duration=19ms
+[03-01 22:28:04,378] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 22:28:11,765] INFO  [080-exec-7][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:28:11,766] INFO  [080-exec-7][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:28:11,767] INFO  [080-exec-7][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT * FROM base_role WHERE IS_DELETED = 0 AND ( name = ? ), params: ["anon"]
+[03-01 22:28:11,768] INFO  [080-exec-7][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:28:11,769] INFO  [080-exec-7][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:28:11,770] INFO  [080-exec-7][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT r.* FROM BASE_RESOURCE r WHERE r.IS_DELETED = 0 AND EXISTS(SELECT 1 FROM BASE_ROLE_RESOURCE_REL rel WHERE rel.IS_DELETED = 0 AND r.ID = rel.RESOURCE_ID AND rel.ROLE_ID = ?), params: [2]
+[03-01 22:28:11,778] INFO  [080-exec-7][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT * FROM base_system_config WHERE IS_DELETED = 0 ORDER BY ID DESC LIMIT 20, 20, params: []
+[03-01 22:28:11,781] INFO  [080-exec-7][] com.cory.db.jdbc.CoryDbProxy{139} - sql: SELECT COUNT(*) FROM base_system_config WHERE IS_DELETED = 0, params: []
+[03-01 22:28:11,794] INFO  [080-exec-7][] c.c.w.i.AccessLogInterceptor{37} - remoteAddr=0:0:0:0:0:0:0:1, uri=/ajax/base/systemconfig/listData, method=GET, queryString=current=2&pageSize=20&pageNo=2, hasException=false, duration=19ms
+[03-01 22:28:33,751] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 22:29:03,478] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 22:29:28,087] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 22:29:55,953] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 22:30:19,300] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 22:30:43,863] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 22:31:07,085] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 22:31:30,466] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 22:31:59,312] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 22:32:24,774] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 22:32:43,621] INFO  [80-exec-10][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:32:43,622] WARN  [80-exec-10][] c.a.d.pool.DruidAbstractDataSource{1489} - discard long time none received connection. , jdbcUrl : jdbc:mysql://127.0.0.1:3306/lm_tooth?characterEncoding=utf-8&autoReconnect=true&serverTimezone=UTC, version : 1.2.4, lastPacketReceivedIdleMillis : 271839
+[03-01 22:32:43,623] DEBUG [80-exec-10][] c.alibaba.druid.pool.DruidDataSource{1466} - skip not validate connection.
+[03-01 22:32:43,627] INFO  [80-exec-10][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:32:43,630] INFO  [80-exec-10][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT * FROM base_role WHERE IS_DELETED = 0 AND ( name = ? ), params: ["anon"]
+[03-01 22:32:43,632] INFO  [80-exec-10][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:32:43,632] INFO  [80-exec-10][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:32:43,633] INFO  [80-exec-10][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT r.* FROM BASE_RESOURCE r WHERE r.IS_DELETED = 0 AND EXISTS(SELECT 1 FROM BASE_ROLE_RESOURCE_REL rel WHERE rel.IS_DELETED = 0 AND r.ID = rel.RESOURCE_ID AND rel.ROLE_ID = ?), params: [2]
+[03-01 22:32:43,641] INFO  [80-exec-10][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:32:43,642] INFO  [80-exec-10][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:32:43,645] INFO  [80-exec-10][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT * FROM base_user WHERE IS_DELETED = 0 AND ( (PHONE = ? OR EMAIL = ? OR THIRDPARTY_ID = ?) ), params: ["13000000000","13000000000","13000000000"]
+[03-01 22:32:43,658] INFO  [80-exec-10][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:32:43,659] INFO  [80-exec-10][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:32:43,660] INFO  [80-exec-10][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT r.* FROM BASE_ROLE r WHERE r.IS_DELETED = 0 AND EXISTS(SELECT 1 FROM BASE_USER_ROLE_REL rel WHERE rel.IS_DELETED = 0 AND r.ID = rel.ROLE_ID AND rel.USER_ID = ?), params: [1]
+[03-01 22:32:43,662] INFO  [80-exec-10][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:32:43,663] INFO  [80-exec-10][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:32:43,665] INFO  [80-exec-10][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT r.* FROM BASE_RESOURCE r WHERE r.IS_DELETED = 0 AND EXISTS(SELECT 1 FROM BASE_ROLE_RESOURCE_REL rel WHERE rel.IS_DELETED = 0 AND r.ID = rel.RESOURCE_ID AND rel.ROLE_ID = ?), params: [1]
+[03-01 22:32:43,678] INFO  [80-exec-10][] c.c.w.i.AccessLogInterceptor{37} - remoteAddr=0:0:0:0:0:0:0:1, uri=/base/systemconfig, method=GET, queryString=fixSiderbar=true&colorWeak=false&title=%E4%BD%A0%E5%A5%BD&pwa=false, hasException=false, duration=37ms
+[03-01 22:32:44,922] INFO  [080-exec-9][] c.c.w.i.AccessLogInterceptor{37} - remoteAddr=0:0:0:0:0:0:0:1, uri=/generateCsrfToken, method=GET, queryString=null, hasException=false, duration=0ms
+[03-01 22:32:44,923] INFO  [080-exec-3][] c.c.w.i.AccessLogInterceptor{37} - remoteAddr=0:0:0:0:0:0:0:1, uri=/generateFormToken, method=GET, queryString=null, hasException=false, duration=1ms
+[03-01 22:32:45,411] INFO  [080-exec-2][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:32:45,412] INFO  [080-exec-2][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:32:45,413] INFO  [080-exec-2][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT * FROM base_role WHERE IS_DELETED = 0 AND ( name = ? ), params: ["anon"]
+[03-01 22:32:45,414] INFO  [080-exec-2][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:32:45,415] INFO  [080-exec-2][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:32:45,416] INFO  [080-exec-2][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT r.* FROM BASE_RESOURCE r WHERE r.IS_DELETED = 0 AND EXISTS(SELECT 1 FROM BASE_ROLE_RESOURCE_REL rel WHERE rel.IS_DELETED = 0 AND r.ID = rel.RESOURCE_ID AND rel.ROLE_ID = ?), params: [2]
+[03-01 22:32:45,425] INFO  [080-exec-2][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT * FROM base_system_config WHERE IS_DELETED = 0 ORDER BY ID DESC LIMIT 0, 20, params: []
+[03-01 22:32:45,427] INFO  [080-exec-2][] com.cory.db.jdbc.CoryDbProxy{139} - sql: SELECT COUNT(*) FROM base_system_config WHERE IS_DELETED = 0, params: []
+[03-01 22:32:45,441] INFO  [080-exec-2][] c.c.w.i.AccessLogInterceptor{37} - remoteAddr=0:0:0:0:0:0:0:1, uri=/ajax/base/systemconfig/listData, method=GET, queryString=current=1&pageSize=20&pageNo=1, hasException=false, duration=18ms
+[03-01 22:32:54,179] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 22:33:23,045] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 22:33:52,285] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 22:34:17,707] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 22:34:42,219] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 22:34:48,641] INFO  [080-exec-6][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:34:48,643] WARN  [080-exec-6][] c.a.d.pool.DruidAbstractDataSource{1489} - discard long time none received connection. , jdbcUrl : jdbc:mysql://127.0.0.1:3306/lm_tooth?characterEncoding=utf-8&autoReconnect=true&serverTimezone=UTC, version : 1.2.4, lastPacketReceivedIdleMillis : 123215
+[03-01 22:34:48,644] DEBUG [080-exec-6][] c.alibaba.druid.pool.DruidDataSource{1466} - skip not validate connection.
+[03-01 22:34:48,688] INFO  [080-exec-6][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:34:48,690] INFO  [080-exec-6][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT * FROM base_role WHERE IS_DELETED = 0 AND ( name = ? ), params: ["anon"]
+[03-01 22:34:48,706] INFO  [080-exec-6][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:34:48,707] INFO  [080-exec-6][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:34:48,708] INFO  [080-exec-6][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT r.* FROM BASE_RESOURCE r WHERE r.IS_DELETED = 0 AND EXISTS(SELECT 1 FROM BASE_ROLE_RESOURCE_REL rel WHERE rel.IS_DELETED = 0 AND r.ID = rel.RESOURCE_ID AND rel.ROLE_ID = ?), params: [2]
+[03-01 22:34:48,712] INFO  [080-exec-6][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:34:48,713] INFO  [080-exec-6][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:34:48,714] INFO  [080-exec-6][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT * FROM base_user WHERE IS_DELETED = 0 AND ( (PHONE = ? OR EMAIL = ? OR THIRDPARTY_ID = ?) ), params: ["13000000000","13000000000","13000000000"]
+[03-01 22:34:48,715] INFO  [080-exec-6][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:34:48,716] INFO  [080-exec-6][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:34:48,717] INFO  [080-exec-6][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT r.* FROM BASE_ROLE r WHERE r.IS_DELETED = 0 AND EXISTS(SELECT 1 FROM BASE_USER_ROLE_REL rel WHERE rel.IS_DELETED = 0 AND r.ID = rel.ROLE_ID AND rel.USER_ID = ?), params: [1]
+[03-01 22:34:48,718] INFO  [080-exec-6][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:34:48,718] INFO  [080-exec-6][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:34:48,720] INFO  [080-exec-6][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT r.* FROM BASE_RESOURCE r WHERE r.IS_DELETED = 0 AND EXISTS(SELECT 1 FROM BASE_ROLE_RESOURCE_REL rel WHERE rel.IS_DELETED = 0 AND r.ID = rel.RESOURCE_ID AND rel.ROLE_ID = ?), params: [1]
+[03-01 22:34:48,735] INFO  [080-exec-6][] c.c.w.i.AccessLogInterceptor{37} - remoteAddr=0:0:0:0:0:0:0:1, uri=/base/systemconfig, method=GET, queryString=fixSiderbar=true&colorWeak=false&title=%E4%BD%A0%E5%A5%BD&pwa=false, hasException=false, duration=23ms
+[03-01 22:34:49,875] INFO  [080-exec-8][] c.c.w.i.AccessLogInterceptor{37} - remoteAddr=0:0:0:0:0:0:0:1, uri=/generateCsrfToken, method=GET, queryString=null, hasException=false, duration=0ms
+[03-01 22:34:49,875] INFO  [080-exec-7][] c.c.w.i.AccessLogInterceptor{37} - remoteAddr=0:0:0:0:0:0:0:1, uri=/generateFormToken, method=GET, queryString=null, hasException=false, duration=0ms
+[03-01 22:34:50,299] INFO  [080-exec-1][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:34:50,300] INFO  [080-exec-1][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:34:50,301] INFO  [080-exec-1][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT * FROM base_role WHERE IS_DELETED = 0 AND ( name = ? ), params: ["anon"]
+[03-01 22:34:50,302] INFO  [080-exec-1][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:34:50,303] INFO  [080-exec-1][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:34:50,304] INFO  [080-exec-1][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT r.* FROM BASE_RESOURCE r WHERE r.IS_DELETED = 0 AND EXISTS(SELECT 1 FROM BASE_ROLE_RESOURCE_REL rel WHERE rel.IS_DELETED = 0 AND r.ID = rel.RESOURCE_ID AND rel.ROLE_ID = ?), params: [2]
+[03-01 22:34:50,310] INFO  [080-exec-1][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT * FROM base_system_config WHERE IS_DELETED = 0 ORDER BY ID DESC LIMIT 0, 20, params: []
+[03-01 22:34:50,312] INFO  [080-exec-1][] com.cory.db.jdbc.CoryDbProxy{139} - sql: SELECT COUNT(*) FROM base_system_config WHERE IS_DELETED = 0, params: []
+[03-01 22:34:50,321] INFO  [080-exec-1][] c.c.w.i.AccessLogInterceptor{37} - remoteAddr=0:0:0:0:0:0:0:1, uri=/ajax/base/systemconfig/listData, method=GET, queryString=current=1&pageSize=20&pageNo=1, hasException=false, duration=12ms
+[03-01 22:35:07,794] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 22:35:36,608] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 22:36:06,320] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 22:36:30,363] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 22:36:54,155] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 22:37:17,572] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 22:37:40,833] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 22:38:06,635] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 22:38:30,945] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 22:38:56,074] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 22:39:25,099] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 22:39:49,279] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 22:40:05,107] INFO  [080-exec-3][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:40:05,108] WARN  [080-exec-3][] c.a.d.pool.DruidAbstractDataSource{1489} - discard long time none received connection. , jdbcUrl : jdbc:mysql://127.0.0.1:3306/lm_tooth?characterEncoding=utf-8&autoReconnect=true&serverTimezone=UTC, version : 1.2.4, lastPacketReceivedIdleMillis : 314796
+[03-01 22:40:05,109] DEBUG [080-exec-3][] c.alibaba.druid.pool.DruidDataSource{1466} - skip not validate connection.
+[03-01 22:40:05,125] INFO  [080-exec-3][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:40:05,127] INFO  [080-exec-3][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT * FROM base_role WHERE IS_DELETED = 0 AND ( name = ? ), params: ["anon"]
+[03-01 22:40:05,128] INFO  [080-exec-3][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:40:05,128] INFO  [080-exec-3][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:40:05,129] INFO  [080-exec-3][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT r.* FROM BASE_RESOURCE r WHERE r.IS_DELETED = 0 AND EXISTS(SELECT 1 FROM BASE_ROLE_RESOURCE_REL rel WHERE rel.IS_DELETED = 0 AND r.ID = rel.RESOURCE_ID AND rel.ROLE_ID = ?), params: [2]
+[03-01 22:40:05,134] INFO  [080-exec-3][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:40:05,134] INFO  [080-exec-3][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:40:05,136] INFO  [080-exec-3][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT * FROM base_user WHERE IS_DELETED = 0 AND ( (PHONE = ? OR EMAIL = ? OR THIRDPARTY_ID = ?) ), params: ["13000000000","13000000000","13000000000"]
+[03-01 22:40:05,137] INFO  [080-exec-3][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:40:05,138] INFO  [080-exec-3][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:40:05,139] INFO  [080-exec-3][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT r.* FROM BASE_ROLE r WHERE r.IS_DELETED = 0 AND EXISTS(SELECT 1 FROM BASE_USER_ROLE_REL rel WHERE rel.IS_DELETED = 0 AND r.ID = rel.ROLE_ID AND rel.USER_ID = ?), params: [1]
+[03-01 22:40:05,141] INFO  [080-exec-3][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:40:05,141] INFO  [080-exec-3][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:40:05,143] INFO  [080-exec-3][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT r.* FROM BASE_RESOURCE r WHERE r.IS_DELETED = 0 AND EXISTS(SELECT 1 FROM BASE_ROLE_RESOURCE_REL rel WHERE rel.IS_DELETED = 0 AND r.ID = rel.RESOURCE_ID AND rel.ROLE_ID = ?), params: [1]
+[03-01 22:40:05,157] INFO  [080-exec-3][] c.c.w.i.AccessLogInterceptor{37} - remoteAddr=0:0:0:0:0:0:0:1, uri=/base/systemconfig, method=GET, queryString=fixSiderbar=true&colorWeak=false&title=%E4%BD%A0%E5%A5%BD&pwa=false, hasException=false, duration=24ms
+[03-01 22:40:06,361] INFO  [080-exec-2][] c.c.w.i.AccessLogInterceptor{37} - remoteAddr=0:0:0:0:0:0:0:1, uri=/generateCsrfToken, method=GET, queryString=null, hasException=false, duration=0ms
+[03-01 22:40:06,366] INFO  [080-exec-4][] c.c.w.i.AccessLogInterceptor{37} - remoteAddr=0:0:0:0:0:0:0:1, uri=/generateFormToken, method=GET, queryString=null, hasException=false, duration=0ms
+[03-01 22:40:06,783] INFO  [080-exec-5][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:40:06,784] INFO  [080-exec-5][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:40:06,786] INFO  [080-exec-5][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT * FROM base_role WHERE IS_DELETED = 0 AND ( name = ? ), params: ["anon"]
+[03-01 22:40:06,811] INFO  [080-exec-5][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:40:06,812] INFO  [080-exec-5][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:40:06,813] INFO  [080-exec-5][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT r.* FROM BASE_RESOURCE r WHERE r.IS_DELETED = 0 AND EXISTS(SELECT 1 FROM BASE_ROLE_RESOURCE_REL rel WHERE rel.IS_DELETED = 0 AND r.ID = rel.RESOURCE_ID AND rel.ROLE_ID = ?), params: [2]
+[03-01 22:40:06,820] INFO  [080-exec-5][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT * FROM base_system_config WHERE IS_DELETED = 0 ORDER BY ID DESC LIMIT 0, 20, params: []
+[03-01 22:40:06,822] INFO  [080-exec-5][] com.cory.db.jdbc.CoryDbProxy{139} - sql: SELECT COUNT(*) FROM base_system_config WHERE IS_DELETED = 0, params: []
+[03-01 22:40:06,840] INFO  [080-exec-5][] c.c.w.i.AccessLogInterceptor{37} - remoteAddr=0:0:0:0:0:0:0:1, uri=/ajax/base/systemconfig/listData, method=GET, queryString=current=1&pageSize=20&pageNo=1, hasException=false, duration=21ms
+[03-01 22:40:18,070] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 22:40:34,450] INFO  [080-exec-6][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:40:34,451] INFO  [080-exec-6][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:40:34,452] INFO  [080-exec-6][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT * FROM base_role WHERE IS_DELETED = 0 AND ( name = ? ), params: ["anon"]
+[03-01 22:40:34,454] INFO  [080-exec-6][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:40:34,455] INFO  [080-exec-6][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:40:34,456] INFO  [080-exec-6][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT r.* FROM BASE_RESOURCE r WHERE r.IS_DELETED = 0 AND EXISTS(SELECT 1 FROM BASE_ROLE_RESOURCE_REL rel WHERE rel.IS_DELETED = 0 AND r.ID = rel.RESOURCE_ID AND rel.ROLE_ID = ?), params: [2]
+[03-01 22:40:34,461] INFO  [080-exec-6][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:40:34,462] INFO  [080-exec-6][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:40:34,464] INFO  [080-exec-6][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT * FROM base_user WHERE IS_DELETED = 0 AND ( (PHONE = ? OR EMAIL = ? OR THIRDPARTY_ID = ?) ), params: ["13000000000","13000000000","13000000000"]
+[03-01 22:40:34,468] INFO  [080-exec-6][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:40:34,468] INFO  [080-exec-6][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:40:34,469] INFO  [080-exec-6][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT r.* FROM BASE_ROLE r WHERE r.IS_DELETED = 0 AND EXISTS(SELECT 1 FROM BASE_USER_ROLE_REL rel WHERE rel.IS_DELETED = 0 AND r.ID = rel.ROLE_ID AND rel.USER_ID = ?), params: [1]
+[03-01 22:40:34,470] INFO  [080-exec-6][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:40:34,471] INFO  [080-exec-6][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:40:34,472] INFO  [080-exec-6][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT r.* FROM BASE_RESOURCE r WHERE r.IS_DELETED = 0 AND EXISTS(SELECT 1 FROM BASE_ROLE_RESOURCE_REL rel WHERE rel.IS_DELETED = 0 AND r.ID = rel.RESOURCE_ID AND rel.ROLE_ID = ?), params: [1]
+[03-01 22:40:34,483] INFO  [080-exec-6][] c.c.w.i.AccessLogInterceptor{37} - remoteAddr=0:0:0:0:0:0:0:1, uri=/base/systemconfig, method=GET, queryString=fixSiderbar=true&colorWeak=false&title=%E4%BD%A0%E5%A5%BD&pwa=false, hasException=false, duration=23ms
+[03-01 22:40:36,009] INFO  [080-exec-7][] c.c.w.i.AccessLogInterceptor{37} - remoteAddr=0:0:0:0:0:0:0:1, uri=/generateCsrfToken, method=GET, queryString=null, hasException=false, duration=1ms
+[03-01 22:40:36,010] INFO  [080-exec-8][] c.c.w.i.AccessLogInterceptor{37} - remoteAddr=0:0:0:0:0:0:0:1, uri=/generateFormToken, method=GET, queryString=null, hasException=false, duration=0ms
+[03-01 22:40:36,436] INFO  [080-exec-1][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:40:36,437] INFO  [080-exec-1][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:40:36,438] INFO  [080-exec-1][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT * FROM base_role WHERE IS_DELETED = 0 AND ( name = ? ), params: ["anon"]
+[03-01 22:40:36,439] INFO  [080-exec-1][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:40:36,439] INFO  [080-exec-1][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 22:40:36,441] INFO  [080-exec-1][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT r.* FROM BASE_RESOURCE r WHERE r.IS_DELETED = 0 AND EXISTS(SELECT 1 FROM BASE_ROLE_RESOURCE_REL rel WHERE rel.IS_DELETED = 0 AND r.ID = rel.RESOURCE_ID AND rel.ROLE_ID = ?), params: [2]
+[03-01 22:40:36,446] INFO  [080-exec-1][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT * FROM base_system_config WHERE IS_DELETED = 0 ORDER BY ID DESC LIMIT 0, 20, params: []
+[03-01 22:40:36,447] INFO  [080-exec-1][] com.cory.db.jdbc.CoryDbProxy{139} - sql: SELECT COUNT(*) FROM base_system_config WHERE IS_DELETED = 0, params: []
+[03-01 22:40:36,456] INFO  [080-exec-1][] c.c.w.i.AccessLogInterceptor{37} - remoteAddr=0:0:0:0:0:0:0:1, uri=/ajax/base/systemconfig/listData, method=GET, queryString=current=1&pageSize=20&pageNo=1, hasException=false, duration=11ms
+[03-01 22:40:47,740] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 22:41:14,885] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 22:41:39,694] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 22:42:03,778] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 22:42:32,891] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 22:42:57,044] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 22:43:24,543] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 22:43:49,206] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 22:44:14,634] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 22:44:44,531] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 22:45:12,647] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 22:45:39,715] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 22:46:04,551] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 22:46:34,482] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 22:47:00,192] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 22:47:25,176] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 22:47:54,101] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 22:48:23,672] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 22:48:51,972] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 22:49:15,048] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 22:49:41,694] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 22:50:04,753] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 22:50:28,024] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 22:50:57,309] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 22:51:23,339] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 22:51:48,785] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 22:52:12,912] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 22:52:39,013] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 22:53:08,078] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 22:53:37,933] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 22:54:01,306] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 22:54:30,564] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 22:55:00,063] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 22:55:28,889] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 22:55:53,272] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 22:56:17,878] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 22:56:43,293] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 22:57:10,132] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 22:57:39,960] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 22:58:03,289] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 22:58:31,053] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 22:59:00,293] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 22:59:27,145] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 22:59:51,954] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 23:00:21,646] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 23:00:45,582] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 23:01:13,934] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 23:01:41,930] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 23:02:05,781] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 23:02:34,148] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 23:02:59,795] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 23:03:29,299] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 23:03:54,232] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 23:04:22,999] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 23:04:49,990] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 23:05:15,119] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 23:05:40,051] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 23:06:07,455] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 23:06:31,851] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 23:06:56,119] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 23:07:26,035] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 23:07:53,146] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 23:08:17,071] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 23:08:42,134] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 23:09:07,281] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 23:09:31,980] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 23:09:57,780] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 23:10:20,913] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 23:10:46,041] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 23:11:12,289] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 23:11:36,819] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 23:12:03,727] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 23:12:30,708] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 23:12:55,192] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 23:13:22,149] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 23:13:45,367] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 23:14:14,075] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 23:14:37,651] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 23:15:03,291] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 23:15:30,254] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 23:15:53,851] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 23:16:18,256] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 23:16:46,510] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 23:17:10,172] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 23:17:37,715] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 23:18:00,821] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 23:18:28,201] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 23:18:54,332] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 23:19:24,073] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 23:19:52,313] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 23:20:18,475] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 23:20:45,683] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 23:21:11,313] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 23:21:39,541] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 23:22:09,220] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 23:22:34,292] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 23:23:03,312] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 23:23:26,786] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 23:23:54,021] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 23:24:20,550] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 23:24:50,321] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 23:25:13,671] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 23:25:39,058] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 23:26:02,149] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 23:26:25,601] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 23:26:52,752] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 23:27:18,827] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 23:27:45,270] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 23:28:12,190] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 23:28:36,628] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 23:29:05,181] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 23:29:31,862] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 23:29:58,868] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 23:30:26,178] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 23:30:54,407] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 23:31:20,098] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 23:31:43,453] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 23:32:09,848] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 23:32:37,928] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 23:33:03,225] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 23:33:28,101] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 23:33:32,424] INFO  [080-exec-3][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 23:33:32,468] INFO  [080-exec-3][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 23:33:32,472] INFO  [080-exec-3][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT * FROM base_role WHERE IS_DELETED = 0 AND ( name = ? ), params: ["anon"]
+[03-01 23:33:32,476] INFO  [080-exec-3][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 23:33:32,477] INFO  [080-exec-3][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 23:33:32,482] INFO  [080-exec-3][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT r.* FROM BASE_RESOURCE r WHERE r.IS_DELETED = 0 AND EXISTS(SELECT 1 FROM BASE_ROLE_RESOURCE_REL rel WHERE rel.IS_DELETED = 0 AND r.ID = rel.RESOURCE_ID AND rel.ROLE_ID = ?), params: [2]
+[03-01 23:33:32,617] INFO  [080-exec-2][] c.c.w.i.AccessLogInterceptor{37} - remoteAddr=0:0:0:0:0:0:0:1, uri=/login, method=GET, queryString=returnUrl=base%2Fsystemconfig%3FfixSiderbar%3Dtrue%26colorWeak%3Dfalse%26title%3D%25E4%25BD%25A0%25E5%25A5%25BD%26pwa%3Dfalse, hasException=false, duration=81ms
+[03-01 23:33:33,524] INFO  [080-exec-4][] c.c.w.i.AccessLogInterceptor{37} - remoteAddr=0:0:0:0:0:0:0:1, uri=/generateCsrfToken, method=GET, queryString=null, hasException=false, duration=0ms
+[03-01 23:33:33,526] INFO  [080-exec-5][] c.c.w.i.AccessLogInterceptor{37} - remoteAddr=0:0:0:0:0:0:0:1, uri=/generateFormToken, method=GET, queryString=null, hasException=false, duration=1ms
+[03-01 23:33:34,832] INFO  [080-exec-6][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 23:33:34,833] INFO  [080-exec-6][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 23:33:34,835] INFO  [080-exec-6][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT * FROM base_user WHERE IS_DELETED = 0 AND ( (PHONE = ? OR EMAIL = ? OR THIRDPARTY_ID = ?) ), params: ["13000000000","13000000000","13000000000"]
+[03-01 23:33:34,836] INFO  [080-exec-6][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 23:33:34,837] INFO  [080-exec-6][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 23:33:34,838] INFO  [080-exec-6][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT r.* FROM BASE_ROLE r WHERE r.IS_DELETED = 0 AND EXISTS(SELECT 1 FROM BASE_USER_ROLE_REL rel WHERE rel.IS_DELETED = 0 AND r.ID = rel.ROLE_ID AND rel.USER_ID = ?), params: [1]
+[03-01 23:33:34,840] INFO  [080-exec-6][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 23:33:34,840] INFO  [080-exec-6][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 23:33:34,841] INFO  [080-exec-6][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT r.* FROM BASE_RESOURCE r WHERE r.IS_DELETED = 0 AND EXISTS(SELECT 1 FROM BASE_ROLE_RESOURCE_REL rel WHERE rel.IS_DELETED = 0 AND r.ID = rel.RESOURCE_ID AND rel.ROLE_ID = ?), params: [1]
+[03-01 23:33:34,846] INFO  [080-exec-6][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 23:33:34,846] INFO  [080-exec-6][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 23:33:34,848] INFO  [080-exec-6][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT * FROM base_user WHERE IS_DELETED = 0 AND ( (PHONE = ? OR EMAIL = ? OR THIRDPARTY_ID = ?) ), params: ["13000000000","13000000000","13000000000"]
+[03-01 23:33:34,849] INFO  [080-exec-6][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 23:33:34,849] INFO  [080-exec-6][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 23:33:34,850] INFO  [080-exec-6][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT r.* FROM BASE_ROLE r WHERE r.IS_DELETED = 0 AND EXISTS(SELECT 1 FROM BASE_USER_ROLE_REL rel WHERE rel.IS_DELETED = 0 AND r.ID = rel.ROLE_ID AND rel.USER_ID = ?), params: [1]
+[03-01 23:33:34,851] INFO  [080-exec-6][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 23:33:34,852] INFO  [080-exec-6][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 23:33:34,853] INFO  [080-exec-6][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT r.* FROM BASE_RESOURCE r WHERE r.IS_DELETED = 0 AND EXISTS(SELECT 1 FROM BASE_ROLE_RESOURCE_REL rel WHERE rel.IS_DELETED = 0 AND r.ID = rel.RESOURCE_ID AND rel.ROLE_ID = ?), params: [1]
+[03-01 23:33:34,872] INFO  [080-exec-8][] c.c.w.i.AccessLogInterceptor{37} - remoteAddr=0:0:0:0:0:0:0:1, uri=/generateFormToken, method=GET, queryString=null, hasException=false, duration=0ms
+[03-01 23:33:34,872] INFO  [080-exec-7][] c.c.w.i.AccessLogInterceptor{37} - remoteAddr=0:0:0:0:0:0:0:1, uri=/generateCsrfToken, method=GET, queryString=null, hasException=false, duration=0ms
+[03-01 23:33:34,878] INFO  [080-exec-1][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 23:33:34,879] INFO  [080-exec-1][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 23:33:34,883] INFO  [080-exec-1][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT * FROM base_user WHERE IS_DELETED = 0 AND ( (PHONE = ? OR EMAIL = ? OR THIRDPARTY_ID = ?) ), params: ["13000000000","13000000000","13000000000"]
+[03-01 23:33:34,885] INFO  [080-exec-1][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 23:33:34,886] INFO  [080-exec-1][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 23:33:34,887] INFO  [080-exec-1][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT r.* FROM BASE_ROLE r WHERE r.IS_DELETED = 0 AND EXISTS(SELECT 1 FROM BASE_USER_ROLE_REL rel WHERE rel.IS_DELETED = 0 AND r.ID = rel.ROLE_ID AND rel.USER_ID = ?), params: [1]
+[03-01 23:33:34,888] INFO  [080-exec-1][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 23:33:34,889] INFO  [080-exec-1][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 23:33:34,890] INFO  [080-exec-1][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT r.* FROM BASE_RESOURCE r WHERE r.IS_DELETED = 0 AND EXISTS(SELECT 1 FROM BASE_ROLE_RESOURCE_REL rel WHERE rel.IS_DELETED = 0 AND r.ID = rel.RESOURCE_ID AND rel.ROLE_ID = ?), params: [1]
+[03-01 23:33:34,900] INFO  [080-exec-1][] c.c.w.i.AccessLogInterceptor{37} - remoteAddr=0:0:0:0:0:0:0:1, uri=/currentUser, method=GET, queryString=null, hasException=false, duration=22ms
+[03-01 23:33:35,960] INFO  [80-exec-10][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 23:33:35,961] INFO  [80-exec-10][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 23:33:35,962] INFO  [80-exec-10][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT * FROM base_role WHERE IS_DELETED = 0 AND ( name = ? ), params: ["anon"]
+[03-01 23:33:35,964] INFO  [80-exec-10][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 23:33:35,965] INFO  [80-exec-10][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 23:33:35,967] INFO  [80-exec-10][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT r.* FROM BASE_RESOURCE r WHERE r.IS_DELETED = 0 AND EXISTS(SELECT 1 FROM BASE_ROLE_RESOURCE_REL rel WHERE rel.IS_DELETED = 0 AND r.ID = rel.RESOURCE_ID AND rel.ROLE_ID = ?), params: [2]
+[03-01 23:33:35,974] INFO  [80-exec-10][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 23:33:35,974] INFO  [80-exec-10][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 23:33:35,977] INFO  [80-exec-10][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT * FROM base_user WHERE IS_DELETED = 0 AND ( (PHONE = ? OR EMAIL = ? OR THIRDPARTY_ID = ?) ), params: ["13000000000","13000000000","13000000000"]
+[03-01 23:33:35,979] INFO  [80-exec-10][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 23:33:35,980] INFO  [80-exec-10][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 23:33:35,981] INFO  [80-exec-10][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT r.* FROM BASE_ROLE r WHERE r.IS_DELETED = 0 AND EXISTS(SELECT 1 FROM BASE_USER_ROLE_REL rel WHERE rel.IS_DELETED = 0 AND r.ID = rel.ROLE_ID AND rel.USER_ID = ?), params: [1]
+[03-01 23:33:35,983] INFO  [80-exec-10][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 23:33:35,983] INFO  [80-exec-10][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 23:33:35,984] INFO  [80-exec-10][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT r.* FROM BASE_RESOURCE r WHERE r.IS_DELETED = 0 AND EXISTS(SELECT 1 FROM BASE_ROLE_RESOURCE_REL rel WHERE rel.IS_DELETED = 0 AND r.ID = rel.RESOURCE_ID AND rel.ROLE_ID = ?), params: [1]
+[03-01 23:33:35,997] INFO  [80-exec-10][] c.c.w.i.AccessLogInterceptor{37} - remoteAddr=0:0:0:0:0:0:0:1, uri=/, method=GET, queryString=null, hasException=false, duration=24ms
+[03-01 23:33:36,944] INFO  [080-exec-3][] c.c.w.i.AccessLogInterceptor{37} - remoteAddr=0:0:0:0:0:0:0:1, uri=/generateFormToken, method=GET, queryString=null, hasException=false, duration=0ms
+[03-01 23:33:36,944] INFO  [080-exec-9][] c.c.w.i.AccessLogInterceptor{37} - remoteAddr=0:0:0:0:0:0:0:1, uri=/generateCsrfToken, method=GET, queryString=null, hasException=false, duration=0ms
+[03-01 23:33:41,633] INFO  [080-exec-2][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 23:33:41,634] INFO  [080-exec-2][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 23:33:41,635] INFO  [080-exec-2][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT * FROM base_role WHERE IS_DELETED = 0 AND ( name = ? ), params: ["anon"]
+[03-01 23:33:41,646] INFO  [080-exec-2][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 23:33:41,647] INFO  [080-exec-2][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 23:33:41,648] INFO  [080-exec-2][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT r.* FROM BASE_RESOURCE r WHERE r.IS_DELETED = 0 AND EXISTS(SELECT 1 FROM BASE_ROLE_RESOURCE_REL rel WHERE rel.IS_DELETED = 0 AND r.ID = rel.RESOURCE_ID AND rel.ROLE_ID = ?), params: [2]
+[03-01 23:33:41,655] INFO  [080-exec-2][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT * FROM base_data_dict WHERE IS_DELETED = 0 ORDER BY SN DESC LIMIT 0, 20, params: []
+[03-01 23:33:41,657] INFO  [080-exec-2][] com.cory.db.jdbc.CoryDbProxy{139} - sql: SELECT COUNT(*) FROM base_data_dict WHERE IS_DELETED = 0, params: []
+[03-01 23:33:41,661] INFO  [080-exec-2][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT * FROM base_data_dict WHERE IS_DELETED = 0 AND ( ID = ? ), params: [1]
+[03-01 23:33:41,663] INFO  [080-exec-2][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT * FROM base_data_dict WHERE IS_DELETED = 0 AND ( ID = ? ), params: [1]
+[03-01 23:33:41,665] INFO  [080-exec-2][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT * FROM base_data_dict WHERE IS_DELETED = 0 AND ( ID = ? ), params: [1]
+[03-01 23:33:41,667] INFO  [080-exec-2][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT * FROM base_data_dict WHERE IS_DELETED = 0 AND ( ID = ? ), params: [1]
+[03-01 23:33:41,669] INFO  [080-exec-2][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT * FROM base_data_dict WHERE IS_DELETED = 0 AND ( ID = ? ), params: [1]
+[03-01 23:33:41,678] INFO  [080-exec-2][] c.c.w.i.AccessLogInterceptor{37} - remoteAddr=0:0:0:0:0:0:0:1, uri=/ajax/base/datadict/listData, method=GET, queryString=current=1&pageSize=20&pageNo=1, hasException=false, duration=26ms
+[03-01 23:33:42,915] INFO  [080-exec-4][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 23:33:42,915] INFO  [080-exec-4][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 23:33:42,916] INFO  [080-exec-4][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT * FROM base_role WHERE IS_DELETED = 0 AND ( name = ? ), params: ["anon"]
+[03-01 23:33:42,917] INFO  [080-exec-4][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 23:33:42,918] INFO  [080-exec-4][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 23:33:42,918] INFO  [080-exec-4][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT r.* FROM BASE_RESOURCE r WHERE r.IS_DELETED = 0 AND EXISTS(SELECT 1 FROM BASE_ROLE_RESOURCE_REL rel WHERE rel.IS_DELETED = 0 AND r.ID = rel.RESOURCE_ID AND rel.ROLE_ID = ?), params: [2]
+[03-01 23:33:42,928] INFO  [080-exec-4][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT * FROM base_system_config WHERE IS_DELETED = 0 ORDER BY ID DESC LIMIT 0, 20, params: []
+[03-01 23:33:42,930] INFO  [080-exec-4][] com.cory.db.jdbc.CoryDbProxy{139} - sql: SELECT COUNT(*) FROM base_system_config WHERE IS_DELETED = 0, params: []
+[03-01 23:33:42,938] INFO  [080-exec-4][] c.c.w.i.AccessLogInterceptor{37} - remoteAddr=0:0:0:0:0:0:0:1, uri=/ajax/base/systemconfig/listData, method=GET, queryString=current=1&pageSize=20&pageNo=1, hasException=false, duration=13ms
+[03-01 23:33:54,488] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 23:34:20,832] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 23:34:46,345] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 23:35:11,838] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 23:35:38,572] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 23:36:07,219] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 23:36:35,771] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 23:37:01,681] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 23:37:25,751] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 23:37:52,987] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 23:38:16,160] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 23:38:29,959] INFO  [080-exec-7][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 23:38:29,961] WARN  [080-exec-7][] c.a.d.pool.DruidAbstractDataSource{1489} - discard long time none received connection. , jdbcUrl : jdbc:mysql://127.0.0.1:3306/lm_tooth?characterEncoding=utf-8&autoReconnect=true&serverTimezone=UTC, version : 1.2.4, lastPacketReceivedIdleMillis : 287030
+[03-01 23:38:29,962] DEBUG [080-exec-7][] c.alibaba.druid.pool.DruidDataSource{1466} - skip not validate connection.
+[03-01 23:38:29,984] INFO  [080-exec-7][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 23:38:29,986] INFO  [080-exec-7][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT * FROM base_role WHERE IS_DELETED = 0 AND ( name = ? ), params: ["anon"]
+[03-01 23:38:29,988] INFO  [080-exec-7][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 23:38:29,989] INFO  [080-exec-7][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 23:38:29,991] INFO  [080-exec-7][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT r.* FROM BASE_RESOURCE r WHERE r.IS_DELETED = 0 AND EXISTS(SELECT 1 FROM BASE_ROLE_RESOURCE_REL rel WHERE rel.IS_DELETED = 0 AND r.ID = rel.RESOURCE_ID AND rel.ROLE_ID = ?), params: [2]
+[03-01 23:38:30,002] INFO  [080-exec-7][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 23:38:30,003] INFO  [080-exec-7][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 23:38:30,006] INFO  [080-exec-7][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT * FROM base_user WHERE IS_DELETED = 0 AND ( (PHONE = ? OR EMAIL = ? OR THIRDPARTY_ID = ?) ), params: ["13000000000","13000000000","13000000000"]
+[03-01 23:38:30,008] INFO  [080-exec-7][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 23:38:30,009] INFO  [080-exec-7][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 23:38:30,011] INFO  [080-exec-7][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT r.* FROM BASE_ROLE r WHERE r.IS_DELETED = 0 AND EXISTS(SELECT 1 FROM BASE_USER_ROLE_REL rel WHERE rel.IS_DELETED = 0 AND r.ID = rel.ROLE_ID AND rel.USER_ID = ?), params: [1]
+[03-01 23:38:30,013] INFO  [080-exec-7][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 23:38:30,014] INFO  [080-exec-7][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 23:38:30,016] INFO  [080-exec-7][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT r.* FROM BASE_RESOURCE r WHERE r.IS_DELETED = 0 AND EXISTS(SELECT 1 FROM BASE_ROLE_RESOURCE_REL rel WHERE rel.IS_DELETED = 0 AND r.ID = rel.RESOURCE_ID AND rel.ROLE_ID = ?), params: [1]
+[03-01 23:38:30,033] INFO  [080-exec-7][] c.c.w.i.AccessLogInterceptor{37} - remoteAddr=0:0:0:0:0:0:0:1, uri=/base/systemconfig, method=GET, queryString=fixSiderbar=true&colorWeak=false&title=%E4%BD%A0%E5%A5%BD&pwa=false, hasException=false, duration=32ms
+[03-01 23:38:31,251] INFO  [080-exec-1][] c.c.w.i.AccessLogInterceptor{37} - remoteAddr=0:0:0:0:0:0:0:1, uri=/generateCsrfToken, method=GET, queryString=null, hasException=false, duration=1ms
+[03-01 23:38:31,258] INFO  [80-exec-10][] c.c.w.i.AccessLogInterceptor{37} - remoteAddr=0:0:0:0:0:0:0:1, uri=/generateFormToken, method=GET, queryString=null, hasException=false, duration=0ms
+[03-01 23:38:31,798] INFO  [080-exec-3][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 23:38:31,799] INFO  [080-exec-3][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 23:38:31,799] INFO  [080-exec-3][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT * FROM base_role WHERE IS_DELETED = 0 AND ( name = ? ), params: ["anon"]
+[03-01 23:38:31,800] INFO  [080-exec-3][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 23:38:31,801] INFO  [080-exec-3][] c.c.cache.manager.CoryCacheManager{37} - CacheManager, cacheType=NULL
+[03-01 23:38:31,801] INFO  [080-exec-3][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT r.* FROM BASE_RESOURCE r WHERE r.IS_DELETED = 0 AND EXISTS(SELECT 1 FROM BASE_ROLE_RESOURCE_REL rel WHERE rel.IS_DELETED = 0 AND r.ID = rel.RESOURCE_ID AND rel.ROLE_ID = ?), params: [2]
+[03-01 23:38:31,808] INFO  [080-exec-3][] com.cory.db.jdbc.CoryDbProxy{128} - sql: SELECT * FROM base_system_config WHERE IS_DELETED = 0 ORDER BY ID DESC LIMIT 0, 20, params: []
+[03-01 23:38:31,810] INFO  [080-exec-3][] com.cory.db.jdbc.CoryDbProxy{139} - sql: SELECT COUNT(*) FROM base_system_config WHERE IS_DELETED = 0, params: []
+[03-01 23:38:31,867] INFO  [080-exec-3][] c.c.w.i.AccessLogInterceptor{37} - remoteAddr=0:0:0:0:0:0:0:1, uri=/ajax/base/systemconfig/listData, method=GET, queryString=current=1&pageSize=20&pageNo=1, hasException=false, duration=60ms
+[03-01 23:38:45,881] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 23:39:13,408] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 23:39:38,726] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 23:40:08,237] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 23:40:32,109] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 23:41:00,950] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 23:41:26,749] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 23:41:56,484] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 23:42:23,779] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 23:42:52,626] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 23:43:17,674] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 23:43:46,131] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 23:44:11,301] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 23:44:36,944] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 23:45:02,197] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 23:45:29,515] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 23:45:53,051] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 23:46:21,366] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 23:46:46,897] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 23:47:10,511] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 23:47:33,769] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 23:47:58,183] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 23:48:23,542] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 23:48:48,957] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 23:49:18,573] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 23:49:41,817] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 23:50:05,331] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 23:50:31,403] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 23:50:55,877] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 23:51:24,948] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 23:51:50,034] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 23:52:16,560] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 23:52:44,369] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 23:53:10,495] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 23:53:39,380] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 23:54:04,853] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 23:54:28,732] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 23:54:56,710] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 23:55:24,790] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 23:55:53,909] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 23:56:23,497] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 23:56:46,945] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 23:57:13,148] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 23:57:36,463] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 23:58:05,720] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 23:58:31,371] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 23:58:55,143] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[03-01 23:59:22,212] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers

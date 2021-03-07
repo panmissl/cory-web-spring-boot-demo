@@ -1,0 +1,78 @@
+[02-18 20:09:34,128] INFO  [main][] c.c.c.c.CoryContextApplicationContextInitializer{19} - CoryContextApplicationContextInitializer initialize
+[02-18 20:09:34,175] INFO  [main][] com.cory.CoryWebDemoApplication{55} - Starting CoryWebDemoApplication using Java 1.8.0_131 on Cory-PC with PID 15956 (E:\WORK\idea_workspace\cory-web-spring-boot-demo-all\target\classes started by Cory in E:\WORK\idea_workspace\cory-web-spring-boot-demo-all)
+[02-18 20:09:34,175] DEBUG [main][] com.cory.CoryWebDemoApplication{56} - Running with Spring Boot v2.4.2, Spring v5.3.3
+[02-18 20:09:34,175] INFO  [main][] com.cory.CoryWebDemoApplication{660} - No active profile set, falling back to default profiles: default
+[02-18 20:09:35,996] INFO  [main][] c.c.db.processor.CoryDbDaoProcessor{35} - cory db register bean definition start
+[02-18 20:09:36,019] INFO  [main][] c.c.db.processor.CoryDbDaoProcessor{59} - cory db register bean definition finish, registered 9 DAO
+[02-18 20:09:38,044] INFO  [main][] c.o.c.s.m.GenericManageableCaptchaService{42} - Init com.octo.captcha.service.captchastore.FastHashMapCaptchaStore
+[02-18 20:09:39,481] INFO  [main][] c.a.d.s.b.a.DruidDataSourceAutoConfigure{56} - Init DruidDataSource
+[02-18 20:09:39,698] INFO  [main][] c.alibaba.druid.pool.DruidDataSource{985} - {dataSource-1} inited
+[02-18 20:09:40,070] INFO  [main][] c.c.sevice.base.SystemConfigService{65} - 加载系统参数配置...
+[02-18 20:09:40,137] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_system_config WHERE IS_DELETED = 0 ORDER BY ID DESC LIMIT 0, 2147483647, params: null
+[02-18 20:09:40,182] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{138} - sql: SELECT COUNT(*) FROM base_system_config WHERE IS_DELETED = 0, params: null
+[02-18 20:09:40,253] INFO  [main][] c.c.sevice.base.SystemConfigService{76} - 加载系统参数配置完成(共23条).
+[02-18 20:09:40,330] INFO  [main][] c.c.s.base.resource.ResourceScanner{36} - start to scan Controllers ...
+[02-18 20:09:40,537] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/demo/save*"]
+[02-18 20:09:40,545] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/demo/post*"]
+[02-18 20:09:40,548] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/demo/detailData/**"]
+[02-18 20:09:40,552] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/demo/upload*"]
+[02-18 20:09:40,557] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/demo/delete/**"]
+[02-18 20:09:40,561] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/demo/hi*"]
+[02-18 20:09:40,564] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/demo/listData*"]
+[02-18 20:09:40,570] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/errorPage*"]
+[02-18 20:09:40,575] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/***"]
+[02-18 20:09:40,579] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/datadict/save*"]
+[02-18 20:09:40,582] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/datadict/delete/**"]
+[02-18 20:09:40,586] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/datadict/listData*"]
+[02-18 20:09:40,589] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/datadict/updateShowable*"]
+[02-18 20:09:40,591] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/datadict/detailData/**"]
+[02-18 20:09:40,595] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/resource/listData*"]
+[02-18 20:09:40,597] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/resource/detailData/**"]
+[02-18 20:09:40,601] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/resource/delete/**"]
+[02-18 20:09:40,605] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/resource/save*"]
+[02-18 20:09:40,612] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/user/changePasswordDirectly*"]
+[02-18 20:09:40,615] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/user/doAssign*"]
+[02-18 20:09:40,619] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/user/listData*"]
+[02-18 20:09:40,623] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/user/detailData/**"]
+[02-18 20:09:40,627] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/user/changePassword*"]
+[02-18 20:09:40,637] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/currentUser*"]
+[02-18 20:09:40,640] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/doRegister*"]
+[02-18 20:09:40,643] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/login*"]
+[02-18 20:09:40,645] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/register*"]
+[02-18 20:09:40,648] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/feedback/listData*"]
+[02-18 20:09:40,651] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/feedback/save*"]
+[02-18 20:09:40,654] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/feedback/delete/**"]
+[02-18 20:09:40,657] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/feedback/detailData/**"]
+[02-18 20:09:40,661] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/role/listData*"]
+[02-18 20:09:40,664] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/role/detailData/**"]
+[02-18 20:09:40,667] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/role/save*"]
+[02-18 20:09:40,672] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/role/doAssign*"]
+[02-18 20:09:40,676] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/systemconfig/detailData/**"]
+[02-18 20:09:40,678] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/systemconfig/delete/**"]
+[02-18 20:09:40,681] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/systemconfig/save*"]
+[02-18 20:09:40,683] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/systemconfig/refreshCache*"]
+[02-18 20:09:40,685] INFO  [main][] com.cory.db.jdbc.CoryDbProxy{127} - sql: SELECT * FROM base_resource WHERE IS_DELETED = 0 AND ( value = ? ), params: ["/ajax/ajax/base/systemconfig/listData*"]
+[02-18 20:09:40,687] INFO  [main][] c.c.s.base.resource.ResourceScanner{56} - scan Controllers finish, url count: 0 ...
+[02-18 20:09:42,181] INFO  [main][] org.quartz.impl.StdSchedulerFactory{1220} - Using default implementation for ThreadExecutor
+[02-18 20:09:42,203] INFO  [main][] o.quartz.core.SchedulerSignalerImpl{61} - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+[02-18 20:09:42,203] INFO  [main][] org.quartz.core.QuartzScheduler{229} - Quartz Scheduler v.2.3.2 created.
+[02-18 20:09:42,204] INFO  [main][] org.quartz.simpl.RAMJobStore{155} - RAMJobStore initialized.
+[02-18 20:09:42,205] INFO  [main][] org.quartz.core.QuartzScheduler{294} - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+[02-18 20:09:42,206] INFO  [main][] org.quartz.impl.StdSchedulerFactory{1374} - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+[02-18 20:09:42,206] INFO  [main][] org.quartz.impl.StdSchedulerFactory{1378} - Quartz scheduler version: 2.3.2
+[02-18 20:09:42,206] INFO  [main][] org.quartz.core.QuartzScheduler{2293} - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@2c06e145
+[02-18 20:09:42,300] INFO  [main][] org.quartz.core.QuartzScheduler{547} - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+[02-18 20:09:42,301] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 20:09:42,348] INFO  [main][] com.cory.CoryWebDemoApplication{61} - Started CoryWebDemoApplication in 8.945 seconds (JVM running for 9.779)
+[02-18 20:10:08,272] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 20:10:33,132] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 20:10:57,526] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 20:11:25,919] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
+[02-18 20:11:53,891] DEBUG [ulerThread][] o.quartz.core.QuartzSchedulerThread{291} - batch acquisition of 0 triggers
