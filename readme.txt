@@ -37,6 +37,7 @@ ROOT
     先用idea的copy功能，copy一个新的project
 	同时copyCDN功能：手动复制cory-web-cdn，注意工程名叫：xxx-cdn (xxx时java工程名称)
 	创建数据库
+	执行init-data.sql里的建表语句和初始化数据
 	表等会自动创建和同步，不用手动创建 -- 生产环境需要手动创建
 	配置：在application.properties和application-prod.properties文件里配置
 	写Model类，加上注解：数据库（包括DDL和DML）、校验、等(所有注解都在com.cory.db.annotations下面)
