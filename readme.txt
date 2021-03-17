@@ -86,6 +86,7 @@ ajax：防止表单重复提交
 自定义Token校验使用：作为OpenApi使用
     场景：有些地方不用用户系统校验，用OpenApi的方式进行访问
     使用：
+        # 配置：系统配置里增加配置项：__token_configs__，格式为：key1:secret1,key2:secret2
 		# 代码：写OpenApiController继承BaseOpenApiController。mapping里以业务模块开始，以/开头，BaseOpenApiController里加了前缀：/openapi
 		# 调用方：在Header里放置：Access-Key-Id、Access-Key-Timestamp和Access-Key-Token。URL以/openapi/开头
 		其中：
