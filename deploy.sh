@@ -15,10 +15,11 @@
 # 可以通过：查看负载均衡状态: http://123.57.189.22:81/httpdstatus?opt=0
 # 发布时，先发布一台，在状态页面刷新，没问题后再发布另外一台。部署脚本分两个
 
+JAVA_HOME=/mokii/software/jdk/jdk1.8.0_181
 APP_NAME=cory-web-demo-0.0.1-SNAPSHOT.jar
 
 #shutdown tomcat
-kill -9 `ps -ef | grep $APP_NAME | awk '{print $2}'`
+#kill -9 `ps -ef | grep $APP_NAME | awk '{print $2}'`
 
 #start server
-nohup java -jar $APP_NAME --spring.profiles.active = prod > /dev/null 2>&1
+nohup $JAVA_HOME/bin/java -jar -Dspring.profiles.active=prod $APP_NAME > /dev/null 2>&1
