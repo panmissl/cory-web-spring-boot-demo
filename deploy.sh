@@ -22,4 +22,4 @@ APP_NAME=cory-web-demo-0.0.1-SNAPSHOT.jar
 #kill -9 `ps -ef | grep $APP_NAME | awk '{print $2}'`
 
 #start server
-nohup $JAVA_HOME/bin/java -jar -Dspring.profiles.active=prod $APP_NAME > /dev/null 2>&1
+nohup $JAVA_HOME/bin/java -jar -Dspring.profiles.active=prod $APP_NAME > /dev/null 2>&1 &
