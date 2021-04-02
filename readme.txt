@@ -66,6 +66,10 @@ Context：
     配置：在application.properteis里配置：cory.cache.type: 可选值有simple/redis/etcd。如果配置了redis或者etcd，还需要配置他们的连接情况。具体可以在prod和dev里配置即可
     在需要缓存的service方法上，添加Cache, CacheEvict等spring的缓存注解即可，参考SystemConfigService.java
 
+操作日志：
+    默认BaseService在增删改时记录操作日志，如果不需要，要自己写，请覆写actionLogEnable方法返回false
+    自己记录操作日志方法：用 ActionLogUtil 类的静态方法记录
+
 拦截器：
     只需要编写拦截器代码：继承HandlerInterceptor。注意在类里自己判断requestURI。注册已经框架层自动注册了
         @Slf4j
