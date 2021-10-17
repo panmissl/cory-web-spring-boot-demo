@@ -88,8 +88,9 @@ Context：
 
 session共享：
     使用spring-session。配置：
-        application.properteis配置：cory-session.enable = true
-		注意会依赖redis
+		注意会依赖redis：application.properteis配置redis
+		pom文件里的spring-session-data-redis依赖打开
+		CoryWebDemoApplication里的EnableRedisHttpSession注释打开
 
 ajax：防止表单重复提交
     不成功时，重新获取token，url：generateFormToken，post提交的参数名：__form_token__
