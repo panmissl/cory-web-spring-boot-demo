@@ -1,3 +1,8 @@
+#、使用cory-web-spring-boot-framework框架进行web开发的示例工程，使用步骤见下面的：开发步骤章节
+#、有问题请联系微信：cory275165359
+
+------------------------------------------
+
 mvn -DskipTests=true -Dmaven.skip.test=true package
 
 工程结构：
