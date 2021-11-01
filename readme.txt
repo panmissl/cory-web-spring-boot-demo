@@ -113,6 +113,13 @@ ajax：防止表单重复提交
             格式为：MD5(Access-Key-Id::Access-Secret-Key::Access-Key-Timestamp)。
             比如：id为123，secret为abc，时间戳为20200101123000，则token为：MD5(123::abc:20200101123000) -> 335fb39e94bca960c5e9eb8e40c24609
 
+验证码：
+    application.properties里配置:
+        cory.web.captcha.enable=true，默认false
+        cory.web.captcha.rlPattern=正则表达式，符合表达式的才校验，否则不校验。以斜杠开头
+    展示验证码：前端组件：Captcha，展示为一个span，里面装一个图片和一个文本框，文本框的变化输出到组件的属性函数：onChange(v)。实际请求URL：/captcha.svl
+    提交验证码：请提交参数为captcha的参数
+
 文件上传
     controller里声明方法，加一个必须参数：MultipartFile file，还可以加其它参数，比如：Model model
     前端可以用ajax或者表单提交方式提交文件名为file的文件进行上传。下面是ajax的例子:
