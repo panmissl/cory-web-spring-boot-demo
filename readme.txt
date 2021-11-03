@@ -62,6 +62,9 @@ Context：
     2、CoryContext.get()
     3、CorySystemContext.get()
 
+如果有一些特殊路径需要写到左侧菜单且用来做权限分配，则可以这样做（/, /admin都这么做了）：
+    写一个Controller继承PortalController，然后方法体里写：return initContext(model);可以参考PortalController的写法，主要是GetMapping里的路径配置
+
 校验：
 	在Model类上增加注解，用SpringValidation框架。前端就用Field里的校验，做简单校验
 
