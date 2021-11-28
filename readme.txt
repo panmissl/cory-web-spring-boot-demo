@@ -122,7 +122,7 @@ ajax：防止表单重复提交
 验证码：
     application.properties里配置:
         cory.web.captcha.enable=true，默认false
-        cory.web.captcha.rlPattern=正则表达式，符合表达式的才校验，否则不校验。以斜杠开头
+        cory.web.captcha.urlPattern=正则表达式，符合表达式的才校验，否则不校验。以斜杠开头
     展示验证码：前端组件：Captcha，展示为一个span，里面装一个图片和一个文本框，文本框的变化输出到组件的属性函数：onChange(v)。实际请求URL：/captcha.svl
     提交验证码：请提交参数为captcha的参数
 
