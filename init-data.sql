@@ -9,12 +9,12 @@ CREATE TABLE `base_user_role_rel` (`id` bigint(20) NOT NULL AUTO_INCREMENT COMME
 CREATE TABLE `base_action_log` (`id` bigint(20) NOT NULL AUTO_INCREMENT COMMENT 'ID',`creator` bigint(20) NOT NULL COMMENT '创建人',`modifier` bigint(20) NOT NULL COMMENT '修改人',`create_time` datetime NOT NULL DEFAULT '1970-01-01 00:00:00' COMMENT '创建时间',`modify_time` datetime NOT NULL DEFAULT '1970-01-01 00:00:00' COMMENT '修改时间',`is_deleted` SMALLINT(1) NOT NULL DEFAULT 0 COMMENT '是否删除',`object_type` varchar(254) NOT NULL  ,`object_id` varchar(254) NOT NULL  ,`log` text NOT NULL  ,`operator` varchar(254) NOT NULL  ,`operate_time` datetime NOT NULL  ,PRIMARY KEY (`id`)) ENGINE=InnoDB AUTO_INCREMENT=10001 DEFAULT CHARSET=utf8 COMMENT='操作日志';
 CREATE TABLE `demo_demo` (`id` bigint(20) NOT NULL AUTO_INCREMENT COMMENT 'ID',`creator` bigint(20) NOT NULL,`modifier` bigint(20) NOT NULL,`create_time` datetime NOT NULL DEFAULT '1970-01-01 00:00:00',`modify_time` datetime NOT NULL DEFAULT '1970-01-01 00:00:00',`is_deleted` SMALLINT(1) NOT NULL DEFAULT 0,`age` int(11) NOT NULL,`foreign_id` bigint(20) NOT NULL,`balance` double NOT NULL,`name` varchar(50) NOT NULL,`remark` text NOT NULL,`is_child` smallint(1) NOT NULL,`birthday` datetime NOT NULL,`time` datetime NOT NULL,`sex` varchar(64) NOT NULL,PRIMARY KEY (`id`)) ENGINE=InnoDB AUTO_INCREMENT=10001 DEFAULT CHARSET=utf8;
 
-insert into base_system_config (creator, modifier, code, val, description) values (1, 1, 'domain_name', 'http://localhost', 'domain');
-insert into base_system_config (creator, modifier, code, val, description) values (1, 1, 'site_name', '魔客粒', 'site name');
-insert into base_system_config (creator, modifier, code, val, description) values (1, 1, 'site_slogan', '魔客粒', 'site slogan');
-insert into base_system_config (creator, modifier, code, val, description) values (1, 1, 'js_dir', 'http://localhost/', 'ends with /');
-insert into base_system_config (creator, modifier, code, val, description) values (1, 1, 'css_dir', 'http://localhost/', 'ends with /');
-insert into base_system_config (creator, modifier, code, val, description) values (1, 1, 'image_dir', 'http://localhost/', 'ends with /');
+insert into base_system_config (creator, modifier, code, val, description) values (1, 1, 'domain_name', 'http://localhost:8080', 'domain');
+insert into base_system_config (creator, modifier, code, val, description) values (1, 1, 'site_name', 'DEMO', 'site name');
+insert into base_system_config (creator, modifier, code, val, description) values (1, 1, 'site_slogan', 'DEMO', 'site slogan');
+insert into base_system_config (creator, modifier, code, val, description) values (1, 1, 'js_dir', 'http://localhost:8000/', 'ends with /');
+insert into base_system_config (creator, modifier, code, val, description) values (1, 1, 'css_dir', 'http://localhost:8000/', 'ends with /');
+insert into base_system_config (creator, modifier, code, val, description) values (1, 1, 'image_dir', 'http://localhost:8000/', 'ends with /');
 insert into base_system_config (creator, modifier, code, val, description) values (1, 1, 'js_file', 'umi.js', 'umi.js');
 insert into base_system_config (creator, modifier, code, val, description) values (1, 1, 'css_file', 'umi.css', 'umi.css');
 insert into base_system_config (creator, modifier, code, val, description) values (1, 1, 'admin-skin', 'green', '皮肤：green,red,yellow,blue,black,purple,green-light,red-light,yellow-light,blue-light,black-light,purple-light');
