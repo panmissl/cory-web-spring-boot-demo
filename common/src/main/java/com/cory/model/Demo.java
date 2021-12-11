@@ -41,4 +41,8 @@ public class Demo extends BaseModel {
 
     @Field(label = "性别", type = CoryDbType.ENUM, filtered = true)
     private Sex sex;
+
+    //数据字典 - primary_course
+    @Field(label = "主修课程", type = CoryDbType.VARCHAR)
+    private String primaryCourse;
 }
