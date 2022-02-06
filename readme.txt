@@ -50,6 +50,7 @@ ROOT
     用代码生成工具生成dao、service、controller、js -- 这一步是自动的，直接启动系统即可
 	可选：系统启动后，插入初始化数据：放在了系统根目录下init-data.sql里。直接从系统功能里执行即可
     可选：在service方法里配置缓存
+    可选：在service方法里配置事务：加注解：@Transactional(rollbackFor = Throwable.class)
     可选：删除test相关 - 可以留着做参考
 	可选：在application.properteis里配置数据库相关信息：
 		cory.db.dao-packages = com.cory.dao -- 这个默认就行，一般不用配置，除非有特殊需要
