@@ -4,7 +4,10 @@ import com.cory.db.annotations.Field;
 import com.cory.db.annotations.Model;
 import com.cory.db.enums.CoryDbType;
 import com.cory.enums.Sex;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.util.Date;
 
@@ -12,6 +15,9 @@ import java.util.Date;
  * Created by Cory on 2021/2/17.
  */
 @Data
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
 @Model(name = "测试", module = "demo")
 public class Demo extends BaseModel {
 
