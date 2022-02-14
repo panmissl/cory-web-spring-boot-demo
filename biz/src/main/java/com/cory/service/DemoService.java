@@ -16,7 +16,6 @@ import java.util.List;
  */
 @Service
 @Scope(proxyMode = ScopedProxyMode.TARGET_CLASS)
-@Transactional
 public class DemoService extends BaseService<Demo> {
 
     @Autowired
