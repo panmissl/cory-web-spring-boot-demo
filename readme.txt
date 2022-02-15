@@ -92,7 +92,7 @@ Context：
 
 定时任务使用：
 	默认关闭，如果需要则可以打开：cory.scheduler.enable=true
-    参考SampleJob写好代码（注意继承SingleIpJob）
+    参考SampleJob写好代码（注意继承SingleIpJob），如果需要广播类型的定时任务（每台机器都执行），则直接实现Job接口
 	配置：
 		cory.scheduler.job-configs[0]=SampleJob1:0 0 2 * * ?
 		cory.scheduler.job-configs[1]=SampleJob2:0 2 35 * * ?
