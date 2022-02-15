@@ -78,6 +78,7 @@ Context：
 缓存使用：
     配置：在application.properteis里配置：cory.cache.type: 可选值有simple/redis/etcd。如果配置了redis或者etcd，还需要配置他们的连接情况。具体可以在prod和dev里配置即可
     在需要缓存的service方法上，添加Cache, CacheEvict等spring的缓存注解即可，参考SystemConfigService.java
+    自定义缓存：直接在需要的地方使用CacheManager，然后用即可
 
 操作日志：
     默认BaseService在增删改时记录操作日志，如果不需要，要自己写，请覆写actionLogEnable方法返回false
