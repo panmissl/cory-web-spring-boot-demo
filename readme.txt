@@ -109,6 +109,10 @@ ajax：防止表单重复提交
     不成功时，重新获取token，url：generateFormToken，post提交的参数名：__form_token__
     csrf: 对于不是页面的post提交来说，需要加上csrf参数。通过：generateCsrfToken来获取，get请求即可。参数名叫：_csrf
 
+跳过权限校验
+    场景：有些地方不能校验权限，比如某些不可控的外部系统回调，比如微信、支付宝等支付回调
+    使用：配置文件里增加：#cory.web.skipAuthUrlPattern的配置
+
 自定义Token校验使用：作为OpenApi使用
     场景：有些地方不用用户系统校验，用OpenApi的方式进行访问
     使用：
