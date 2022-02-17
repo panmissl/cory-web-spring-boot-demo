@@ -176,4 +176,6 @@ swagger-ui
 		在@Api的类加上：@SwaggerApiController注解，API是按注解开的，不加的话不会在页面上看到
         访问：localhost:8080/swagger-ui.html
 
+代码生成：默认会在启动时判断没有DAO类就生成代码，如果想要手动生成部分代码，则启动后调用CodeGeneratorHelper类来生成即可
+
 mvn -DskipTests=true -Dmaven.skip.test=true package
