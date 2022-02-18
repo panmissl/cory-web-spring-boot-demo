@@ -24,6 +24,7 @@ insert into base_system_config (creator, modifier, code, val, description) value
 insert into base_system_config (creator, modifier, code, val, description) values (1, 1, 'anon_role_name', 'anon', '匿名角色');
 insert into base_system_config (creator, modifier, code, val, description) values (1, 1, 'normal_role_name', 'normal', '普通用户角色');
 insert into base_system_config (creator, modifier, code, val, description) values (1, 1, 'user_enabled', 'true', '是否开启用户系统');
+insert into base_system_config (creator, modifier, code, val, description) values (1, 1, 'register_enable', 'false', '是否开启注册功能');
 insert into base_system_config (creator, modifier, code, val, description) values (1, 1, 'quartz_ip', 'NOT_USED', '定时器运行ip');
 insert into base_system_config (creator, modifier, code, val, description) values (1, 1, 'sql_password', 'cory', '执行sql密码');
 
