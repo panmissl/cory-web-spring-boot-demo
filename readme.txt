@@ -82,7 +82,8 @@ Context：
 
 基础数据的获取：
     获取数据字典列表
-    /ajax/basedata/datadict/list?type=0
+    /ajax/basedata/datadict/listByTypeId?typeId=13
+    /ajax/basedata/datadict/listByTypeValue?typeValue=shippingMethod
     获取系统配置
     /ajax/basedata/systemconfig?key=abc
     获取本机IP和端口
