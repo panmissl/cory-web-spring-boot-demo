@@ -193,4 +193,6 @@ swagger-ui
 
 代码生成：默认会在启动时判断没有DAO类就生成代码，如果想要手动生成部分代码，则启动后调用CodeGeneratorHelper类来生成即可
 
+扩展：如果有些功能需要扩展，比如密码加密器需要自己实现，则可以覆盖PasswordEncoder这个Bean，它定义在ShiroConfig里
+
 mvn -DskipTests=true -Dmaven.skip.test=true package
