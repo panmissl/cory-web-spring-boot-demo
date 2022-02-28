@@ -17,10 +17,10 @@
 # Apache httpd http的转发配置：https://blog.51cto.com/5468755/1369911, https://blog.csdn.net/a332708815/article/details/50441061
 
 JAVA_HOME=/mokii/software/jdk/jdk1.8.0_181
-APP_NAME=cory-web-demo-0.0.1-SNAPSHOT.jar
+APP_NAME=web-0.0.1-SNAPSHOT.jar
 
 #shutdown tomcat
 #kill -9 `ps -ef | grep $APP_NAME | awk '{print $2}'`
 
 #start server
-nohup $JAVA_HOME/bin/java -jar -Dspring.profiles.active=prod $APP_NAME > /dev/null 2>&1 &
+nohup $JAVA_HOME/bin/java -jar -Dspring.profiles.active=prod $APP_NAME --server.port=8080 > /dev/null 2>&1 &
