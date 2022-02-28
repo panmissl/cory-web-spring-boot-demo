@@ -23,4 +23,4 @@ APP_NAME=web-0.0.1-SNAPSHOT.jar
 #kill -9 `ps -ef | grep $APP_NAME | awk '{print $2}'`
 
 #start server
-nohup $JAVA_HOME/bin/java -jar -Dspring.profiles.active=prod $APP_NAME --server.port=8080 > /dev/null 2>&1 &
+nohup $JAVA_HOME/bin/java -server -Djava.awt.headless=true -jar -Dspring.profiles.active=prod $APP_NAME --server.port=8080 > /dev/null 2>&1 &
