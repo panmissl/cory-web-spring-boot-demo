@@ -24,3 +24,4 @@ APP_NAME=web-0.0.1-SNAPSHOT.jar
 
 #start server
 nohup $JAVA_HOME/bin/java -server -Djava.awt.headless=true -jar -Dspring.profiles.active=prod $APP_NAME --server.port=8080 > /dev/null 2>&1 &
+nohup $JAVA_HOME/bin/java -server -Djava.awt.headless=true -jar -Dspring.profiles.active=prod web-0.0.1-SNAPSHOT.jar --server.port=8080 > /dev/null 2>&1 &
