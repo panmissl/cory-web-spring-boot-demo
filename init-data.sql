@@ -12,7 +12,10 @@ CREATE TABLE `demo_demo` (`id` bigint(20) NOT NULL AUTO_INCREMENT COMMENT 'ID',`
 
 insert into base_system_config (creator, modifier, code, val, description) values (1, 1, 'domain_name', 'http://localhost:8080', 'domain');
 insert into base_system_config (creator, modifier, code, val, description) values (1, 1, 'site_name', 'DEMO', 'site name');
-insert into base_system_config (creator, modifier, code, val, description) values (1, 1, 'site_slogan', 'DEMO', 'site slogan');
+insert into base_system_config (creator, modifier, code, val, description) values (1, 1, 'site_slogan', 'slogan', 'site slogan');
+insert into base_system_config (creator, modifier, code, val, description) values (1, 1, 'site_keywords', 'keywords', 'site keywords');
+insert into base_system_config (creator, modifier, code, val, description) values (1, 1, 'site_description', 'description', 'site description');
+insert into base_system_config (creator, modifier, code, val, description) values (1, 1, 'site_description_body', 'description body', 'site description body');
 insert into base_system_config (creator, modifier, code, val, description) values (1, 1, 'js_dir', 'http://localhost:8000/', 'ends with /');
 insert into base_system_config (creator, modifier, code, val, description) values (1, 1, 'css_dir', 'http://localhost:8000/', 'ends with /');
 insert into base_system_config (creator, modifier, code, val, description) values (1, 1, 'image_dir', 'http://localhost:8000/', 'ends with /');
