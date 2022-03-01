@@ -130,7 +130,7 @@ ajax：防止表单重复提交
 		# 代码：写OpenApiController继承BaseOpenApiController。mapping里以业务模块开始，以/开头，BaseOpenApiController里加了前缀：/openapi
 		# 调用方：在Header里放置：Access-Key-Id、Access-Key-Timestamp和Access-Key-Token。URL以/openapi/开头
 		其中：
-		1、Access-Key-Timestamp格式为：System.currentTimeMillis()取得的long型值，10分钟有效
+		1、Access-Key-Timestamp格式为：System.currentTimeMillis()取得的long型值，10秒内有效
 		2、Access-Key-Token是根据Access-Key-Id、Access-Secret-Key和Access-Key-Timestamp生成的。
             格式为：MD5(Access-Key-Id::Access-Secret-Key::Access-Key-Timestamp)。
             比如：id为123，secret为456，时间戳为1645111672839，则token为：MD5(123::456::1645111672839) -> da8819510a2df87aa9415debe3786817
