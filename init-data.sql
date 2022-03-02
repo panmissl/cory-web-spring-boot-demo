@@ -16,9 +16,8 @@ insert into base_system_config (creator, modifier, code, val, description) value
 insert into base_system_config (creator, modifier, code, val, description) values (1, 1, 'site_keywords', 'keywords', 'site keywords');
 insert into base_system_config (creator, modifier, code, val, description) values (1, 1, 'site_description', 'description', 'site description');
 insert into base_system_config (creator, modifier, code, val, description) values (1, 1, 'site_description_body', 'description body', 'site description body');
-insert into base_system_config (creator, modifier, code, val, description) values (1, 1, 'js_dir', 'http://localhost:8000/', 'ends with /');
-insert into base_system_config (creator, modifier, code, val, description) values (1, 1, 'css_dir', 'http://localhost:8000/', 'ends with /');
-insert into base_system_config (creator, modifier, code, val, description) values (1, 1, 'image_dir', 'http://localhost:8000/', 'ends with /');
+insert into base_system_config (creator, modifier, code, val, description) values (1, 1, 'static_dir', 'http://localhost:8000/', 'ends with /');
+insert into base_system_config (creator, modifier, code, val, description) values (1, 1, 'static_version', '', '0.0.1');
 insert into base_system_config (creator, modifier, code, val, description) values (1, 1, 'js_file', 'umi.js', 'umi.js');
 insert into base_system_config (creator, modifier, code, val, description) values (1, 1, 'css_file', 'umi.css', 'umi.css');
 insert into base_system_config (creator, modifier, code, val, description) values (1, 1, 'admin-skin', 'green', '皮肤：green,red,yellow,blue,black,purple,green-light,red-light,yellow-light,blue-light,black-light,purple-light');
