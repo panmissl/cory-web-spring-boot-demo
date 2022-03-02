@@ -30,6 +30,7 @@ insert into base_system_config (creator, modifier, code, val, description) value
 insert into base_system_config (creator, modifier, code, val, description) values (1, 1, 'register_enable', 'false', '是否开启注册功能');
 insert into base_system_config (creator, modifier, code, val, description) values (1, 1, 'quartz_ip', 'NOT_USED', '定时器运行ip');
 insert into base_system_config (creator, modifier, code, val, description) values (1, 1, 'sql_password', 'cory', '执行sql密码');
+insert into base_data_dict (id, creator, modifier, type, value, sn, description) values (1, 1, 1, 'cory_web_data_dict_root_parent_000', 'cory_web_data_dict_root', 1, 'ROOT(根类型，系统用，勿删)');
 
 /* -- password: 123456 */
 insert into base_user (id, creator, modifier, user_name, nick_name, phone, email, password, type, status, level) values (1, 1, 1, 'admin', '管理员', '13000000000', 'xxx@163.com', 'e10adc3949ba59abbe56e057f20f883e', 'SITE', 'NORMAL', 'SVIP');
