@@ -58,6 +58,7 @@ ROOT
 	注意：所有枚举实现CoryEnum接口
 	注意：Model类字段类型用对象类型，不要用原始类型，而且不要有默认值。原因有两个：1、int等会有默认值，导致没有传条件时会有一个默认值查询不出来；2、boolean型生成的getter/setter不带IS，有问题
 	注意：VO和DTO，都继承BaseVO和BaseDTO
+	注意：所有的类都加上：serialVersionUID，防止缓存或其它操作时报类转换错误
 	访问：localhost:8080，注意：先启动cdn工程
 
 Context：

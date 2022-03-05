@@ -12,7 +12,9 @@ import lombok.NoArgsConstructor;
 import java.util.Date;
 
 /**
- * Created by Cory on 2021/2/17.
+ *
+ * @author Cory
+ * @date 2021/2/17
  */
 @Data
 @Builder
@@ -20,6 +22,8 @@ import java.util.Date;
 @AllArgsConstructor
 @Model(name = "测试", module = "demo")
 public class Demo extends BaseModel {
+
+    private static final long serialVersionUID = -4335503869914343155L;
 
     @Field(label = "年龄", type = CoryDbType.INT)
     private Integer age;
