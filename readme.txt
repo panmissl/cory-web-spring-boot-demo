@@ -61,6 +61,21 @@ ROOT
 	注意：所有的类都加上：serialVersionUID，防止缓存或其它操作时报类转换错误
 	访问：localhost:8080，注意：先启动cdn工程
 
+上线流程：
+    db结构、初始化数据：直接把本地的db结构导出到线上数据库执行即可。初始化数据执行init-data.sql
+    给表建索引
+    打包：三个：java、前端js、后端js
+    前端页面增加：keyword、description等
+    上传静态资源：一般上传到OSS，然后配置CDN加速
+    favicon
+    安装nginx
+    安装java
+    启动
+    备案
+    访问统计：可接入的平台很多，比如百度统计
+    配置域名
+    配置证书
+
 Context：
     1、用户直接用：CurrentUser.get()即可。但是OpenApi获取不到，注意
     2、CoryContext.get()
