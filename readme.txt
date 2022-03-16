@@ -98,6 +98,7 @@ Context：
 
 操作日志：
     默认BaseService在增删改时记录操作日志，如果不需要，要自己写，请覆写actionLogEnable方法返回false
+    修改：默认打开写得多了，目前是默认关闭状态
     自己记录操作日志方法：用 ActionLogUtil 类的静态方法记录
 
 拦截器：
