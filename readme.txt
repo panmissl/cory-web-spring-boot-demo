@@ -96,15 +96,6 @@ Context：
     在需要缓存的service方法上，添加Cache, CacheEvict等spring的缓存注解即可，参考SystemConfigService.java
     自定义缓存：直接在需要的地方使用CacheManager，然后用即可
 
-基础数据的获取：
-    获取数据字典列表
-    /ajax/basedata/datadict/listByTypeId?typeId=13
-    /ajax/basedata/datadict/listByTypeValue?typeValue=shippingMethod
-    获取系统配置
-    /ajax/basedata/systemconfig?key=abc
-    获取本机IP和端口
-    /ajax/basedata/ip_port
-
 操作日志：
     默认BaseService在增删改时记录操作日志，如果不需要，要自己写，请覆写actionLogEnable方法返回false
     自己记录操作日志方法：用 ActionLogUtil 类的静态方法记录
