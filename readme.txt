@@ -196,6 +196,15 @@ ajax：防止表单重复提交
             });
         });
 
+返回值加密
+    支持对返回值进行加密。场景：某个接口返回的数据只能自己解析，即使别人拿到返回数据也不能解析。常用在APP或小程序的通讯上。
+    加密功能需要和客户端配合使用，服务端加密后，客户端相应解密。所以加密的算法要自己提供。
+    使用步骤：
+    1、在需要加密的Controller类或方法上加注解：@GenericResultEncrypt
+    2、写一个Bean，实现接口：GenericResultEncryptor。注意bean加上@Service或@Component注解
+    3、客户端拿到数据后进行解密(GenericResult里的isEncrypt字段值为true)
+    可以参见GenericResultEncrypt的注释
+
 swagger-ui
     参考文档：
         https://swagger.io/tools/swagger-ui/
