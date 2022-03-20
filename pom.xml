@@ -26,9 +26,10 @@
 
 	<dependencies>
 		<dependency>
-			<groupId>com.cory</groupId>
+			<groupId>ink.cory</groupId>
 			<artifactId>cory-web-spring-boot-starter</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
+			<!-- 请到maven仓库查询并使用最新版本：https://search.maven.org/search?q=cory-web-spring-boot-starter -->
+			<version>0.0.1</version>
 		</dependency>
 		<dependency>
 			<groupId>org.projectlombok</groupId>
