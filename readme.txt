@@ -47,7 +47,7 @@ ROOT
             用命令git clone将cory-web-demo工程：git@github.com:panmissl/cory-web-spring-boot-demo.git 和 cory-web-spring-boot-demo-cdn工程：git@github.com:panmissl/cory-web-spring-boot-demo-cdn.git克隆到本地
             （或者先fork到自己的github再clone）
             可选：如果需要改名字，则两个工程都要一起改，且名字是有关系的，后端项目如果改叫：abc-test的话，cdn项目叫：adb-test-cdn
-	2、创建数据库
+    2、创建数据库，数据库名称在application.properties里配置
 	3、编辑init-data.sql，将域名等修改好，见sql文件里的注释
 	4、执行init-data.sql里的建表语句和初始化数据
 	5、此步在开发环境不用做，因为表等会自动创建和同步，不用手动创建 -- 生产环境需要手动创建
