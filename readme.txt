@@ -39,20 +39,26 @@ ROOT
 # js
 
 开发步骤：
-    先用idea的copy功能，copy一个新的project
-	同时copyCDN功能：手动复制cory-web-spring-boot-demo-all-cdn，注意工程名叫：xxx-cdn (xxx是java工程名称)
-	创建数据库
-	编辑init-data.sql
-	执行init-data.sql里的建表语句和初始化数据
-	表等会自动创建和同步，不用手动创建 -- 生产环境需要手动创建
-	配置：在application.properties和application-prod.properties文件里配置
-	写Model类，加上注解：数据库（包括DDL和DML）、校验、等(所有注解都在com.cory.db.annotations下面)
-    用代码生成工具生成dao、service、controller、js -- 这一步是自动的，直接启动系统即可
+    1、工程准备：
+        方式一：本地已经有cory-web-spring-boot-demo-all和cory-web-spring-boot-demo-cdn工程：
+            先用idea的copy功能，copy一个新的project
+            同时copyCDN功能：手动复制cory-web-spring-boot-demo-all-cdn，注意工程名叫：xxx-cdn (xxx是java工程名称)
+        方式二：本地还没有cory-web-demo工程
+            用命令git clone将cory-web-demo工程：git@github.com:panmissl/cory-web-spring-boot-demo.git 和 cory-web-spring-boot-demo-cdn工程：git@github.com:panmissl/cory-web-spring-boot-demo-cdn.git克隆到本地
+            （或者先fork到自己的github再clone）
+            可选：如果需要改名字，则两个工程都要一起改，且名字是有关系的，后端项目如果改叫：abc-test的话，cdn项目叫：adb-test-cdn
+	2、创建数据库
+	3、编辑init-data.sql，将域名等修改好，见sql文件里的注释
+	4、执行init-data.sql里的建表语句和初始化数据
+	5、此步在开发环境不用做，因为表等会自动创建和同步，不用手动创建 -- 生产环境需要手动创建
+	6、配置：在application.properties和application-prod.properties文件里配置
+	7、写Model类，加上注解：数据库（包括DDL和DML）、校验、等(所有注解都在com.cory.db.annotations下面)
+    8、这一步是自动的，直接启动系统即可。用代码生成工具生成dao、service、controller、js。如果需要自行生成，可使用类：CodeGeneratorHelper来生成（本文下面有描述）
 	可选：系统启动后，插入初始化数据：放在了系统根目录下init-data.sql里。直接从系统功能里执行即可
     可选：在service方法里配置缓存
     可选：在service方法里配置事务：加注解：@Transactional(rollbackFor = Throwable.class)
     可选：删除test相关 - 可以留着做参考
-	可选：在application.properteis里配置数据库相关信息：
+	可选：在application.properties里配置数据库相关信息：
 		cory.db.dao-packages = com.cory.dao -- 这个默认就行，一般不用配置，除非有特殊需要
 		cory.db.model-packages = com.cory.model -- 这个默认就行，一般不用配置，除非有特殊需要
 	注意：所有枚举实现CoryEnum接口
@@ -208,7 +214,7 @@ swagger-ui
 		在@Api的类加上：@SwaggerApiController注解，API是按注解开的，不加的话不会在页面上看到
         访问：localhost:8080/swagger-ui.html
 
-代码生成：默认会在启动时判断没有DAO类就生成代码，如果想要手动生成部分代码，则启动后调用CodeGeneratorHelper类来生成即可
+代码生成：默认会在启动时判断没有DAO类就生成代码，如果想要手动生成部分代码，则启动后调用CodeGeneratorHelper类来生成即可（比如写一个测试用的Controller来做此工作）
 
 扩展：如果有些功能需要扩展，比如密码加密器需要自己实现，则可以覆盖PasswordEncoder这个Bean，它定义在ShiroConfig里
 

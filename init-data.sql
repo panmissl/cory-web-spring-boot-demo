@@ -10,13 +10,13 @@ CREATE TABLE `base_action_log` (`id` bigint(20) NOT NULL AUTO_INCREMENT COMMENT 
 CREATE TABLE `base_access_count` (`id` bigint(20) NOT NULL AUTO_INCREMENT COMMENT 'ID',`creator` bigint(20) NOT NULL COMMENT '创建人',`modifier` bigint(20) NOT NULL COMMENT '修改人',`create_time` datetime NOT NULL DEFAULT '1970-01-01 00:00:00' COMMENT '创建时间',`modify_time` datetime NOT NULL DEFAULT '1970-01-01 00:00:00' COMMENT '修改时间',`is_deleted` SMALLINT(1) NOT NULL DEFAULT 0 COMMENT '是否删除',`day` varchar(20) NOT NULL COMMENT '日',`hour` varchar(20) NOT NULL COMMENT '小时',`uri` varchar(254) NOT NULL COMMENT 'URI',`access_count` int NOT NULL DEFAULT 0 COMMENT '访问次数',PRIMARY KEY (`id`)) ENGINE=InnoDB AUTO_INCREMENT=10001 DEFAULT CHARSET=utf8 COMMENT='访问统计';
 CREATE TABLE `demo_demo` (`id` bigint(20) NOT NULL AUTO_INCREMENT COMMENT 'ID',`creator` bigint(20) NOT NULL,`modifier` bigint(20) NOT NULL,`create_time` datetime NOT NULL DEFAULT '1970-01-01 00:00:00',`modify_time` datetime NOT NULL DEFAULT '1970-01-01 00:00:00',`is_deleted` SMALLINT(1) NOT NULL DEFAULT 0,`age` int(11) NOT NULL,`foreign_id` bigint(20) NOT NULL,`balance` double NOT NULL,`name` varchar(50) NOT NULL,`remark` text NOT NULL,`is_child` smallint(1) NOT NULL,`birthday` datetime NOT NULL,`time` datetime NOT NULL,`sex` varchar(64) NOT NULL,PRIMARY KEY (`id`)) ENGINE=InnoDB AUTO_INCREMENT=10001 DEFAULT CHARSET=utf8;
 
-insert into base_system_config (creator, modifier, code, val, description) values (1, 1, 'domain_name', 'http://localhost:8080', 'domain');
-insert into base_system_config (creator, modifier, code, val, description) values (1, 1, 'site_name', 'DEMO', 'site name');
-insert into base_system_config (creator, modifier, code, val, description) values (1, 1, 'site_slogan', 'slogan', 'site slogan');
-insert into base_system_config (creator, modifier, code, val, description) values (1, 1, 'site_keywords', 'keywords', 'site keywords');
-insert into base_system_config (creator, modifier, code, val, description) values (1, 1, 'site_description', 'description', 'site description');
-insert into base_system_config (creator, modifier, code, val, description) values (1, 1, 'site_description_body', 'description body', 'site description body');
-insert into base_system_config (creator, modifier, code, val, description) values (1, 1, 'static_dir', 'http://localhost:8000/', 'ends with /');
+insert into base_system_config (creator, modifier, code, val, description) values (1, 1, 'domain_name', 'http://localhost:8080', '域名，结尾不要/，线上一般没有端口');
+insert into base_system_config (creator, modifier, code, val, description) values (1, 1, 'site_name', 'DEMO', '网站名称，作为页面主标题');
+insert into base_system_config (creator, modifier, code, val, description) values (1, 1, 'site_slogan', 'slogan', '网站标语，作为页面副标题');
+insert into base_system_config (creator, modifier, code, val, description) values (1, 1, 'site_keywords', 'keywords', '网站关键字，放在meta keywords里');
+insert into base_system_config (creator, modifier, code, val, description) values (1, 1, 'site_description', 'description', '网站描述，放在meta description里');
+insert into base_system_config (creator, modifier, code, val, description) values (1, 1, 'site_description_body', 'description body', '网站描述，作用和description一样，但放在body里，用作SEO');
+insert into base_system_config (creator, modifier, code, val, description) values (1, 1, 'static_dir', 'http://localhost:8000/', 'ends with /，静态资源目录（域名+端口+目录），比如：g.alicdn.com/abc/def/');
 insert into base_system_config (creator, modifier, code, val, description) values (1, 1, 'static_version', '', '0.0.1');
 insert into base_system_config (creator, modifier, code, val, description) values (1, 1, 'js_file', 'umi.js', 'umi.js');
 insert into base_system_config (creator, modifier, code, val, description) values (1, 1, 'css_file', 'umi.css', 'umi.css');
@@ -29,7 +29,7 @@ insert into base_system_config (creator, modifier, code, val, description) value
 insert into base_system_config (creator, modifier, code, val, description) values (1, 1, 'user_enabled', 'true', '是否开启用户系统');
 insert into base_system_config (creator, modifier, code, val, description) values (1, 1, 'register_enable', 'false', '是否开启注册功能');
 insert into base_system_config (creator, modifier, code, val, description) values (1, 1, 'quartz_ip', 'NOT_USED', '定时器运行ip');
-insert into base_system_config (creator, modifier, code, val, description) values (1, 1, 'sql_password', 'cory', '执行sql密码');
+insert into base_system_config (creator, modifier, code, val, description) values (1, 1, 'sql_password', 'cory', '执行sql密码，有一个执行sql模块，可在页面上执行sql');
 insert into base_system_config (creator, modifier, code, val, description) values (1, 1, 'debug_mode', 'true', '是否开启debug，true/false');
 insert into base_data_dict (id, creator, modifier, type, value, sn, description) values (1, 1, 1, 'cory_web_data_dict_root_parent_000', 'cory_web_data_dict_root', 1, 'ROOT(根类型，系统用，勿删)');
 
