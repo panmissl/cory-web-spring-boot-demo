@@ -20,7 +20,8 @@ JAVA_HOME=/mokii/software/jdk/jdk1.8.0_181
 APP_NAME=web-0.0.1-SNAPSHOT.jar
 
 #shutdown tomcat
-#kill -9 `ps -ef | grep $APP_NAME | awk '{print $2}'`
+#不要用kill -9，因为这样的话注册的shutdownHook不会生效
+#kill -2 `ps -ef | grep $APP_NAME | awk '{print $2}'`
 
 #start server
 nohup $JAVA_HOME/bin/java -server -Djava.awt.headless=true -jar -Dspring.profiles.active=prod $APP_NAME --server.port=8080 > /dev/null 2>&1 &
