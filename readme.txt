@@ -94,13 +94,20 @@ Context：
 校验：
 	在Model类上增加注解，用SpringValidation框架。前端就用Field里的校验，做简单校验
 
+删除：
+    默认是物理删除，如果需要逻辑删除，请指定model注解里的logicDelete = true
+
 执行sql：
 	可以再页面直接执行sql，但每次都需要输入密码。密码配置再系统参数配置里，key是：sql_password
 
 缓存使用：
     配置：在application.properteis里配置：cory.cache.type: 可选值有simple/redis/etcd。如果配置了redis或者etcd，还需要配置他们的连接情况。具体可以在prod和dev里配置即可
-    在需要缓存的service方法上，添加Cache, CacheEvict等spring的缓存注解即可，参考SystemConfigService.java
+    在需要缓存的service方法上，添加Cache, CacheEvict等spring的缓存注解即可，参考ResourceService.java
     自定义缓存：直接在需要的地方使用CacheManager，然后用即可
+
+特殊缓存：
+    系统配置和数据字典，有特殊的缓存使用方法，用：SystemConfigCacheUtil和DataDictCacheUtil来获取
+    所以一般情况下不直接使用systemConfigService和dataDictService
 
 操作日志：
     默认BaseService在增删改时记录操作日志，如果不需要，要自己写，请覆写actionLogEnable方法返回false
@@ -121,6 +128,15 @@ Context：
 		cory.scheduler.job-configs[0]=SampleJob1:0 0 2 * * ?
 		cory.scheduler.job-configs[1]=SampleJob2:0 2 35 * * ?
 	配置规则：Job(Job类名[不加包名]):cronExpress。如：SampleJob:0 0 2 * * ?
+
+集群定时任务：
+    除上面的定时任务(使用Spring Quartz实现)外，还有一类特殊的定时任务：集群定时任务
+    它类似上面的广播任务，区别是：广播任务每次都执行，而集群定时任务只执行一次，执行后任务就被删除掉了。而且是定时执行（10s一次）。
+    用途：用在那些需要集群所有机器执行一次的任务。比如目前用在：系统参数配置和数据字典的缓存加载，这两个缓存用得特别多，如果用redis缓存那么性能不好，所以直接加载到内存使用。刷新缓存时使用集群定时任务刷新一次即可。
+    用法：
+        1、系统启动时，注册任务handler：在用@PostConstruct注解的方法里，调用：com.cory.service.ClusterJobService#registerJobHandler
+        2、在需要执行任务时，调用com.cory.service.ClusterJobService#addJob方法添加任务
+        具体参见SystemConfigService里的使用
 
 session共享：
     使用spring-session。配置：
