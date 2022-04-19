@@ -35,7 +35,7 @@ deploy() {
   kill -2 `ps -ef | grep $APP_NAME | grep $1 | awk '{print $2}'`
 
   #等待服务器彻底停止
-  echo -n 'INFO: please wait server stop...'
+  echo -n 'INFO: please wait server stop'
   for e in $(seq 5); do
       echo -n "."
       sleep 1
@@ -46,7 +46,7 @@ deploy() {
   nohup $JAVA_HOME/bin/java -server -Djava.awt.headless=true -jar -Dspring.profiles.active=prod $APP_NAME --server.port=$1 > /dev/null 2>&1 &
 
   #等待20秒，确认服务器已经启动，然后做健康检查
-  echo -n 'INFO: server is starting, please wait...'
+  echo -n 'INFO: server is starting, please wait'
   for e in $(seq 20); do
       echo -n "."
       sleep 1
