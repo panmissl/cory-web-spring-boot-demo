@@ -25,9 +25,10 @@ SERVER2=8081
 cd /xx/xxx
 
 #备份jar
-echo "backup jar"
+echo "INFO: backup jar..."
 mv $APP_NAME $APP_NAME.old
 mv $APP_NAME.new $APP_NAME
+echo "INFO: backup jar finish."
 
 #执行部署，一个参数，输入哪个server（上面定义的SERVER1和SERVER2）
 deploy() {
@@ -37,7 +38,7 @@ deploy() {
   #kill -15执行后，后台还是在，所以要用kill -15和kill -9组合
   #从本地运行远程脚本还是不行，杀不死进程，所以脚本还是去远程上运行了
   SERVER_PID=`ps -ef | grep $APP_NAME | grep $1 | awk '{print $2}'`
-  echo "server pid: $SERVER_PID"
+  echo "INFO: server pid: $SERVER_PID"
   kill -15 $SERVER_PID
 
   #等待服务器彻底停止
