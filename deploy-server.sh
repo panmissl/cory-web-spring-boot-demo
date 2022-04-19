@@ -32,7 +32,8 @@ mv web-0.0.1-SNAPSHOT.jar.new web-0.0.1-SNAPSHOT.jar
 deploy() {
   #shutdown tomcat
   #不要用kill -9，因为这样的话注册的shutdownHook不会生效
-  kill -2 `ps -ef | grep $APP_NAME | grep $1 | awk '{print $2}'`
+  #也不要用kill -2，因为这样杀不死从脚本启动的程序，只能杀死直接启动的程序
+  kill -15 `ps -ef | grep $APP_NAME | grep $1 | awk '{print $2}'`
 
   #等待服务器彻底停止
   echo -n 'INFO: please wait server stop'
