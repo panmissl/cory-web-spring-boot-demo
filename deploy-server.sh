@@ -25,19 +25,24 @@ SERVER2=8081
 cd /xx/xxx
 
 #备份jar
-mv web-0.0.1-SNAPSHOT.jar web-0.0.1-SNAPSHOT.jar.old
-mv web-0.0.1-SNAPSHOT.jar.new web-0.0.1-SNAPSHOT.jar
+echo "backup jar"
+mv $APP_NAME $APP_NAME.old
+mv $APP_NAME.new $APP_NAME
 
 #执行部署，一个参数，输入哪个server（上面定义的SERVER1和SERVER2）
 deploy() {
   #shutdown tomcat
   #不要用kill -9，因为这样的话注册的shutdownHook不会生效
   #也不要用kill -2，因为这样杀不死从脚本启动的程序，只能杀死直接启动的程序
-  kill -15 `ps -ef | grep $APP_NAME | grep $1 | awk '{print $2}'`
+  #kill -15执行后，后台还是在，所以要用kill -15和kill -9组合
+  #从本地运行远程脚本还是不行，杀不死进程，所以脚本还是去远程上运行了
+  SERVER_PID=`ps -ef | grep $APP_NAME | grep $1 | awk '{print $2}'`
+  echo "server pid: $SERVER_PID"
+  kill -15 $SERVER_PID
 
   #等待服务器彻底停止
   echo -n 'INFO: please wait server stop'
-  for e in $(seq 10); do
+  for e in $(seq 3); do
       echo -n "."
       sleep 1
   done
