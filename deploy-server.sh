@@ -37,7 +37,7 @@ deploy() {
 
   #等待服务器彻底停止
   echo -n 'INFO: please wait server stop'
-  for e in $(seq 5); do
+  for e in $(seq 10); do
       echo -n "."
       sleep 1
   done
