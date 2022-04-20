@@ -33,6 +33,7 @@ insert into base_system_config (creator, modifier, code, val, description) value
 insert into base_system_config (creator, modifier, code, val, description) values (1, 1, 'quartz_ip', 'NOT_USED', '定时器运行ip');
 insert into base_system_config (creator, modifier, code, val, description) values (1, 1, 'sql_password', 'cory', '执行sql密码，有一个执行sql模块，可在页面上执行sql');
 insert into base_system_config (creator, modifier, code, val, description) values (1, 1, 'debug_mode', 'true', '是否开启debug，true/false');
+insert into base_system_config (creator, modifier, code, val, description) values (1, 1, '__token_expire_time_in_second__', '10', 'token过期时间：秒');
 insert into base_data_dict (id, creator, modifier, type, value, sn, description) values (1, 1, 1, 'cory_web_data_dict_root_parent_000', 'cory_web_data_dict_root', 1, 'ROOT(根类型，系统用，勿删)');
 
 /* -- password: 123456 */
