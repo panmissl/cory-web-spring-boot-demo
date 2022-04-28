@@ -91,6 +91,9 @@ Context：
     写一个Controller继承BasePortalController，然后方法体里写：return initPortalPageContext(model);可以参考PortalController的写法，主要是GetMapping里的路径配置
     在cdn里的config里添加菜单
 
+特殊过滤条件：
+    在list时，可能会有些特殊过滤的，比如根据状态列表过滤，某个值的区间（大于、小于等），这种可以构造出过滤对象后，利用BaseModel里的addXxxFilterField方法添加这些特殊过滤条件，不用自己手写。具体见BaseModel源码里的注释及方法。
+
 校验：
 	在Model类上增加注解，用SpringValidation框架。前端就用Field里的校验，做简单校验
 
