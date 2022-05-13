@@ -87,9 +87,9 @@ Context：
     2、CoryContext.get()
     3、CorySystemContext.get()
 
-如果有一些特殊路径需要写到左侧菜单且用来做权限分配，则可以这样做（/, /admin都这么做了，参考PortalController）：
-    写一个Controller继承BasePortalController，然后方法体里写：return initPortalPageContext(model);可以参考PortalController的写法，主要是GetMapping里的路径配置
-    在cdn里的config里添加菜单
+特殊菜单路径：
+    默认生成后端和前端代码后，前端的访问路径是固定了的，一个model对应一个访问路径。
+    如果有一些特殊路径需要写到左侧菜单且用来做权限分配（比如订单model后端是同一个，此时生成的访问url是：/xxx/order，但前端要显示成线上订单和线下订单，对应url是：/xxx/order/online和/xxx/order/offline），请在MenuPortalController里配置即可
 
 特殊过滤条件：
     在list时，可能会有些特殊过滤的，比如根据状态列表过滤，某个值的区间（大于、小于等），这种可以构造出过滤对象后，利用BaseModel里的addXxxFilterField方法添加这些特殊过滤条件，不用自己手写。具体见BaseModel源码里的注释及方法。
