@@ -38,6 +38,23 @@ ROOT
     com.cory.web.controller.#Model#Controller.java
 # js
 
+controller划分建议
+    controller可分为4类：
+        1、后台数据请求，以/ajax/开头，用于后台系统，需要登录授权后，才能访问。
+        2、openapi请求，以/openapi/开头，用于openapi，对外提供接口，需要用ak、sk授权访问，比如给小程序或app访问，或者给第三方访问
+        3、api请求，以/api/开头，用于站点非后台系统（比如官网），需要访问数据时用这种controller，不用授权，放开访问（在application.properties里配置），但要注意数据安全
+        4、MenuPortalController，自定义uri，作用见类注释。
+    在controller数量少时，可以全部放在controller文件夹下即可。但如果数量多，那么建议将它们分开目录放，且可以自行新建子目录。建议目录如下：
+        controller
+        +--- ajax
+        +---------- 自己定义的二级目录
+        +--- api
+        +---------- 自己定义的二级目录
+        +--- openapi
+        +---------- 自己定义的二级目录
+        +--- MenuPortalController
+    注意：代码自动生成的controller，是放在controller目录下的，如果分开了文件夹，需要在生成代码后手动移动一下。
+
 开发步骤：
     1、工程准备：
         方式一：本地已经有cory-web-spring-boot-demo-all和cory-web-spring-boot-demo-cdn工程：
