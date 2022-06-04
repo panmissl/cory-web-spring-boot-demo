@@ -213,6 +213,31 @@ ajax：防止表单重复提交
             });
         });
 
+文件导出
+    背景：对于一些导出需要时间比较长的，需要用异步导出，然后通过查看导出列表查看导出结果和下载导出文件
+    提供了文件导出任务服务：ExportJobService。无论是同步还是异步导出都可以使用
+    使用：
+        1、直接使用ExportJobService的doExport方法，提供一个type，然后自行导出，导出后将下载地址返回即可（第二个参数）。具体见方法注释
+        2、导出数据查看：可以在页面上嵌入导出数据模块：ExportJobList，传入type字段即可，具体见前端组件注释
+    注意：
+        直接使用ExportJobService的doExport方法时，如果需要异步，自己开线程处理。ExportJobService的doExport方法不会开异步线程。
+    示例：
+        private static final ExecutorService POOL = ConcurrentUtil.newFixedThreadPool(1);
+
+        @Autowired
+        private ExportJobService exportJobService;
+
+        public void export() {
+            POOL.submit(() -> {
+                exportJobService.doExport("my_text_export_job", () -> {
+                    //自己处理上传逻辑，比如上传到OSS
+                    ByteArrayOutputStream out = xxx;
+                    String url = OSSHelper.upload(out);
+                    return url;
+                });
+            });
+        }
+
 返回值加密
     支持对返回值进行加密。场景：某个接口返回的数据只能自己解析，即使别人拿到返回数据也不能解析。常用在APP或小程序的通讯上。
     加密功能需要和客户端配合使用，服务端加密后，客户端相应解密。所以加密的算法要自己提供。
