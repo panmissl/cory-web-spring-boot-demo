@@ -173,6 +173,10 @@ ajax：防止表单重复提交
     场景：有些地方不能校验权限，比如某些不可控的外部系统回调，比如微信、支付宝等支付回调
     使用：配置文件里增加：cory.web.skipShiroAuthUrlPattern的配置
 
+数据权限
+    写数据权限实现类，实现接口：DataPermission接口。记得加上@Component注解
+    在Dao的方法上（select注解），加datapermission的code即可。
+
 自定义Token校验使用：作为OpenApi使用
     场景：有些地方不用用户系统校验，用OpenApi的方式进行访问
     使用：
