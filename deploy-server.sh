@@ -50,7 +50,7 @@ deploy() {
   echo ''
 
   #启动服务器
-  nohup $JAVA_HOME/bin/java -server -Djava.awt.headless=true -jar -Dspring.profiles.active=prod $APP_NAME --server.port=$1 > /dev/null 2>&1 &
+  nohup $JAVA_HOME/bin/java -server -Xms2g -Xmx2g -XX:MetaspaceSize=256m -XX:MaxMetaspaceSize=256m -XX:+PrintGC -XX:+PrintGCDetails -XX:+PrintGCTimeStamps -XX:+PrintCommandLineFlags -Djava.awt.headless=true -jar -Dspring.profiles.active=prod $APP_NAME --server.port=$1 > start.log 2>&1 &
 
   #等待20秒，确认服务器已经启动，然后做健康检查
   echo -n 'INFO: server is starting, please wait'
