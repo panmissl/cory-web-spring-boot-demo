@@ -164,6 +164,9 @@ session共享：
 		pom文件里的spring-session-data-redis依赖打开
 		CoryWebDemoApplication里的EnableRedisHttpSession注释打开
 
+session过期时间
+    默认30分钟过期，可以在系统配置里配置，编码为：session_timeout_in_minute，值为时间，比如：60，单位为分钟
+
 ajax：防止表单重复提交
     不成功时，重新获取token，url：generateFormToken，post提交的参数名：__form_token__
     csrf: 对于不是页面的post提交来说，需要加上csrf参数。通过：generateCsrfToken来获取，get请求即可。参数名叫：_csrf
