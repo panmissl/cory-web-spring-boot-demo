@@ -1,0 +1,30 @@
+/* index page START */
+.index-welcome {
+    margin: 24px 0 96px 24px;
+    color: #2881ce;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+/* index page END */
+
+/* setting page START */
+.setting-tip {
+    margin: 4px auto 24px auto;
+}
+#msg {
+    margin-bottom: 12px;
+}
+#setting-out {
+    margin-bottom: 12px;
+}
+/* setting page END */
+
+/* test START */
+.toast-test-ct {
+    margin-top: 24px;
+}
+/* test END */
+
+/* table START */
+#supplier-code {width: 400px;}
+/* table END */

@@ -58,20 +58,19 @@ controller划分建议
 开发步骤：
     1、工程准备：
         方式一：本地已经有cory-web-spring-boot-demo-all和cory-web-spring-boot-demo-cdn工程：
-            先用idea的copy功能，copy一个新的project
+            先用idea的copy功能，copy一个新的project：直接在工程名上右键，点"复制"，然后在空白外点"粘贴"即可
             同时copyCDN功能：手动复制cory-web-spring-boot-demo-all-cdn，注意工程名叫：xxx-cdn (xxx是java工程名称)
         方式二：本地还没有cory-web-demo工程
             用命令git clone将cory-web-demo工程：git@github.com:panmissl/cory-web-spring-boot-demo.git 和 cory-web-spring-boot-demo-cdn工程：git@github.com:panmissl/cory-web-spring-boot-demo-cdn.git克隆到本地
             （或者先fork到自己的github再clone）
             可选：如果需要改名字，则两个工程都要一起改，且名字是有关系的，后端项目如果改叫：abc-test的话，cdn项目叫：adb-test-cdn
-    2、创建数据库，数据库名称在application.properties里配置
-	3、编辑init-data.sql，将域名等修改好，见sql文件里的注释
-	4、执行init-data.sql里的建表语句和初始化数据
-	5、此步在开发环境不用做，因为表等会自动创建和同步，不用手动创建 -- 生产环境需要手动创建
-	6、配置：在application.properties和application-prod.properties文件里配置
-	7、写Model类，加上注解：数据库（包括DDL和DML）、校验、等(所有注解都在com.cory.db.annotations下面)
-    8、这一步是自动的，直接启动系统即可。用代码生成工具生成dao、service、controller、js。如果需要自行生成，可使用类：CodeGeneratorHelper来生成（本文下面有描述）
-	可选：系统启动后，插入初始化数据：放在了系统根目录下init-data.sql里。直接从系统功能里执行即可
+	2、配置：在application.properties和application-prod.properties文件里配置其它配置项
+    3、如果不启用数据库(cory.db.enable=false)，忽略此步。创建数据库：在application.properties里配置数据库名，然后创建数据库。注意：字符集选：utf8mb4，排序规则选择：utf8mb4_0900_ai_ci。具体原因见：http://cory.ink/mysql_charset_and_collation
+	4、如果不启用数据库(cory.db.enable=false)，忽略此步。编辑init-data.sql，将域名等修改好，见sql文件里的注释
+	5、如果不启用数据库(cory.db.enable=false)，忽略此步。执行init-data.sql里的建表语句和初始化数据
+	到此步骤就可以启动服务器了
+	6、写Model类，加上注解：数据库（包括DDL和DML）、校验、等(所有注解都在com.cory.db.annotations下面)
+    7、用代码生成工具生成dao、service、controller、js。注意：这一步是自动的，不需要手工生成，直接启动系统即可。如果需要自行生成，可使用类：CodeGeneratorHelper来生成（本文下面有描述）
     可选：在service方法里配置缓存
     可选：在service方法里配置事务：加注解：@Transactional(rollbackFor = Throwable.class)
     可选：删除test相关 - 可以留着做参考
@@ -82,6 +81,7 @@ controller划分建议
 	注意：Model类字段类型用对象类型，不要用原始类型，而且不要有默认值。原因有两个：1、int等会有默认值，导致没有传条件时会有一个默认值查询不出来；2、boolean型生成的getter/setter不带IS，有问题
 	注意：VO和DTO，都继承BaseVO和BaseDTO
 	注意：所有的类都加上：serialVersionUID，防止缓存或其它操作时报类转换错误
+    注意：在开发环境，新增表（增加一个模型类即可，比如Demo），不用在数据库里同时建表，因为表会自动创建和同步，但是生产环境需要手动创建
 	访问：localhost:8080，注意：先启动cdn工程
 
 上线流程：
@@ -148,6 +148,7 @@ Context：
 		cory.scheduler.job-configs[0]=SampleJob1:0 0 2 * * ?
 		cory.scheduler.job-configs[1]=SampleJob2:0 2 35 * * ?
 	配置规则：Job(Job类名[不加包名]):cronExpress。如：SampleJob:0 0 2 * * ?
+	cronExpress解释：秒 分 时 日 月 周
 
 集群定时任务：
     除上面的定时任务(使用Spring Quartz实现)外，还有一类特殊的定时任务：集群定时任务
@@ -286,4 +287,77 @@ swagger-ui
 
 扩展：如果有些功能需要扩展，比如密码加密器需要自己实现，则可以覆盖PasswordEncoder这个Bean，它定义在ShiroConfig里
 
-mvn -DskipTests=true -Dmaven.skip.test=true package
+工具类：
+    提供了很多有用的工具类，比如HttpClientUtil、VelocityUtil、XmlUti等等，可查看com.cory.util包
+
+静态资源处理，见StaticResourceFilter
+    目的：一般前后端是分离的，但对有些简单的页面，不想做得那么重，就想在一个jar里全部包含，那么可以将静态资源放在jar包里，并配合下面的"自定义页面路由"功能，在一个jar里实现全部功能
+    放在resource/static/目录下的文件，会被当作静态资源处理。默认已经加了js/jquery.min.js和一些图片(static/image/)
+    还可以再加其它的文件，比如js或css
+
+自定义页面路由
+    默认除了/static/外的其它请求，都被拦截了（PortalController里），如果要自定义路由，可以写自己的Controller，然后定义请求路由，并转到自己的页面（所有页面都是用freemarker渲染的）
+        比如写一个TestPortalController，里面定义了：@GetMapping("/test")，返回test，即可渲染test.ftlh模板
+
+前后端不分离样例
+    按上面静态资源处理描述，demo系统提供了一个样例（包含了顶部、左边菜单、右边内容的框架），可直接使用。
+    Portal类：MyPortalController，可以自己修改成自己的类名，还有里面的路径定义也可以自行修改
+    静态资源：jquery已经在framework提供了，这里放了图片、css、其它js和模板文件
+    在frame.js里，非下划线开头的，都是可以用的小组件
+    启动后访问：http://localhost:8080/my_page/index
+
+不连接数据库：在配置文件（application.properties）里将cory.db.enable设置为false
+
+支持多个数据库：
+    1、在application.properties（或者-prod的文件）里定义数据库配置
+    2、写一个配置类，加载多个数据库。注意：一定要配置一个bean名称为：dataSource，且是Primary的数据源，给系统用。然后再配置其它dataSource，beanName要不一样。
+    举例如下：
+    @Configuration
+    public class SqlServerDataSourceConfiguration {
+
+        @Value("${spring.datasource.sqlserver.url}")
+        private String url;
+        @Value("${spring.datasource.sqlserver.username}")
+        private String username;
+        @Value("${spring.datasource.sqlserver.password}")
+        private String password;
+
+        //这是默认的数据源，给系统用的
+        @Bean
+        @Primary
+        @ConfigurationProperties(prefix = "spring.datasource")
+        public DataSource dataSource(DataSourceProperties properties) {
+            return DataSourceBuilder
+                    .create()
+                    .username(properties.getUsername())
+                    .password(properties.getPassword())
+                    .driverClassName(properties.getDriverClassName())
+                    .url(properties.getUrl())
+                    .type(HikariDataSource.class)
+                    .build();
+        }
+
+        //这是自定义数据源，连接sqlserver数据库
+        @Bean
+        @Qualifier("sqlServerDataSource")
+        public SQLServerDataSource sqlServerDataSource() {
+            SQLServerDataSource ds = new SQLServerDataSource();
+            ds.setURL(url);
+            ds.setUser(username);
+            ds.setPassword(password);
+            ds.setEncrypt("False");
+            ds.setTrustServerCertificate(true);
+            return ds;
+        }
+
+        //自定义数据源定义好后，用它创建JdbcTemplate，进行数据库操作
+        @Bean
+        public JdbcTemplate sqlServerJdbcTemplate(@Nullable SQLServerDataSource sqlServerDataSource) {
+            JdbcTemplate template = new JdbcTemplate();
+            template.setDataSource(sqlServerDataSource);
+            return template;
+        }
+    }
+
+打包：
+mvn -DskipTests=true -Dmaven.skip.test=true clean package
