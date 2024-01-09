@@ -140,6 +140,7 @@ Context：
         @Component
         public class WeixinApiInterceptor implements HandlerInterceptor {
         }
+    注意如果有顺序要求的话，加@Order注解
 
 定时任务使用：
 	默认关闭，如果需要则可以打开：cory.scheduler.enable=true
@@ -298,6 +299,7 @@ swagger-ui
 自定义页面路由
     默认除了/static/外的其它请求，都被拦截了（PortalController里），如果要自定义路由，可以写自己的Controller，然后定义请求路由，并转到自己的页面（所有页面都是用freemarker渲染的）
         比如写一个TestPortalController，里面定义了：@GetMapping("/test")，返回test，即可渲染test.ftlh模板
+        注意：test.ftlh要放在resources目录下：resource/templates
 
 前后端不分离样例
     按上面静态资源处理描述，demo系统提供了一个样例（包含了顶部、左边菜单、右边内容的框架），可直接使用。
@@ -358,6 +360,10 @@ swagger-ui
             return template;
         }
     }
+
+自定义Filter
+    不要直接实现Filter接口，实现OrderedFilter，这样能控制执行顺序。系统的几个Filter已经设置好了顺序了
+    实现OrderedFilter，然后加上@Component注解即可，不用再在config里注册，也不用加WebFilter注解
 
 打包：
 mvn -DskipTests=true -Dmaven.skip.test=true clean package
